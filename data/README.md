@@ -15,11 +15,11 @@ Chủ đề: kiến thức về đột quỵ — nhận biết, phòng ngừa, p
 | Know Stroke: Recovery Through Rehabilitation | 05/2024 | 1 | 1 |
 | **Tổng** | | **83** | **67** |
 
-## Quyền xử lý và phương án nộp
+## Quyền sử dụng
 
 Căn cứ: [NINDS Publications Help — Copyright and Use of NINDS Materials](https://www.ninds.nih.gov/publications/publications-help). Thông tin do NINDS chuẩn bị thuộc public domain; hình ảnh có hướng dẫn quyền sử dụng riêng. Trang 2 của *Stroke: Hope Through Research* cũng có thông báo public domain cho phần thông tin.
 
-**PDF gốc giữ local**, tải từ URL NINDS trong manifest và được Git bỏ qua. Repo chứa manifest, công cụ tái tạo và artifacts văn bản; nguồn được ghi là NINDS/NIH. Pipeline không trích xuất hình ảnh.
+PDF gốc tải từ URL NINDS trong manifest, chỉ lưu local và không commit. Repo gồm manifest, script và văn bản đã xử lý, có ghi nguồn NINDS/NIH. Pipeline không lấy hình ảnh.
 
 ## Lấy lại dữ liệu
 
@@ -29,15 +29,15 @@ Từ root repo, script tải chỉ cần thư viện chuẩn Python:
 python3 starter/scripts/fetch_data.py
 ```
 
-Script dùng `source_url` và `source_path_or_url` trong manifest, tải file thiếu vào đúng đường dẫn, kiểm tra SHA-256 trước khi nhận file. File local đúng checksum được dùng lại; file sai không bị ghi đè và manifest không tự thay đổi khi nguồn đổi.
+Script đọc URL và đường dẫn từ manifest, tải file còn thiếu rồi kiểm tra SHA-256. File local đúng checksum được dùng lại; file sai không bị ghi đè. Script không tự sửa manifest nếu nguồn thay đổi.
 
-Kiểm tra HTTP GET ngày 14/11/2026: cả 5 `source_url` trả HTTP 403 từ môi trường kiểm tra, chưa xác minh được PDF tải lại. Nếu gặp lỗi này, tra cứu tài liệu trong [danh mục NINDS](https://www.ninds.nih.gov/publications); ba factsheet có trang [nhận biết](https://www.ninds.nih.gov/health-information/stroke/signs-and-symptoms), [phòng ngừa](https://www.ninds.nih.gov/health-information/stroke/prevention) và [phục hồi](https://www.ninds.nih.gov/health-information/stroke/recovery). Lưu PDF tải được đúng tên vào `data/raw/stroke-awareness/`, rồi kiểm tra:
+Lần kiểm tra ngày 14/11/2026, cả 5 URL trả HTTP 403 nên chưa kiểm tra được việc tải lại PDF. Nếu gặp lỗi này, tìm tài liệu trong [danh mục NINDS](https://www.ninds.nih.gov/publications); ba factsheet có trang [nhận biết](https://www.ninds.nih.gov/health-information/stroke/signs-and-symptoms), [phòng ngừa](https://www.ninds.nih.gov/health-information/stroke/prevention) và [phục hồi](https://www.ninds.nih.gov/health-information/stroke/recovery). Lưu PDF đúng tên vào `data/raw/stroke-awareness/`, rồi kiểm tra:
 
 ```bash
 python3 starter/scripts/fetch_data.py --verify-only
 ```
 
-Năm PDF local đã được xác minh checksum; nguồn trả phiên bản khác sẽ không khớp manifest.
+Checksum của 5 PDF local đã khớp manifest. Nếu nguồn trả phiên bản khác, bước kiểm tra sẽ báo lỗi.
 
 Sau khi cài môi trường theo [starter/README.md](../starter/README.md), từ root:
 

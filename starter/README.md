@@ -4,7 +4,7 @@ Pipeline trong `src/` đọc PDF, chuẩn hóa, chia chunk, tạo embedding, lư
 
 ## 1. Cài môi trường local
 
-Cần Python **3.12**, Docker Engine/Desktop + Compose và [uv](https://docs.astral.sh/uv/getting-started/installation/). Python 3.12 là phiên bản đã kiểm tra với lock hiện tại; lần cài dependencies và tải model đầu cần mạng. Các lệnh sau chạy từ `starter/`:
+Cần Python **3.12**, Docker Engine/Desktop + Compose và [uv](https://docs.astral.sh/uv/getting-started/installation/). Lock file đã được kiểm tra với Python 3.12. Cần mạng để cài dependencies và tải model lần đầu. Chạy từ root repo:
 
 ```bash
 cd starter
@@ -15,7 +15,7 @@ uv pip sync --python .venv/bin/python --torch-backend cpu requirements-local.loc
 
 Trên Windows PowerShell: dùng `py -3.12 -m venv .venv`, kích hoạt bằng `.venv\Scripts\Activate.ps1`, thay đường dẫn Python trong lệnh uv bằng `.venv\Scripts\python.exe`.
 
-`requirements-local.lock` ghi các phiên bản môi trường CPU đã dùng; `requirements-local.txt` là đầu vào để tạo lock. `requirements.txt` chứa thư viện đọc PDF/database.
+`requirements-local.lock` lưu phiên bản các package đã dùng trên CPU. `requirements-local.txt` dùng để tạo lock; `requirements.txt` chứa thư viện đọc PDF và kết nối database.
 
 Nếu chưa có `.env`, copy `.env.example` thành `.env` (PowerShell: `Copy-Item .env.example .env`). Mẫu đã điền model và revision dùng trong thí nghiệm:
 
@@ -45,7 +45,7 @@ python scripts/fetch_data.py --verify-only
 
 Nếu nguồn trả HTTP 403 hoặc lỗi mạng, tải thủ công theo [data/README.md](../data/README.md), sau đó chạy `fetch_data.py --verify-only`.
 
-`check_corpus.py` đọc lại PDF bằng mã ingestion, kiểm tra checksum, số trang, phân loại chọn/loại, số ký tự từng trang và tổng manifest. Kỳ vọng: `PASS`, **5 tài liệu / 83 trang vật lý / 67 trang được chọn / 95.535 ký tự**. Bốn trang rỗng đều bị loại; không có trang được chọn bị lỗi. Ý nghĩa nội dung và căn cứ quyền được ghi riêng trong [data/README.md](../data/README.md).
+`check_corpus.py` đọc lại PDF qua pipeline, kiểm tra checksum, trang chọn/loại và số ký tự so với manifest. Kết quả cần đạt: `PASS`, **5 tài liệu / 83 trang vật lý / 67 trang được chọn / 95.535 ký tự**. Bốn trang rỗng đều đã loại; không có trang được chọn bị lỗi. Nguồn và quyền sử dụng nằm trong [data/README.md](../data/README.md).
 
 ## 3. Kiểm tra database và model
 
@@ -59,7 +59,7 @@ Database mở tại `127.0.0.1:55433`, volume `pg_data` lưu bền vững. Kỳ 
 
 Vector và metadata nằm trong bảng `stroke_chunks`, khóa chính `(strategy, chunk_id)`. Cả bốn cấu hình dùng cosine exact search với toán tử `<=>`; C thêm điều kiện lọc `publication_year` trước khi xếp hạng. Không dùng index ANN. Đường dẫn embedding trong repo được lưu tương đối với root để có thể chuyển thư mục bài làm.
 
-Model check kỳ vọng `BAAI/bge-m3`, CPU, **1.024 chiều** và `PASS`. Kiểm tra này dùng câu mẫu và giới hạn mặc định của model; pipeline thí nghiệm dùng **512 token**, FP32, batch 4 và vector chuẩn hóa theo `configs/lab.json`.
+Lệnh check model cần trả về `BAAI/bge-m3`, CPU, **1.024 chiều** và `PASS`. Lệnh này dùng câu mẫu với giới hạn mặc định của model. Pipeline dùng **512 token**, FP32, batch 4 và chuẩn hóa vector theo `configs/lab.json`.
 
 Khi tài liệu thay đổi, cập nhật PDF và manifest tương ứng (checksum, trang, số ký tự, metadata), kiểm chứng lại gold rồi chạy `prepare` → `embed` → `ingest` cho phiên bản mới. `prepare` tạo ID theo hash đầu vào và mã nguồn. `ingest` thay toàn bộ dữ liệu của từng cấu hình trong một transaction, loại chunk cũ thay vì cộng dồn; nạp lại cùng phiên bản không tăng số bản ghi. Giữ kết quả phiên bản trước để truy vết, và tuân thủ quy tắc dev/test khi thay tài liệu hoặc gold.
 
@@ -77,7 +77,7 @@ docker compose -p day6_student_starter stop
 
 ## 4. Luồng thí nghiệm
 
-Xem các lệnh thực tế:
+Xem danh sách lệnh:
 
 ```bash
 python -m src.run --help
@@ -99,11 +99,11 @@ Một lượt chạy mới cần thư mục làm việc riêng không chứa `re
 
 Sau khi dữ liệu và model đã sẵn trong cache, có thể thêm `HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1` trước lệnh `prepare` và `embed` trên Bash để chạy không cần mạng.
 
-Phiên bản benchmark hiện tại dùng 20 dev / 5 test (`q21–q25`). Test cũ `q16–q20` đã chuyển sang dev sau khi được xem. Lượt hiện tại đã chạy đủ dev và test; C được chốt trên dev trước khi chạy test. Kết quả cũ nằm riêng dưới prepared ID cũ.
+Benchmark dùng 20 dev / 5 test (`q21–q25`). Test cũ `q16–q20` đã chuyển sang dev sau khi được xem. C được chọn trên dev trước khi chạy test mới; cả hai tập đã chạy xong.
 
-Cấu hình hiện tại gồm **A/B/C và semantic D**. D đo khoảng cách cosine giữa embedding các cửa sổ câu (buffer 1), dùng ngưỡng percentile 90 trên corpus, tối thiểu 100 ký tự trước khi cắt do ngữ nghĩa và giới hạn 500 ký tự/overlap 0 như B. D không áp dụng filter; B–C vẫn chỉ thay filter. Model, corpus, gold và cách chia dev/test giữ nguyên; xem `strategy_extension` trong `benchmark/protocol.json`.
+Cấu hình gồm **A/B/C và semantic D**. D dùng embedding cửa sổ câu (buffer 1), ngưỡng percentile 90 và tối thiểu 100 ký tự trước mỗi lần cắt theo ngữ nghĩa. Giới hạn vẫn là 500 ký tự, overlap 0 như B. D không dùng filter; B–C chỉ khác filter. Chi tiết nằm trong `configs/lab.json` và `benchmark/protocol.json`.
 
-`prepare` chạy thêm BGE-M3 trên CPU để xác định ranh giới semantic từ nguồn, không dùng câu hỏi/gold. Model phải có sẵn hoặc tải được. `semantic_D.json` và `semantic_D.npz` trong thư mục prepared lưu cửa sổ/offset, khoảng cách, ngưỡng, vector nguồn và thời gian thực chạy. Chi phí bước này được ghi riêng với embedding các chunk dùng truy xuất. Ranh giới câu dùng regex, câu quá dài có thể bị chia để giữ giới hạn; không bảo đảm mọi chunk trọn ý.
+`prepare` dùng BGE-M3 để tìm điểm chia cho D từ text nguồn, không dùng câu hỏi hay gold. Bước này cần model và có thời gian xử lý riêng. `semantic_D.json` và `semantic_D.npz` lưu cửa sổ câu, offset, vector và số liệu xử lý. Câu được tách bằng regex; câu dài vẫn có thể bị cắt để giữ giới hạn chunk.
 
 `audit` xuất biểu mẫu chấm coherence, metadata và grounding. Sau khi điền điểm, lý do và reviewer:
 
@@ -135,8 +135,8 @@ Sau khi cài môi trường và khởi động PostgreSQL, từ `starter/`:
 python scripts/reproduce_retrieval.py --output /tmp/day06-replay
 ```
 
-`--output` phải là thư mục chưa tồn tại; trên Windows chọn một đường dẫn mới phù hợp. Script sao chép code, cấu hình, benchmark và các vector thật đã lưu sang thư mục riêng, tạo database tạm trên cùng PostgreSQL rồi chạy `ingest` → `dev` → `select` → `test`. Sau đó đối chiếu toàn bộ chỉ số, ID top-3 và lựa chọn cấu hình với kết quả đã nộp. Database tạm được xóa; kết quả tái lập giữ tại `--output`, không ghi đè index hay kết quả gốc. Tài khoản database cần quyền tạo database; cấu hình Docker mặc định của lab có quyền này.
+`--output` phải là thư mục chưa tồn tại; trên Windows dùng một đường dẫn mới phù hợp. Script chạy `ingest` → `dev` → `select` → `test` trong thư mục và database riêng, rồi so sánh chỉ số, ID top-3 và cấu hình được chọn với kết quả gốc. Database tạm tự xóa; kết quả chạy lại nằm ở `--output`. Tài khoản cần quyền tạo database, có sẵn trong cấu hình Docker của lab.
 
-Lệnh này không mã hóa lại và không cần tải PDF/model; danh tính/checksum của bộ vector được kiểm tra trước khi dùng. Đây là tái chạy cùng thí nghiệm đã cố định, không phải tập test độc lập mới. Để tái tạo từ PDF và mã hóa lại, lấy corpus theo mục 2 rồi chạy luồng đầy đủ ở mục 4 trong thư mục làm việc mới chỉ chứa code, config, benchmark và dữ liệu.
+Lệnh dùng lại vector và bộ câu hỏi đã lưu, có kiểm tra checksum, nên không cần tải PDF/model. Để chạy từ PDF và tạo embedding lại, làm theo mục 2 và 4 trong thư mục mới chỉ chứa code, config, benchmark và dữ liệu.
 
 Các quy định về corpus, benchmark, AI và bài nộp vẫn theo [GUIDE.md](../GUIDE.md), [RULES.md](../RULES.md) và [SUBMISSION.md](../SUBMISSION.md).
