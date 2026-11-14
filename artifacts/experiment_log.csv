@@ -1,4 +1,5 @@
 strategy,chunking,chunk_size,overlap,metadata,filter,vectorizer,hypothesis,dev_hit1,dev_hit3,test_hit1,test_hit3,notes
-A,,,,,,,,,,,,
-B,,,,,,,,,,,,
-C,,,,,,,,,,,,
+A,fixed,500,50,document_id;source;page;publication_year;document_type;topic;country_context,none,BAAI/bge-m3@5617a9f61b028005a4858fdac845db406aefb181,Baseline fixed windows; overlap may retain boundaries but add redundant text.,13/20,17/20,3/5,3/5,
+B,paragraph_sentence,500,0,document_id;source;page;publication_year;document_type;topic;country_context,none,BAAI/bge-m3@5617a9f61b028005a4858fdac845db406aefb181,Respecting paragraph/sentence boundaries may improve coherence and evidence completeness.,17/20,17/20,5/5,5/5,
+C,paragraph_sentence,500,0,document_id;source;page;publication_year;document_type;topic;country_context,question-provided publication_year only,BAAI/bge-m3@5617a9f61b028005a4858fdac845db406aefb181,B chunks plus pre-supplied year filters may improve retrieval on explicitly scoped questions.,17/20,18/20,5/5,5/5,Reuses B vectors.
+D,semantic,500,0,document_id;source;page;publication_year;document_type;topic;country_context,none,BAAI/bge-m3@5617a9f61b028005a4858fdac845db406aefb181,"Source-embedding semantic boundaries may improve coherence and evidence retrieval at the same 500-character cap as B, with additional preprocessing cost.",15/20,17/20,5/5,5/5,

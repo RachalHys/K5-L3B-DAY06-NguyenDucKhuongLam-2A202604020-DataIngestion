@@ -1,0 +1,18 @@
+{
+  "prepared_id": "c5d3358834ca1f25c699",
+  "started_at": "2026-11-14T10:08:31.402180+00:00",
+  "selection_sha256": "76017efd6d5ff1665eee59dce3d6890e39bf1b09956bb124d68832c6646ea5b9",
+  "dev_trace_sha256": "50273c1694d1c0e1ff7425a60081c33e25a4a632bde337242d627e97eb75cdcd",
+  "embedding_run_sha256": "2085ee485cef412e81b98313cc37b7427dd9fb429d4413da92ca109287d16e8f",
+  "selected_strategy_before_test": "C",
+  "fresh_test_ids": [
+    "q21",
+    "q22",
+    "q23",
+    "q24",
+    "q25"
+  ],
+  "completed_at": "2026-11-14T10:08:32.544108+00:00",
+  "test_trace_sha256": "93a9dd84a16e6eeb96dbede8bf6e9633fd5c6df4e2e06567eaef09b37206d122",
+  "test_metrics_sha256": "b22b4cbaae040ed5080c30cc81d207a0e1b072b8843e47aecb75ad088010404b"
+}

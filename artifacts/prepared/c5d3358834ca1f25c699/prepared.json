@@ -1,0 +1,147 @@
+{
+  "prepared_id": "c5d3358834ca1f25c699",
+  "config": {
+    "study_id": "stroke-awareness-v1",
+    "model": {
+      "name": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "dimensions": 1024,
+      "max_tokens": 512,
+      "normalize_embeddings": true,
+      "precision": "float32",
+      "batch_size": 4,
+      "document_method": "encode",
+      "query_method": "encode",
+      "query_instruction": ""
+    },
+    "strategies": {
+      "A": {
+        "chunking": "fixed",
+        "chunk_size": 500,
+        "overlap": 50,
+        "filters": false
+      },
+      "B": {
+        "chunking": "paragraph_sentence",
+        "chunk_size": 500,
+        "overlap": 0,
+        "filters": false
+      },
+      "C": {
+        "chunks_from": "B",
+        "filters": true
+      },
+      "D": {
+        "chunking": "semantic",
+        "chunk_size": 500,
+        "overlap": 0,
+        "filters": false,
+        "breakpoint_percentile": 90,
+        "min_chunk_size": 100,
+        "buffer_size": 1
+      }
+    },
+    "retrieval": {
+      "top_k": 3,
+      "metric": "cosine",
+      "search": "exact"
+    },
+    "selection_rule": [
+      "dev_evidence_hit3_desc",
+      "dev_hit1_desc",
+      "chunk_count_asc",
+      "strategy_id_asc"
+    ],
+    "coherence_sampling": "First 10 eligible pages ordered by document_id/page; midpoint advanced to next non-whitespace character; first covering chunk in source order.",
+    "benchmark_language": "en",
+    "test_policy": "Freeze questions and selection rule before retrieval; select on dev before test. Any test-informed changes require disclosure and a new independent test set.",
+    "embedding_backend": "Local CPU; four PyTorch threads.",
+    "cost_scope": "USD compute-service charges; excludes electricity, hardware and network."
+  },
+  "input_hashes": {
+    "configs/lab.json": "24eef272c686a07211e966256186aeb2ce40d39cb32dd7616a692f7987ed480a",
+    "data/manifest.json": "dc556bd7d835e7d12bba7efe5f2ec74778d0ffbfb24c9e5eb4b82994275179df",
+    "benchmark/questions.json": "1eef4f6de7df6b8a8e532b11ea2a01e44bc4e692d29ac7d57b05629a8dd7295c",
+    "benchmark/protocol.json": "3c70fb9b8c9c2f2c104c2e44596dd0350641b4566cb1ea7f3a801402a3d760f9",
+    "starter/src/__init__.py": "86b6f304b218783f00e27c050a111049f5dc07fd98194c556deb0633d7c8980a",
+    "starter/src/audits.py": "5bdef1b8d37f66d1fb21c5857942c0639715e612d5eb4ae648ff641ed8c1490b",
+    "starter/src/chunking.py": "85efdb4a09dc69c9efddd94564d0b8d2111e1f76af1c57bc2051eeedc84d29d9",
+    "starter/src/embeddings.py": "c62db82fbe8a79d3239d82eb090eb96c7aea68fae5382896d1f2a5492e1c0e41",
+    "starter/src/evaluation.py": "c8e3ea06a302dbee77d62f7d5326cdb26d3b7eb2e2b9693707d6495420bd1bfe",
+    "starter/src/experiment.py": "708ceedd5e795622b45e5825ce19c25ede70d84e71c1727cafc9e463174c7152",
+    "starter/src/ingestion.py": "38b6d4b7b47e6da438ebe66308db6399ab27e89e2717851f9a5ecda61e011874",
+    "starter/src/models.py": "5380cd16fcd0d4396db5dda3a205c148c148a5fd6e90b90d060dd546e39bb68d",
+    "starter/src/run.py": "91b6838ce7128c2752a47061315f954da8f83f3b15cb7f53e1b83c2d6a61eaa3",
+    "starter/src/semantic.py": "eba10720d9e14807974633a18a46db091f79348e5122903c3158dbc0ff6deb42",
+    "starter/src/store.py": "74ffdf7a4eeb5bb011df1119b2d688d0f3a1fa1ac091dba47664dc102be16936",
+    "starter/src/workflow.py": "3d505236dc4b499b93ca8e6a57b445260a760bcc07b387ac38791d689de1cd38"
+  },
+  "corpus_pages": 67,
+  "corpus_characters": 95535,
+  "question_counts": {
+    "dev": 20,
+    "test": 5
+  },
+  "chunk_statistics": {
+    "A": {
+      "chunk_count": 241,
+      "total_characters": 104235,
+      "min_characters": 56,
+      "max_characters": 500,
+      "median_characters": 500,
+      "p95_characters": 500.0
+    },
+    "B": {
+      "chunk_count": 252,
+      "total_characters": 95349,
+      "min_characters": 19,
+      "max_characters": 500,
+      "median_characters": 415.0,
+      "p95_characters": 492.0
+    },
+    "C": {
+      "chunk_count": 252,
+      "total_characters": 95349,
+      "min_characters": 19,
+      "max_characters": 500,
+      "median_characters": 415.0,
+      "p95_characters": 492.0
+    },
+    "D": {
+      "chunk_count": 273,
+      "total_characters": 95328,
+      "min_characters": 19,
+      "max_characters": 500,
+      "median_characters": 386,
+      "p95_characters": 489.0
+    }
+  },
+  "semantic_chunking": {
+    "D": {
+      "threshold": 0.17315599918365476,
+      "distance_count": 692,
+      "token_statistics": {
+        "count": 759,
+        "total_tokens": 62752,
+        "maximum_tokens": 216
+      },
+      "model_loading_seconds": 8.477382379000119,
+      "embedding_seconds": 249.24708132900014,
+      "total_seconds": 257.79364923899993,
+      "service_cost": 0.0
+    }
+  },
+  "preprocessing_seconds": 261.72585050900125,
+  "files": {
+    "chunks_A.jsonl": "84e0326395e60efbb91310cf3c1c47246ecb73b2df6b7c2445335668216af153",
+    "chunks_B.jsonl": "47c8d4f307e4a7dfe6689b20e7bfdc19400145922494b9dd2b544366f18d23ac",
+    "chunks_D.jsonl": "d8387e25bb528b9247b806664c77e8752f144a8b11633be5f92c1569b6129db7",
+    "coherence.csv": "d05f0050e8cd7aeadc97f073c539fbc1f553a109834de5f40b8dadcfaf8733ee",
+    "extraction_issues.json": "d37f5eefc8b8e03b9b0bc74d4431efb3be3c3a7b9ee984c6b6c0cb515cd36931",
+    "pages.jsonl": "9e68b4971c45588e2ca809bfe0b1ba72a53ec54c1d1c17f50213088fc70ebeae",
+    "queries.jsonl": "d7e75ec04df3dcbae4eec70e411c50b07eea6ebcdfe8ad5964dffe76548d90a2",
+    "semantic_D.json": "e7d6c0da07d9653e85675cb550cf90aa198250c67df98c7957fa509e4490aa76",
+    "semantic_D.npz": "dcb98ee0bab5106e5b2c00f7a1a13033a9a3f1f4a6e55d1002a1bcdacac194ec"
+  },
+  "created_at": "2026-11-14T09:54:41.757999+00:00"
+}

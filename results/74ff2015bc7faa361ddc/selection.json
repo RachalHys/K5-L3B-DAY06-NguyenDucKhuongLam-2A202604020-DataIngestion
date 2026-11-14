@@ -1,0 +1,60 @@
+{
+  "prepared_id": "74ff2015bc7faa361ddc",
+  "selected_strategy": "E",
+  "selection_rule": [
+    "dev_evidence_hit3_desc",
+    "dev_hit1_desc",
+    "chunk_count_asc",
+    "strategy_id_asc"
+  ],
+  "dev_metrics": [
+    {
+      "strategy": "E",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 17,
+      "hit3_n": 19,
+      "hit1": 0.85,
+      "evidence_hit3": 0.95
+    },
+    {
+      "strategy": "D",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 16,
+      "hit3_n": 19,
+      "hit1": 0.8,
+      "evidence_hit3": 0.95
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 17,
+      "hit3_n": 18,
+      "hit1": 0.85,
+      "evidence_hit3": 0.9
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 17,
+      "hit3_n": 17,
+      "hit1": 0.85,
+      "evidence_hit3": 0.85
+    },
+    {
+      "strategy": "A",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 13,
+      "hit3_n": 17,
+      "hit1": 0.65,
+      "evidence_hit3": 0.85
+    }
+  ],
+  "dev_trace_sha256": "bb5f166715bca3c13a80f1a1e9700c55da794dd9ff9a3125bbb4102e7aa0f2e1",
+  "embedding_run_sha256": "f7b096747ebb58b922d61a067f967175a8f2cc554ac69beb6740c60b3ab5cd57",
+  "selected_at": "2026-11-14T08:49:07.470677+00:00"
+}

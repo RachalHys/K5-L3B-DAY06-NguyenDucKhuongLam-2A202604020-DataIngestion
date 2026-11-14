@@ -1,0 +1,47 @@
+[
+  {
+    "strategy": "A",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 13,
+    "hit3_n": 17,
+    "hit1": 0.65,
+    "evidence_hit3": 0.85
+  },
+  {
+    "strategy": "B",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 17,
+    "hit3_n": 17,
+    "hit1": 0.85,
+    "evidence_hit3": 0.85
+  },
+  {
+    "strategy": "C",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 17,
+    "hit3_n": 18,
+    "hit1": 0.85,
+    "evidence_hit3": 0.9
+  },
+  {
+    "strategy": "D",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 16,
+    "hit3_n": 19,
+    "hit1": 0.8,
+    "evidence_hit3": 0.95
+  },
+  {
+    "strategy": "E",
+    "split": "dev",
+    "n": 20,
+    "hit1_n": 17,
+    "hit3_n": 19,
+    "hit1": 0.85,
+    "evidence_hit3": 0.95
+  }
+]

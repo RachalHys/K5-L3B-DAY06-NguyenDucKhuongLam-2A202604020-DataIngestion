@@ -1,0 +1,373 @@
+[
+  {
+    "id": "q01",
+    "split": "dev",
+    "type": "direct",
+    "question": "What happens to blood flow in the brain during a stroke?",
+    "expected_answer": "It is suddenly interrupted, for example by a blocked, narrowed, or burst blood vessel.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 5,
+    "evidence_quote": "A stroke is a brain attack—a sudden interruption of continuous blood flow to the brain—and a medical emergency. A stroke occurs when a blood vessel in the brain becomes blocked or narrowed, or when a blood vessel bursts and spills blood into the brain.",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_prevention_2024",
+        "page": 1,
+        "quote": "Stroke occurs when blood flow to the brain is interrupted."
+      },
+      {
+        "source_id": "ninds_fast_2024",
+        "page": 1,
+        "quote": "About 80% are ischemic strokes, which disrupts blood to the brain. The rest are hemorrhagic strokes, caused by bleeding in or around the brain. The longer blood flow is cut off, the greater the damage."
+      },
+      {
+        "source_id": "ninds_rehabilitation_2020",
+        "page": 3,
+        "quote": "Advances in emergency stroke treatment can limit damage to the brain, which occurs either from bleeding into and around the brain (hemorrhagic stroke) or from lack of blood flow to a region where nerve cells are robbed of vital supplies of oxygen and nutrients and subsequently die (ischemic stroke)."
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "q02",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What feature of symptom onset is key to recognizing a stroke?",
+    "expected_answer": "The symptoms come on suddenly.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 6,
+    "evidence_quote": "The key to recognizing stroke symptoms is that they come on suddenly.",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_fast_2024",
+        "page": 1,
+        "quote": "More sudden stroke symptoms Numbness or weakness of face, arm, or leg, especially on one side of the body"
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "q03",
+    "split": "dev",
+    "type": "direct",
+    "question": "What is a transient ischemic attack (TIA)?",
+    "expected_answer": "A temporary cut-off of blood flow to the brain.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 14,
+    "evidence_quote": "A transient ischemic attack, or TIA, is a temporary cut-off of blood flow to the brain.",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_stroke_overview_2020",
+        "page": 14,
+        "quote": "A TIA occurs when blood flow to part of the brain is blocked, often by a clot, but then dissipates after a short time and the stroke symptoms go away."
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "q04",
+    "split": "dev",
+    "type": "direct",
+    "question": "How does the booklet define an ischemic stroke?",
+    "expected_answer": "The blood supply to part of the brain is cut off or interrupted.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 10,
+    "evidence_quote": "An ischemic stroke occurs when the supply of blood to one or more regions of the brain is suddenly cut off or interrupted.",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_stroke_overview_2020",
+        "page": 10,
+        "quote": "An ischemic stroke occurs when the supply of blood to one or more regions of the brain is suddenly cut off"
+      },
+      {
+        "source_id": "ninds_rehabilitation_2020",
+        "page": 3,
+        "quote": "from lack of blood flow to a region where nerve cells are robbed of vital supplies of oxygen and nutrients and subsequently die (ischemic stroke)."
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "q05",
+    "split": "dev",
+    "type": "filter",
+    "question": "In the May 2024 Know Stroke materials, what should you check when someone smiles during the FAST face check?",
+    "expected_answer": "Whether one side of the face droops.",
+    "gold_source_id": "ninds_fast_2024",
+    "gold_page": 1,
+    "evidence_quote": "Face Drooping Does one side of the face droop when smiling?",
+    "alternative_evidence": [],
+    "filter": {
+      "publication_year": 2024
+    }
+  },
+  {
+    "id": "q06",
+    "split": "dev",
+    "type": "filter",
+    "question": "Which six actions appear in the May 2024 Know Stroke prevention fact sheet to lower stroke risk?",
+    "expected_answer": "Treat high blood pressure; exercise; eat healthy; control cholesterol; manage diabetes; quit smoking.",
+    "gold_source_id": "ninds_prevention_2024",
+    "gold_page": 1,
+    "evidence_quote": "Treat High Blood Pressure Exercise & Be Physically Active Eat Healthy Control Cholesterol Manage Diabetes Quit Smoking",
+    "alternative_evidence": [],
+    "filter": {
+      "publication_year": 2024
+    }
+  },
+  {
+    "id": "q07",
+    "split": "dev",
+    "type": "condition",
+    "question": "According to the 2020 overview booklet, how does stroke risk change two and five years after quitting smoking?",
+    "expected_answer": "It decreases significantly after two years and decreases further by five years.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 26,
+    "evidence_quote": "The risk for stroke decreases significantly 2 years after a person quits smoking; by 5 years, the risk decreases even further.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q08",
+    "split": "dev",
+    "type": "condition",
+    "question": "Why does the booklet say doctors must check for brain bleeding before giving thrombolytic therapy?",
+    "expected_answer": "Such medicines might increase bleeding and worsen a hemorrhagic stroke.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 28,
+    "evidence_quote": "Doctors must determine if there is any bleeding in the brain before giving certain medicines, such as thrombolytic therapy or t-PA (tissue plasminogen activator), which might increase bleeding and worsen a hemorrhagic stroke.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q09",
+    "split": "dev",
+    "type": "filter",
+    "question": "What three rehabilitation goals are listed in the May 2024 Know Stroke recovery fact sheet?",
+    "expected_answer": "Relearn lost skills; prevent new medical problems; learn ways to compensate for remaining disabilities.",
+    "gold_source_id": "ninds_recovery_2024",
+    "gold_page": 1,
+    "evidence_quote": "Relearn skills that are suddenly lost when part of the brain is damaged. • Prevent new medical problems from developing. • Learn new ways to compensate for any remaining disabilities.",
+    "alternative_evidence": [],
+    "filter": {
+      "publication_year": 2024
+    }
+  },
+  {
+    "id": "q10",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Which five motor activities are listed as goals for physical therapy?",
+    "expected_answer": "Walking, sitting, standing, lying down, and switching between movements.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 41,
+    "evidence_quote": "The aim of physical therapy is to help people relearn simple motor activities such as walking, sitting, standing, lying down, and the process of switching from one type of movement to another.",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_stroke_overview_2020",
+        "page": 41,
+        "quote": "walking, sitting, standing, lying down, and the process of switching from one type of movement to another. To achieve this, physical therapists use training and exercises to restore movement, balance, and coordination."
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "q11",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "Which everyday tasks are listed in the overview's description of occupational therapy?",
+    "expected_answer": "Activities including eating, drinking and swallowing, dressing, bathing, cooking, reading and writing, and toileting.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 42,
+    "evidence_quote": "Occupational therapy helps people relearn the skills needed to perform everyday activities such as eating, drinking and swallowing, dressing, bathing, cooking, reading and writing, and toileting.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q12",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "How can clots formed in the atria lead to an ischemic stroke?",
+    "expected_answer": "They can loosen, leave the heart, and travel to the brain.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 23,
+    "evidence_quote": "This leads to blood stagnation in the atria, and the formation of blood clots that can loosen and leave the heart and travel to the brain, causing an ischemic stroke.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q13",
+    "split": "dev",
+    "type": "direct",
+    "question": "Which cholesterol types are commonly called good and bad cholesterol in the booklet?",
+    "expected_answer": "HDL is commonly called good cholesterol; LDL is usually called bad cholesterol.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 23,
+    "evidence_quote": "There are two kinds of cholesterol: high-density lipoprotein, or HDL, which is commonly called “good” cholesterol; and low-density lipoprotein, or LDL, which is usually referred to as “bad” cholesterol.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q14",
+    "split": "dev",
+    "type": "direct",
+    "question": "Which website and single-word search term does the overview suggest for finding stroke clinical studies?",
+    "expected_answer": "Visit Clinicaltrials.gov and search for stroke.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 51,
+    "evidence_quote": "For information about finding and participating in a clinical study on stroke, visit Clinicaltrials.gov at https://clinicaltrials.gov and enter the search term “stroke.”",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q15",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "How do healthcare professionals use the NIH Stroke Scale to assess neurological function?",
+    "expected_answer": "They ask questions and have the person perform physical and mental tests.",
+    "gold_source_id": "ninds_stroke_overview_2020",
+    "gold_page": 27,
+    "evidence_quote": "Healthcare professionals use the NIH Stroke Scale to measure neurological function and deficits by asking the person to answer questions and perform several physical and mental tests.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q16",
+    "split": "dev",
+    "type": "filter",
+    "question": "In the May 2024 Know Stroke materials, what should you observe when the person raises both arms during FAST?",
+    "expected_answer": "Whether one arm drifts down.",
+    "gold_source_id": "ninds_fast_2024",
+    "gold_page": 1,
+    "evidence_quote": "Arm Weakness When arms are raised, does one drift down?",
+    "alternative_evidence": [],
+    "filter": {
+      "publication_year": 2024
+    }
+  },
+  {
+    "id": "q17",
+    "split": "dev",
+    "type": "condition",
+    "question": "What equipment limitation can home-based rehabilitation have compared with a traditional facility?",
+    "expected_answer": "Specialized equipment available at a traditional rehabilitation facility may not be accessible at home.",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "gold_page": 14,
+    "evidence_quote": "Home-based rehabilitation programs allow for great flexibility to let a stroke victim and rehabilitation to tailor a program specific to that person’s individual needs. Such a program allows the person to practice skills and develop compensatory strategies in the context of her/his own living environment. (However, there may not be access to specialized equipment found at a traditional rehabilitation facility.)",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_rehabilitation_2020",
+        "page": 14,
+        "quote": "However, there may not be access to specialized equipment found at a traditional rehabilitation facility.) Home-based rehabilitation may involve participating in an intensive level of therapy several hours per week or follow a less demanding regimen."
+      }
+    ],
+    "filter": {}
+  },
+  {
+    "id": "q18",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "What difficulty characterizes receptive aphasia after a stroke?",
+    "expected_answer": "Difficulty understanding spoken or written language, often with incoherent speech.",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "gold_page": 8,
+    "evidence_quote": "receptive aphasia, in which people have difficulty understanding spoken or written language and often have incoherent speech.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q19",
+    "split": "dev",
+    "type": "filter",
+    "question": "In the 2020 NIH materials, what was the purpose of the home-based telerehabilitation system being studied?",
+    "expected_answer": "To improve motor recovery and patient education after stroke.",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "gold_page": 15,
+    "evidence_quote": "Telerehabilitation: a home-based telehealth system designed to improve motor recovery and patient education after stroke.",
+    "alternative_evidence": [],
+    "filter": {
+      "publication_year": 2020
+    }
+  },
+  {
+    "id": "q20",
+    "split": "dev",
+    "type": "paraphrase",
+    "question": "How can family and friends affect the outcome of stroke rehabilitation?",
+    "expected_answer": "Supportive family and social networks can be a very important factor over the months of rehabilitation.",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "gold_page": 5,
+    "evidence_quote": "Cooperation of family and friends. Supportive family and social networks can be a very important factor in rehabilitation, which usually extends over many months.",
+    "alternative_evidence": [],
+    "filter": {}
+  },
+  {
+    "id": "q21",
+    "type": "filter",
+    "question": "In the 2020 NIH materials, under what condition and typically how soon after a stroke can rehabilitative therapy begin?",
+    "expected_answer": "Once the condition has stabilized, often within 48 hours, in the acute-care hospital.",
+    "gold_page": 10,
+    "evidence_quote": "therapy typically begins in the acute-care hospital once the condition has stabilized, often within 48 hours after the stroke.",
+    "filter": {
+      "publication_year": 2020
+    },
+    "split": "test",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "alternative_evidence": []
+  },
+  {
+    "id": "q22",
+    "type": "direct",
+    "question": "What movement and planning difficulties characterize apraxia after stroke?",
+    "expected_answer": "Loss of the ability to carry out a learned purposeful movement, or to plan and carry out the steps of a complex task in the correct sequence.",
+    "gold_page": 9,
+    "evidence_quote": "apraxia, the loss of ability to carry out a learned purposeful movement or to plan the steps involved in a complex task and act on them in the proper sequence.",
+    "filter": {},
+    "split": "test",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "alternative_evidence": []
+  },
+  {
+    "id": "q23",
+    "type": "filter",
+    "question": "In the 2020 NIH materials, which rehabilitation specialists help identify vocational strengths and develop resumes?",
+    "expected_answer": "Vocational therapists.",
+    "gold_page": 12,
+    "evidence_quote": "Vocational therapists perform many of the same functions that ordinary career counselors do, in helping people with residual disabilities identify vocational strengths and develop résumés that highlight those strengths.",
+    "filter": {
+      "publication_year": 2020
+    },
+    "split": "test",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "alternative_evidence": []
+  },
+  {
+    "id": "q24",
+    "type": "condition",
+    "question": "What daily amount and weekly frequency of active therapy may an inpatient rehabilitation program include?",
+    "expected_answer": "At least three hours of active therapy a day, five or six days a week.",
+    "gold_page": 13,
+    "evidence_quote": "Inpatient rehabilitation units may be freestanding or part of larger hospital complexes. The stay at the facility for usually 2 to 3 weeks and involves a coordinated, intensive program of rehabilitation that may include at least 3 hours of active therapy a day, 5 or 6 days a week.",
+    "filter": {},
+    "split": "test",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "alternative_evidence": []
+  },
+  {
+    "id": "q25",
+    "type": "paraphrase",
+    "question": "Which terms distinguish paralysis on one side of the body from weakness on one side after a stroke?",
+    "expected_answer": "Hemiplegia means paralysis on one side; hemiparesis means weakness on one side.",
+    "gold_page": 6,
+    "evidence_quote": "Paralysis on one side of the body is called hemiplegia; weakness on one side is called hemiparesis.",
+    "filter": {},
+    "split": "test",
+    "gold_source_id": "ninds_rehabilitation_2020",
+    "alternative_evidence": [
+      {
+        "source_id": "ninds_stroke_overview_2020",
+        "page": 17,
+        "quote": "hemiplegia (paralysis on one side of the body), and hemiparesis (weakness on one side of the body)."
+      }
+    ]
+  }
+]

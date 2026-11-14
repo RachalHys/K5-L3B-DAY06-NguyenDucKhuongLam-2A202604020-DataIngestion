@@ -8,3 +8,6 @@ __pycache__/
 .DS_Store
 .pytest_cache/
 *.sqlite
+
+# Original NINDS PDFs stay local; restore them with starter/scripts/fetch_data.py.
+/data/raw/stroke-awareness/

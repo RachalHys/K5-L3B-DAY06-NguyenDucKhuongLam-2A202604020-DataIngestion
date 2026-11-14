@@ -1,0 +1,25 @@
+{"id": "q01", "split": "dev", "question": "What happens to blood flow in the brain during a stroke?", "filter": {}}
+{"id": "q02", "split": "dev", "question": "What feature of symptom onset is key to recognizing a stroke?", "filter": {}}
+{"id": "q03", "split": "dev", "question": "What is a transient ischemic attack (TIA)?", "filter": {}}
+{"id": "q04", "split": "dev", "question": "How does the booklet define an ischemic stroke?", "filter": {}}
+{"id": "q05", "split": "dev", "question": "In the May 2024 Know Stroke materials, what should you check when someone smiles during the FAST face check?", "filter": {"publication_year": 2024}}
+{"id": "q06", "split": "dev", "question": "Which six actions appear in the May 2024 Know Stroke prevention fact sheet to lower stroke risk?", "filter": {"publication_year": 2024}}
+{"id": "q07", "split": "dev", "question": "According to the 2020 overview booklet, how does stroke risk change two and five years after quitting smoking?", "filter": {}}
+{"id": "q08", "split": "dev", "question": "Why does the booklet say doctors must check for brain bleeding before giving thrombolytic therapy?", "filter": {}}
+{"id": "q09", "split": "dev", "question": "What three rehabilitation goals are listed in the May 2024 Know Stroke recovery fact sheet?", "filter": {"publication_year": 2024}}
+{"id": "q10", "split": "dev", "question": "Which five motor activities are listed as goals for physical therapy?", "filter": {}}
+{"id": "q11", "split": "dev", "question": "Which everyday tasks are listed in the overview's description of occupational therapy?", "filter": {}}
+{"id": "q12", "split": "dev", "question": "How can clots formed in the atria lead to an ischemic stroke?", "filter": {}}
+{"id": "q13", "split": "dev", "question": "Which cholesterol types are commonly called good and bad cholesterol in the booklet?", "filter": {}}
+{"id": "q14", "split": "dev", "question": "Which website and single-word search term does the overview suggest for finding stroke clinical studies?", "filter": {}}
+{"id": "q15", "split": "dev", "question": "How do healthcare professionals use the NIH Stroke Scale to assess neurological function?", "filter": {}}
+{"id": "q16", "split": "dev", "question": "In the May 2024 Know Stroke materials, what should you observe when the person raises both arms during FAST?", "filter": {"publication_year": 2024}}
+{"id": "q17", "split": "dev", "question": "What equipment limitation can home-based rehabilitation have compared with a traditional facility?", "filter": {}}
+{"id": "q18", "split": "dev", "question": "What difficulty characterizes receptive aphasia after a stroke?", "filter": {}}
+{"id": "q19", "split": "dev", "question": "In the 2020 NIH materials, what was the purpose of the home-based telerehabilitation system being studied?", "filter": {"publication_year": 2020}}
+{"id": "q20", "split": "dev", "question": "How can family and friends affect the outcome of stroke rehabilitation?", "filter": {}}
+{"id": "q21", "split": "test", "question": "In the 2020 NIH materials, under what condition and typically how soon after a stroke can rehabilitative therapy begin?", "filter": {"publication_year": 2020}}
+{"id": "q22", "split": "test", "question": "What movement and planning difficulties characterize apraxia after stroke?", "filter": {}}
+{"id": "q23", "split": "test", "question": "In the 2020 NIH materials, which rehabilitation specialists help identify vocational strengths and develop resumes?", "filter": {"publication_year": 2020}}
+{"id": "q24", "split": "test", "question": "What daily amount and weekly frequency of active therapy may an inpatient rehabilitation program include?", "filter": {}}
+{"id": "q25", "split": "test", "question": "Which terms distinguish paralysis on one side of the body from weakness on one side after a stroke?", "filter": {}}

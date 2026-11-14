@@ -1,0 +1,42 @@
+{
+  "prepared_id": "a5c449a58a4bb27fac01",
+  "selected_strategy": "C",
+  "selection_rule": [
+    "dev_evidence_hit3_desc",
+    "dev_hit1_desc",
+    "chunk_count_asc",
+    "strategy_id_asc"
+  ],
+  "dev_metrics": [
+    {
+      "strategy": "C",
+      "split": "dev",
+      "n": 15,
+      "hit1_n": 13,
+      "hit3_n": 15,
+      "hit1": 0.8666666666666667,
+      "evidence_hit3": 1.0
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "n": 15,
+      "hit1_n": 13,
+      "hit3_n": 14,
+      "hit1": 0.8666666666666667,
+      "evidence_hit3": 0.9333333333333333
+    },
+    {
+      "strategy": "A",
+      "split": "dev",
+      "n": 15,
+      "hit1_n": 12,
+      "hit3_n": 14,
+      "hit1": 0.8,
+      "evidence_hit3": 0.9333333333333333
+    }
+  ],
+  "dev_trace_sha256": "4be33e42c7e7cafe91a0984d4cba51bc59bb4b9d11e84bdb906f79aecdd7a5d0",
+  "embedding_run_sha256": "85392c806ad3ae516ef4bb72bec630697ac3235c7ba66caf64e7e3230afa141e",
+  "selected_at": "2026-11-14T04:50:01.494629+00:00"
+}

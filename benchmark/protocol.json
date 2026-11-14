@@ -1,0 +1,67 @@
+{
+  "created_before_retrieval": true,
+  "language": "en",
+  "split_method": "q01-q20 development (20); q21-q25 test (5). Five new test questions cover different source passages from the old test, before any retrieval of these new questions.",
+  "leakage_risk": "Both splits share corpus documents and broad topics. q21-q25 are new questions on different source passages from the old test, but not an unseen-document evaluation. Five questions are a small educational holdout.",
+  "filter_origin": "Every filter is an explicit year stated in the question before retrieval. Gold source IDs, pages, answers and evidence are never used in encoding or search filters.",
+  "alternative_evidence_policy": "Primary and listed alternative quotes are accepted. Additional equivalent evidence requires reviewed labels with source/page, supporting quote, reviewer and justification. Automatic matching and manual grounding are reported separately.",
+  "selection_rule": [
+    "dev_evidence_hit3_desc",
+    "dev_hit1_desc",
+    "chunk_count_asc",
+    "strategy_id_asc"
+  ],
+  "holdout_policy": "Select from dev before test retrieval. Test-informed changes invalidate independent holdout claims and require disclosure and a fresh test set.",
+  "authoring": "Questions and source evidence were drafted and checked with Codex.",
+  "benchmark_version": 2,
+  "frozen_at": "2026-11-14T08:15:39.967915+00:00",
+  "creation_scope": "Revision 2 is frozen before its own retrieval. Previously retrieved q01-q20 are development data; only q21-q25 form the fresh test.",
+  "revision": {
+    "previous_prepared_id": "a5c449a58a4bb27fac01",
+    "previous_inputs": "results/a5c449a58a4bb27fac01/inputs.zip",
+    "previous_test_ids": [
+      "q16",
+      "q17",
+      "q18",
+      "q19",
+      "q20"
+    ],
+    "previous_test_disposition": "Moved to development after exposure; not reused as independent test.",
+    "changes": [
+      "Source-checked alternative evidence and clearer question scope.",
+      "q17 now requires home-based context.",
+      "Fresh q21-q25 test; no changes to corpus, model or A/B/C parameters.",
+      "Cross-corpus source audit found equivalent q25 definitions on overview page 17, added before any fresh-test retrieval."
+    ]
+  },
+  "fresh_test_ids": [
+    "q21",
+    "q22",
+    "q23",
+    "q24",
+    "q25"
+  ],
+  "gold_verification": {
+    "method": "Primary and alternative quotes checked against normalized physical PDF pages, answer support and question-provided filter scope.",
+    "reviewer": "Codex AI",
+    "human_verified": false
+  },
+  "strategy_extension": {
+    "previous_prepared_id": "74ff2015bc7faa361ddc",
+    "previous_inputs": "results/74ff2015bc7faa361ddc/inputs.zip",
+    "frozen_at": "2026-11-14T09:00:51.346023+00:00",
+    "dev_informed": true,
+    "basis": "The 1000-character paragraph/sentence D/E experiment was replaced with semantic D. Earlier dev results were observed; q21-q25 have not been retrieved.",
+    "replaced_strategies": [
+      "D",
+      "E"
+    ],
+    "replacement": {
+      "D": "Semantic boundaries using real buffered BGE-M3 source-sentence embeddings, a corpus-wide 90th-percentile cosine-distance threshold, minimum 100 characters before semantic cuts, maximum 500 characters and zero overlap; no metadata filter."
+    },
+    "hypothesis": "Semantic boundaries may improve topic coherence and evidence retrieval at the same character cap as B, but can fragment evidence and add preprocessing cost. B-D compare chunking; B-C retain the controlled filter comparison.",
+    "threshold_policy": "Percentile, buffer and size limits fixed before this run. Threshold uses only source-text distances across the selected corpus, never questions, answers or retrieval scores.",
+    "unchanged": "Corpus, normalization, A/B/C settings, retrieval model, 25 questions/gold, split and selection rule.",
+    "evaluation": "A/B/C/D are compared on the same 20 dev questions and selected before fresh-test retrieval. The evidence metric scores the actual returned chunk. Coherence and grounding use separate manual assessments."
+  }
+}

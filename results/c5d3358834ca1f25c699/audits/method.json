@@ -1,0 +1,67 @@
+{
+  "reviewer": "Đối chiếu nguồn",
+  "review_type": "Đối chiếu từng mẫu với nguồn và rubric",
+  "status": "Đã đối chiếu và xác nhận theo nguồn/rubric.",
+  "coherence": {
+    "n": 40,
+    "sampling": "First 10 eligible pages ordered by document_id/page; midpoint advanced to next non-whitespace character; first covering chunk in source order.",
+    "scale": {
+      "0": "Không hiểu được vì bị cắt hoặc mất chủ thể.",
+      "1": "Hiểu một phần, còn ranh giới hoặc ngữ cảnh thiếu.",
+      "2": "Tự hiểu được và giữ trọn ý của nội dung trong chunk."
+    },
+    "judgment": "Vị trí mẫu được cố định trước truy xuất. Từng chunk được đối chiếu với toàn trang nguồn theo rubric; chunk B/C giống nhau nhận cùng nhãn."
+  },
+  "metadata": {
+    "n": 60,
+    "fields": [
+      "document_id",
+      "source",
+      "page",
+      "publication_year",
+      "document_type",
+      "topic",
+      "language",
+      "country_context",
+      "start_char",
+      "end_char"
+    ],
+    "verification": "Đối chiếu source/trang/offset với PDF trích xuất lại, năm với ngày in trên PDF và các nhãn phân loại với manifest. Metadata đúng được tách khỏi việc tuân thủ filter.",
+    "printed_date_sources": {
+      "ninds_stroke_overview_2020": "February 2020, trang PDF 56",
+      "ninds_rehabilitation_2020": "April 2020, trang PDF 24",
+      "ninds_fast_2024": "May 2024, trang PDF 1",
+      "ninds_prevention_2024": "May 2024, trang PDF 1",
+      "ninds_recovery_2024": "May 2024, trang PDF 1"
+    }
+  },
+  "grounding": {
+    "n": 20,
+    "unit": "Toàn bộ top-3 của mỗi câu test và cấu hình.",
+    "scale": {
+      "0": "Không có bằng chứng.",
+      "1": "Có bằng chứng nhưng thiếu điều kiện hoặc ngữ cảnh.",
+      "2": "Đủ trả lời và truy nguồn."
+    },
+    "multi_chunk_policy": "Có thể dùng tổ hợp các chunk trong top-3 nếu thực sự đủ bằng chứng; không thay định nghĩa Evidence Hit@3 yêu cầu một chunk. A/q22 và A/q23 cần ghép hai chunk cùng trang có overlap."
+  },
+  "evidence_hits": {
+    "n": 60,
+    "single_chunk_required": true,
+    "additional_equivalence_applied": false,
+    "reviewed_labels_match_automatic_labels": true
+  },
+  "bias": "Quá trình xây benchmark và đối chiếu nhãn dùng cùng một quy trình, nên có nguy cơ thiên lệch; không phải đánh giá độc lập.",
+  "inputs": {
+    "coherence_template_sha256": "d05f0050e8cd7aeadc97f073c539fbc1f553a109834de5f40b8dadcfaf8733ee",
+    "test_trace_sha256": "93a9dd84a16e6eeb96dbede8bf6e9633fd5c6df4e2e06567eaef09b37206d122",
+    "manifest_sha256": "dc556bd7d835e7d12bba7efe5f2ec74778d0ffbfb24c9e5eb4b82994275179df"
+  },
+  "completed_at": "2026-11-14T10:27:49.005360+00:00",
+  "tool_support": {
+    "implementation_and_source_review": "Codex",
+    "pdf_extraction": "pypdf",
+    "data_validation": "Python",
+    "vector_storage": "PostgreSQL + pgvector"
+  }
+}

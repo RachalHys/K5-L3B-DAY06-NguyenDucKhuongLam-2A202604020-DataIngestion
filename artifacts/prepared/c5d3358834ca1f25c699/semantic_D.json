@@ -1,0 +1,7634 @@
+{
+  "model": {
+    "name": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimensions": 1024,
+    "max_tokens": 512,
+    "normalize_embeddings": true,
+    "precision": "float32",
+    "batch_size": 4,
+    "document_method": "encode",
+    "query_method": "encode",
+    "query_instruction": ""
+  },
+  "device": "cpu",
+  "cpu_threads": 4,
+  "settings": {
+    "chunking": "semantic",
+    "chunk_size": 500,
+    "overlap": 0,
+    "filters": false,
+    "breakpoint_percentile": 90,
+    "min_chunk_size": 100,
+    "buffer_size": 1
+  },
+  "method": "Buffered sentence-window cosine distance; one corpus-wide percentile threshold; source text only.",
+  "sentence_segmentation": "Punctuation/blank-line regex; long units split at word boundaries to respect the character cap.",
+  "method_reference": "https://github.com/langchain-ai/langchain-experimental/blob/main/libs/experimental/langchain_experimental/text_splitter.py",
+  "threshold": 0.17315599918365476,
+  "distance_count": 692,
+  "units": [
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 0,
+      "end_char": 19,
+      "window_start": 0,
+      "window_end": 131,
+      "tokens": 34,
+      "distance_to_next": 0.018158316612243652
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 20,
+      "end_char": 131,
+      "window_start": 0,
+      "window_end": 272,
+      "tokens": 72,
+      "distance_to_next": 0.01636272668838501
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 132,
+      "end_char": 272,
+      "window_start": 20,
+      "window_end": 345,
+      "tokens": 79,
+      "distance_to_next": 0.05623197555541992
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 273,
+      "end_char": 345,
+      "window_start": 132,
+      "window_end": 440,
+      "tokens": 72,
+      "distance_to_next": 0.07632946968078613
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 346,
+      "end_char": 440,
+      "window_start": 273,
+      "window_end": 530,
+      "tokens": 56,
+      "distance_to_next": 0.1540127396583557
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 441,
+      "end_char": 530,
+      "window_start": 346,
+      "window_end": 629,
+      "tokens": 67,
+      "distance_to_next": 0.0705825686454773
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 531,
+      "end_char": 629,
+      "window_start": 441,
+      "window_end": 689,
+      "tokens": 59,
+      "distance_to_next": 0.08149778842926025
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 630,
+      "end_char": 689,
+      "window_start": 531,
+      "window_end": 771,
+      "tokens": 58,
+      "distance_to_next": 0.11519485712051392
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 690,
+      "end_char": 771,
+      "window_start": 630,
+      "window_end": 874,
+      "tokens": 56,
+      "distance_to_next": 0.0684618353843689
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 772,
+      "end_char": 874,
+      "window_start": 690,
+      "window_end": 974,
+      "tokens": 67,
+      "distance_to_next": 0.0860973596572876
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 875,
+      "end_char": 974,
+      "window_start": 772,
+      "window_end": 1012,
+      "tokens": 55,
+      "distance_to_next": 0.1490204930305481
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 975,
+      "end_char": 1012,
+      "window_start": 875,
+      "window_end": 1208,
+      "tokens": 70,
+      "distance_to_next": 0.03760868310928345
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 5,
+      "start_char": 1013,
+      "end_char": 1208,
+      "window_start": 975,
+      "window_end": 1208,
+      "tokens": 48,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 0,
+      "end_char": 53,
+      "window_start": 0,
+      "window_end": 146,
+      "tokens": 38,
+      "distance_to_next": 0.015462875366210938
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 54,
+      "end_char": 146,
+      "window_start": 0,
+      "window_end": 216,
+      "tokens": 53,
+      "distance_to_next": 0.04021453857421875
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 147,
+      "end_char": 216,
+      "window_start": 54,
+      "window_end": 323,
+      "tokens": 66,
+      "distance_to_next": 0.07246541976928711
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 217,
+      "end_char": 323,
+      "window_start": 147,
+      "window_end": 466,
+      "tokens": 73,
+      "distance_to_next": 0.05799943208694458
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 324,
+      "end_char": 466,
+      "window_start": 217,
+      "window_end": 569,
+      "tokens": 82,
+      "distance_to_next": 0.11411178112030029
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 467,
+      "end_char": 569,
+      "window_start": 324,
+      "window_end": 681,
+      "tokens": 77,
+      "distance_to_next": 0.26598548889160156
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 570,
+      "end_char": 681,
+      "window_start": 467,
+      "window_end": 1027,
+      "tokens": 126,
+      "distance_to_next": 0.019591450691223145
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 6,
+      "start_char": 682,
+      "end_char": 1027,
+      "window_start": 570,
+      "window_end": 1027,
+      "tokens": 102,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 0,
+      "end_char": 57,
+      "window_start": 0,
+      "window_end": 181,
+      "tokens": 49,
+      "distance_to_next": 0.02122032642364502
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 58,
+      "end_char": 181,
+      "window_start": 0,
+      "window_end": 260,
+      "tokens": 64,
+      "distance_to_next": 0.11829018592834473
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 182,
+      "end_char": 260,
+      "window_start": 58,
+      "window_end": 355,
+      "tokens": 71,
+      "distance_to_next": 0.09671133756637573
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 261,
+      "end_char": 355,
+      "window_start": 182,
+      "window_end": 392,
+      "tokens": 46,
+      "distance_to_next": 0.15139728784561157
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 356,
+      "end_char": 392,
+      "window_start": 261,
+      "window_end": 471,
+      "tokens": 53,
+      "distance_to_next": 0.08974093198776245
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 393,
+      "end_char": 471,
+      "window_start": 356,
+      "window_end": 559,
+      "tokens": 54,
+      "distance_to_next": 0.05711185932159424
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 472,
+      "end_char": 559,
+      "window_start": 393,
+      "window_end": 741,
+      "tokens": 83,
+      "distance_to_next": 0.07944059371948242
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 560,
+      "end_char": 741,
+      "window_start": 472,
+      "window_end": 785,
+      "tokens": 70,
+      "distance_to_next": 0.09728068113327026
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 742,
+      "end_char": 785,
+      "window_start": 560,
+      "window_end": 937,
+      "tokens": 82,
+      "distance_to_next": 0.09656023979187012
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 786,
+      "end_char": 937,
+      "window_start": 742,
+      "window_end": 1109,
+      "tokens": 89,
+      "distance_to_next": 0.05469930171966553
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 938,
+      "end_char": 1109,
+      "window_start": 786,
+      "window_end": 1243,
+      "tokens": 116,
+      "distance_to_next": 0.06329572200775146
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 1110,
+      "end_char": 1243,
+      "window_start": 938,
+      "window_end": 1368,
+      "tokens": 116,
+      "distance_to_next": 0.08056461811065674
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 1244,
+      "end_char": 1368,
+      "window_start": 1110,
+      "window_end": 1409,
+      "tokens": 78,
+      "distance_to_next": 0.15803027153015137
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 7,
+      "start_char": 1369,
+      "end_char": 1409,
+      "window_start": 1244,
+      "window_end": 1409,
+      "tokens": 42,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 0,
+      "end_char": 66,
+      "window_start": 0,
+      "window_end": 212,
+      "tokens": 48,
+      "distance_to_next": 0.04126685857772827
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 67,
+      "end_char": 212,
+      "window_start": 0,
+      "window_end": 284,
+      "tokens": 64,
+      "distance_to_next": 0.12117314338684082
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 213,
+      "end_char": 284,
+      "window_start": 67,
+      "window_end": 424,
+      "tokens": 78,
+      "distance_to_next": 0.07480847835540771
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 285,
+      "end_char": 424,
+      "window_start": 213,
+      "window_end": 640,
+      "tokens": 98,
+      "distance_to_next": 0.06289786100387573
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 425,
+      "end_char": 640,
+      "window_start": 285,
+      "window_end": 809,
+      "tokens": 121,
+      "distance_to_next": 0.09218704700469971
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 641,
+      "end_char": 809,
+      "window_start": 425,
+      "window_end": 925,
+      "tokens": 114,
+      "distance_to_next": 0.08939909934997559
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 810,
+      "end_char": 925,
+      "window_start": 641,
+      "window_end": 1113,
+      "tokens": 104,
+      "distance_to_next": 0.08466601371765137
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 926,
+      "end_char": 1113,
+      "window_start": 810,
+      "window_end": 1310,
+      "tokens": 108,
+      "distance_to_next": 0.059403061866760254
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 1114,
+      "end_char": 1310,
+      "window_start": 926,
+      "window_end": 1402,
+      "tokens": 105,
+      "distance_to_next": 0.09483492374420166
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 1311,
+      "end_char": 1402,
+      "window_start": 1114,
+      "window_end": 1534,
+      "tokens": 85,
+      "distance_to_next": 0.11685729026794434
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 1403,
+      "end_char": 1534,
+      "window_start": 1311,
+      "window_end": 1602,
+      "tokens": 57,
+      "distance_to_next": 0.1363915205001831
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 1535,
+      "end_char": 1602,
+      "window_start": 1403,
+      "window_end": 1643,
+      "tokens": 45,
+      "distance_to_next": 0.21925091743469238
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 8,
+      "start_char": 1603,
+      "end_char": 1643,
+      "window_start": 1535,
+      "window_end": 1643,
+      "tokens": 24,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 0,
+      "end_char": 136,
+      "window_start": 0,
+      "window_end": 286,
+      "tokens": 70,
+      "distance_to_next": 0.012161850929260254
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 137,
+      "end_char": 286,
+      "window_start": 0,
+      "window_end": 427,
+      "tokens": 104,
+      "distance_to_next": 0.08812516927719116
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 287,
+      "end_char": 427,
+      "window_start": 137,
+      "window_end": 493,
+      "tokens": 88,
+      "distance_to_next": 0.12837588787078857
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 428,
+      "end_char": 493,
+      "window_start": 287,
+      "window_end": 642,
+      "tokens": 79,
+      "distance_to_next": 0.14905518293380737
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 494,
+      "end_char": 642,
+      "window_start": 428,
+      "window_end": 814,
+      "tokens": 81,
+      "distance_to_next": 0.08397912979125977
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 643,
+      "end_char": 814,
+      "window_start": 494,
+      "window_end": 903,
+      "tokens": 85,
+      "distance_to_next": 0.058344125747680664
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 815,
+      "end_char": 903,
+      "window_start": 643,
+      "window_end": 1026,
+      "tokens": 84,
+      "distance_to_next": 0.05821990966796875
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 904,
+      "end_char": 1026,
+      "window_start": 815,
+      "window_end": 1176,
+      "tokens": 86,
+      "distance_to_next": 0.11447304487228394
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 1027,
+      "end_char": 1176,
+      "window_start": 904,
+      "window_end": 1260,
+      "tokens": 86,
+      "distance_to_next": 0.09587591886520386
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 1177,
+      "end_char": 1260,
+      "window_start": 1027,
+      "window_end": 1369,
+      "tokens": 83,
+      "distance_to_next": 0.057087242603302
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 1261,
+      "end_char": 1369,
+      "window_start": 1177,
+      "window_end": 1411,
+      "tokens": 55,
+      "distance_to_next": 0.16288268566131592
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 9,
+      "start_char": 1370,
+      "end_char": 1411,
+      "window_start": 1261,
+      "window_end": 1411,
+      "tokens": 36,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 0,
+      "end_char": 84,
+      "window_start": 0,
+      "window_end": 222,
+      "tokens": 58,
+      "distance_to_next": 0.05728638172149658
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 85,
+      "end_char": 222,
+      "window_start": 0,
+      "window_end": 409,
+      "tokens": 97,
+      "distance_to_next": 0.20136523246765137
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 223,
+      "end_char": 409,
+      "window_start": 85,
+      "window_end": 555,
+      "tokens": 108,
+      "distance_to_next": 0.06109744310379028
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 410,
+      "end_char": 555,
+      "window_start": 223,
+      "window_end": 595,
+      "tokens": 79,
+      "distance_to_next": 0.16128456592559814
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 556,
+      "end_char": 595,
+      "window_start": 410,
+      "window_end": 631,
+      "tokens": 48,
+      "distance_to_next": 0.19855737686157227
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 596,
+      "end_char": 631,
+      "window_start": 556,
+      "window_end": 742,
+      "tokens": 46,
+      "distance_to_next": 0.033507347106933594
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 632,
+      "end_char": 742,
+      "window_start": 596,
+      "window_end": 826,
+      "tokens": 60,
+      "distance_to_next": 0.08546626567840576
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 743,
+      "end_char": 826,
+      "window_start": 632,
+      "window_end": 965,
+      "tokens": 86,
+      "distance_to_next": 0.06538170576095581
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 827,
+      "end_char": 965,
+      "window_start": 743,
+      "window_end": 1125,
+      "tokens": 97,
+      "distance_to_next": 0.04987865686416626
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 966,
+      "end_char": 1125,
+      "window_start": 827,
+      "window_end": 1307,
+      "tokens": 123,
+      "distance_to_next": 0.061410367488861084
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 1126,
+      "end_char": 1307,
+      "window_start": 966,
+      "window_end": 1489,
+      "tokens": 133,
+      "distance_to_next": 0.03149056434631348
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 10,
+      "start_char": 1308,
+      "end_char": 1489,
+      "window_start": 1126,
+      "window_end": 1489,
+      "tokens": 94,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 0,
+      "end_char": 228,
+      "window_start": 0,
+      "window_end": 345,
+      "tokens": 101,
+      "distance_to_next": 0.02075439691543579
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 229,
+      "end_char": 345,
+      "window_start": 0,
+      "window_end": 492,
+      "tokens": 133,
+      "distance_to_next": 0.10510420799255371
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 346,
+      "end_char": 492,
+      "window_start": 229,
+      "window_end": 688,
+      "tokens": 108,
+      "distance_to_next": 0.08087360858917236
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 493,
+      "end_char": 688,
+      "window_start": 346,
+      "window_end": 762,
+      "tokens": 97,
+      "distance_to_next": 0.09513682126998901
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 689,
+      "end_char": 762,
+      "window_start": 493,
+      "window_end": 959,
+      "tokens": 114,
+      "distance_to_next": 0.06075495481491089
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 763,
+      "end_char": 959,
+      "window_start": 689,
+      "window_end": 1012,
+      "tokens": 82,
+      "distance_to_next": 0.05951428413391113
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 960,
+      "end_char": 1012,
+      "window_start": 763,
+      "window_end": 1126,
+      "tokens": 88,
+      "distance_to_next": 0.14407563209533691
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 1013,
+      "end_char": 1126,
+      "window_start": 960,
+      "window_end": 1280,
+      "tokens": 75,
+      "distance_to_next": 0.06962341070175171
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 1127,
+      "end_char": 1280,
+      "window_start": 1013,
+      "window_end": 1425,
+      "tokens": 100,
+      "distance_to_next": 0.0874178409576416
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 1281,
+      "end_char": 1425,
+      "window_start": 1127,
+      "window_end": 1651,
+      "tokens": 133,
+      "distance_to_next": 0.07655322551727295
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 1426,
+      "end_char": 1651,
+      "window_start": 1281,
+      "window_end": 1713,
+      "tokens": 108,
+      "distance_to_next": 0.06802201271057129
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 11,
+      "start_char": 1652,
+      "end_char": 1713,
+      "window_start": 1426,
+      "window_end": 1713,
+      "tokens": 71,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 0,
+      "end_char": 34,
+      "window_start": 0,
+      "window_end": 149,
+      "tokens": 38,
+      "distance_to_next": 0.13137704133987427
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 35,
+      "end_char": 149,
+      "window_start": 0,
+      "window_end": 312,
+      "tokens": 79,
+      "distance_to_next": 0.07133173942565918
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 150,
+      "end_char": 312,
+      "window_start": 35,
+      "window_end": 488,
+      "tokens": 110,
+      "distance_to_next": 0.11007726192474365
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 313,
+      "end_char": 488,
+      "window_start": 150,
+      "window_end": 597,
+      "tokens": 108,
+      "distance_to_next": 0.18934834003448486
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 489,
+      "end_char": 597,
+      "window_start": 313,
+      "window_end": 743,
+      "tokens": 105,
+      "distance_to_next": 0.11761093139648438
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 598,
+      "end_char": 743,
+      "window_start": 489,
+      "window_end": 858,
+      "tokens": 93,
+      "distance_to_next": 0.0978020429611206
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 744,
+      "end_char": 858,
+      "window_start": 598,
+      "window_end": 918,
+      "tokens": 84,
+      "distance_to_next": 0.10772335529327393
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 859,
+      "end_char": 918,
+      "window_start": 744,
+      "window_end": 1036,
+      "tokens": 78,
+      "distance_to_next": 0.10147428512573242
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 919,
+      "end_char": 1036,
+      "window_start": 859,
+      "window_end": 1094,
+      "tokens": 66,
+      "distance_to_next": 0.07647931575775146
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 12,
+      "start_char": 1037,
+      "end_char": 1094,
+      "window_start": 919,
+      "window_end": 1094,
+      "tokens": 50,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 0,
+      "end_char": 206,
+      "window_start": 0,
+      "window_end": 314,
+      "tokens": 76,
+      "distance_to_next": 0.036253511905670166
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 207,
+      "end_char": 314,
+      "window_start": 0,
+      "window_end": 351,
+      "tokens": 87,
+      "distance_to_next": 0.21445655822753906
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 315,
+      "end_char": 351,
+      "window_start": 207,
+      "window_end": 496,
+      "tokens": 71,
+      "distance_to_next": 0.06805133819580078
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 352,
+      "end_char": 496,
+      "window_start": 315,
+      "window_end": 628,
+      "tokens": 76,
+      "distance_to_next": 0.09663105010986328
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 497,
+      "end_char": 628,
+      "window_start": 352,
+      "window_end": 1126,
+      "tokens": 203,
+      "distance_to_next": 0.03868532180786133
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 629,
+      "end_char": 1126,
+      "window_start": 497,
+      "window_end": 1222,
+      "tokens": 195,
+      "distance_to_next": 0.04388582706451416
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 1127,
+      "end_char": 1222,
+      "window_start": 629,
+      "window_end": 1421,
+      "tokens": 214,
+      "distance_to_next": 0.19556546211242676
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 1223,
+      "end_char": 1421,
+      "window_start": 1127,
+      "window_end": 1562,
+      "tokens": 114,
+      "distance_to_next": 0.07355844974517822
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 13,
+      "start_char": 1422,
+      "end_char": 1562,
+      "window_start": 1223,
+      "window_end": 1562,
+      "tokens": 91,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 0,
+      "end_char": 58,
+      "window_start": 0,
+      "window_end": 110,
+      "tokens": 37,
+      "distance_to_next": 0.05985057353973389
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 59,
+      "end_char": 110,
+      "window_start": 0,
+      "window_end": 281,
+      "tokens": 80,
+      "distance_to_next": 0.10978078842163086
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 111,
+      "end_char": 281,
+      "window_start": 59,
+      "window_end": 346,
+      "tokens": 76,
+      "distance_to_next": 0.0648031234741211
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 282,
+      "end_char": 346,
+      "window_start": 111,
+      "window_end": 437,
+      "tokens": 83,
+      "distance_to_next": 0.11198490858078003
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 347,
+      "end_char": 437,
+      "window_start": 282,
+      "window_end": 585,
+      "tokens": 81,
+      "distance_to_next": 0.13455814123153687
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 438,
+      "end_char": 585,
+      "window_start": 347,
+      "window_end": 668,
+      "tokens": 86,
+      "distance_to_next": 0.13028597831726074
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 586,
+      "end_char": 668,
+      "window_start": 438,
+      "window_end": 751,
+      "tokens": 90,
+      "distance_to_next": 0.12451887130737305
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 669,
+      "end_char": 751,
+      "window_start": 586,
+      "window_end": 907,
+      "tokens": 84,
+      "distance_to_next": 0.05245828628540039
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 752,
+      "end_char": 907,
+      "window_start": 669,
+      "window_end": 1047,
+      "tokens": 91,
+      "distance_to_next": 0.12259453535079956
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 908,
+      "end_char": 1047,
+      "window_start": 752,
+      "window_end": 1133,
+      "tokens": 88,
+      "distance_to_next": 0.12407100200653076
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 1048,
+      "end_char": 1133,
+      "window_start": 908,
+      "window_end": 1274,
+      "tokens": 90,
+      "distance_to_next": 0.08609873056411743
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 1134,
+      "end_char": 1274,
+      "window_start": 1048,
+      "window_end": 1311,
+      "tokens": 71,
+      "distance_to_next": 0.16647887229919434
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 1275,
+      "end_char": 1311,
+      "window_start": 1134,
+      "window_end": 1399,
+      "tokens": 75,
+      "distance_to_next": 0.06467986106872559
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 1312,
+      "end_char": 1399,
+      "window_start": 1275,
+      "window_end": 1550,
+      "tokens": 77,
+      "distance_to_next": 0.01681220531463623
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 1400,
+      "end_char": 1550,
+      "window_start": 1312,
+      "window_end": 1605,
+      "tokens": 79,
+      "distance_to_next": 0.07787346839904785
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 14,
+      "start_char": 1551,
+      "end_char": 1605,
+      "window_start": 1400,
+      "window_end": 1605,
+      "tokens": 53,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 0,
+      "end_char": 126,
+      "window_start": 0,
+      "window_end": 232,
+      "tokens": 60,
+      "distance_to_next": 0.019053280353546143
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 127,
+      "end_char": 232,
+      "window_start": 0,
+      "window_end": 325,
+      "tokens": 85,
+      "distance_to_next": 0.08122539520263672
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 233,
+      "end_char": 325,
+      "window_start": 127,
+      "window_end": 439,
+      "tokens": 80,
+      "distance_to_next": 0.14154183864593506
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 326,
+      "end_char": 439,
+      "window_start": 233,
+      "window_end": 577,
+      "tokens": 79,
+      "distance_to_next": 0.07220214605331421
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 440,
+      "end_char": 577,
+      "window_start": 326,
+      "window_end": 721,
+      "tokens": 89,
+      "distance_to_next": 0.09145510196685791
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 578,
+      "end_char": 721,
+      "window_start": 440,
+      "window_end": 789,
+      "tokens": 80,
+      "distance_to_next": 0.05731731653213501
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 722,
+      "end_char": 789,
+      "window_start": 578,
+      "window_end": 867,
+      "tokens": 72,
+      "distance_to_next": 0.1059446930885315
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 790,
+      "end_char": 867,
+      "window_start": 722,
+      "window_end": 907,
+      "tokens": 46,
+      "distance_to_next": 0.18880611658096313
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 868,
+      "end_char": 907,
+      "window_start": 790,
+      "window_end": 1003,
+      "tokens": 50,
+      "distance_to_next": 0.21569252014160156
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 908,
+      "end_char": 1003,
+      "window_start": 868,
+      "window_end": 1029,
+      "tokens": 38,
+      "distance_to_next": 0.18327558040618896
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 1004,
+      "end_char": 1029,
+      "window_start": 908,
+      "window_end": 1146,
+      "tokens": 52,
+      "distance_to_next": 0.11698704957962036
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 1030,
+      "end_char": 1146,
+      "window_start": 1004,
+      "window_end": 1233,
+      "tokens": 54,
+      "distance_to_next": 0.026212334632873535
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 1147,
+      "end_char": 1233,
+      "window_start": 1030,
+      "window_end": 1323,
+      "tokens": 65,
+      "distance_to_next": 0.16817164421081543
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 1234,
+      "end_char": 1323,
+      "window_start": 1147,
+      "window_end": 1412,
+      "tokens": 61,
+      "distance_to_next": 0.12207150459289551
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 1324,
+      "end_char": 1412,
+      "window_start": 1234,
+      "window_end": 1525,
+      "tokens": 61,
+      "distance_to_next": 0.01740109920501709
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 15,
+      "start_char": 1413,
+      "end_char": 1525,
+      "window_start": 1324,
+      "window_end": 1525,
+      "tokens": 43,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 0,
+      "end_char": 120,
+      "window_start": 0,
+      "window_end": 207,
+      "tokens": 45,
+      "distance_to_next": 0.06192660331726074
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 121,
+      "end_char": 207,
+      "window_start": 0,
+      "window_end": 290,
+      "tokens": 68,
+      "distance_to_next": 0.11744368076324463
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 208,
+      "end_char": 290,
+      "window_start": 121,
+      "window_end": 410,
+      "tokens": 74,
+      "distance_to_next": 0.09332078695297241
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 291,
+      "end_char": 410,
+      "window_start": 208,
+      "window_end": 477,
+      "tokens": 65,
+      "distance_to_next": 0.05948948860168457
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 411,
+      "end_char": 477,
+      "window_start": 291,
+      "window_end": 529,
+      "tokens": 56,
+      "distance_to_next": 0.10146605968475342
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 478,
+      "end_char": 529,
+      "window_start": 411,
+      "window_end": 619,
+      "tokens": 46,
+      "distance_to_next": 0.08919161558151245
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 530,
+      "end_char": 619,
+      "window_start": 478,
+      "window_end": 722,
+      "tokens": 58,
+      "distance_to_next": 0.050800442695617676
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 620,
+      "end_char": 722,
+      "window_start": 530,
+      "window_end": 794,
+      "tokens": 60,
+      "distance_to_next": 0.05204176902770996
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 723,
+      "end_char": 794,
+      "window_start": 620,
+      "window_end": 871,
+      "tokens": 58,
+      "distance_to_next": 0.10232281684875488
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 795,
+      "end_char": 871,
+      "window_start": 723,
+      "window_end": 1001,
+      "tokens": 60,
+      "distance_to_next": 0.07503026723861694
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 872,
+      "end_char": 1001,
+      "window_start": 795,
+      "window_end": 1096,
+      "tokens": 71,
+      "distance_to_next": 0.032843828201293945
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 1002,
+      "end_char": 1096,
+      "window_start": 872,
+      "window_end": 1357,
+      "tokens": 109,
+      "distance_to_next": 0.05507868528366089
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 1097,
+      "end_char": 1357,
+      "window_start": 1002,
+      "window_end": 1454,
+      "tokens": 104,
+      "distance_to_next": 0.05933278799057007
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 1358,
+      "end_char": 1454,
+      "window_start": 1097,
+      "window_end": 1565,
+      "tokens": 101,
+      "distance_to_next": 0.07377314567565918
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 16,
+      "start_char": 1455,
+      "end_char": 1565,
+      "window_start": 1358,
+      "window_end": 1565,
+      "tokens": 48,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 0,
+      "end_char": 221,
+      "window_start": 0,
+      "window_end": 359,
+      "tokens": 80,
+      "distance_to_next": 0.007749319076538086
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 222,
+      "end_char": 359,
+      "window_start": 0,
+      "window_end": 429,
+      "tokens": 91,
+      "distance_to_next": 0.07330447435379028
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 360,
+      "end_char": 429,
+      "window_start": 222,
+      "window_end": 568,
+      "tokens": 74,
+      "distance_to_next": 0.17604702711105347
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 430,
+      "end_char": 568,
+      "window_start": 360,
+      "window_end": 654,
+      "tokens": 59,
+      "distance_to_next": 0.03755784034729004
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 569,
+      "end_char": 654,
+      "window_start": 430,
+      "window_end": 690,
+      "tokens": 58,
+      "distance_to_next": 0.15532457828521729
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 655,
+      "end_char": 690,
+      "window_start": 569,
+      "window_end": 908,
+      "tokens": 81,
+      "distance_to_next": 0.0671159029006958
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 691,
+      "end_char": 908,
+      "window_start": 655,
+      "window_end": 1044,
+      "tokens": 94,
+      "distance_to_next": 0.062199950218200684
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 909,
+      "end_char": 1044,
+      "window_start": 691,
+      "window_end": 1175,
+      "tokens": 113,
+      "distance_to_next": 0.15388000011444092
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 1045,
+      "end_char": 1175,
+      "window_start": 909,
+      "window_end": 1372,
+      "tokens": 101,
+      "distance_to_next": 0.046746909618377686
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 1176,
+      "end_char": 1372,
+      "window_start": 1045,
+      "window_end": 1511,
+      "tokens": 105,
+      "distance_to_next": 0.0687265396118164
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 1373,
+      "end_char": 1511,
+      "window_start": 1176,
+      "window_end": 1613,
+      "tokens": 99,
+      "distance_to_next": 0.17845392227172852
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 17,
+      "start_char": 1512,
+      "end_char": 1613,
+      "window_start": 1373,
+      "window_end": 1613,
+      "tokens": 58,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 0,
+      "end_char": 91,
+      "window_start": 0,
+      "window_end": 156,
+      "tokens": 38,
+      "distance_to_next": 0.06113225221633911
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 92,
+      "end_char": 156,
+      "window_start": 0,
+      "window_end": 218,
+      "tokens": 51,
+      "distance_to_next": 0.12642121315002441
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 157,
+      "end_char": 218,
+      "window_start": 92,
+      "window_end": 304,
+      "tokens": 47,
+      "distance_to_next": 0.04740053415298462
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 219,
+      "end_char": 304,
+      "window_start": 157,
+      "window_end": 425,
+      "tokens": 61,
+      "distance_to_next": 0.10181152820587158
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 305,
+      "end_char": 425,
+      "window_start": 219,
+      "window_end": 525,
+      "tokens": 64,
+      "distance_to_next": 0.12274050712585449
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 426,
+      "end_char": 525,
+      "window_start": 305,
+      "window_end": 698,
+      "tokens": 89,
+      "distance_to_next": 0.07749158143997192
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 526,
+      "end_char": 698,
+      "window_start": 426,
+      "window_end": 736,
+      "tokens": 70,
+      "distance_to_next": 0.11293220520019531
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 699,
+      "end_char": 736,
+      "window_start": 526,
+      "window_end": 793,
+      "tokens": 66,
+      "distance_to_next": 0.21599292755126953
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 737,
+      "end_char": 793,
+      "window_start": 699,
+      "window_end": 878,
+      "tokens": 42,
+      "distance_to_next": 0.05710864067077637
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 794,
+      "end_char": 878,
+      "window_start": 737,
+      "window_end": 1006,
+      "tokens": 68,
+      "distance_to_next": 0.030058622360229492
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 879,
+      "end_char": 1006,
+      "window_start": 794,
+      "window_end": 1186,
+      "tokens": 91,
+      "distance_to_next": 0.049479007720947266
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 1007,
+      "end_char": 1186,
+      "window_start": 879,
+      "window_end": 1264,
+      "tokens": 86,
+      "distance_to_next": 0.06067115068435669
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 1187,
+      "end_char": 1264,
+      "window_start": 1007,
+      "window_end": 1398,
+      "tokens": 85,
+      "distance_to_next": 0.06250685453414917
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 1265,
+      "end_char": 1398,
+      "window_start": 1187,
+      "window_end": 1499,
+      "tokens": 74,
+      "distance_to_next": 0.01803874969482422
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 18,
+      "start_char": 1399,
+      "end_char": 1499,
+      "window_start": 1265,
+      "window_end": 1499,
+      "tokens": 59,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 0,
+      "end_char": 54,
+      "window_start": 0,
+      "window_end": 95,
+      "tokens": 27,
+      "distance_to_next": 0.02416682243347168
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 55,
+      "end_char": 95,
+      "window_start": 0,
+      "window_end": 219,
+      "tokens": 56,
+      "distance_to_next": 0.04923754930496216
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 96,
+      "end_char": 219,
+      "window_start": 55,
+      "window_end": 359,
+      "tokens": 71,
+      "distance_to_next": 0.06087309122085571
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 220,
+      "end_char": 359,
+      "window_start": 96,
+      "window_end": 477,
+      "tokens": 88,
+      "distance_to_next": 0.03949683904647827
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 360,
+      "end_char": 477,
+      "window_start": 220,
+      "window_end": 554,
+      "tokens": 76,
+      "distance_to_next": 0.09099555015563965
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 478,
+      "end_char": 554,
+      "window_start": 360,
+      "window_end": 617,
+      "tokens": 57,
+      "distance_to_next": 0.09209275245666504
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 555,
+      "end_char": 617,
+      "window_start": 478,
+      "window_end": 870,
+      "tokens": 84,
+      "distance_to_next": 0.030088722705841064
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 618,
+      "end_char": 870,
+      "window_start": 555,
+      "window_end": 1077,
+      "tokens": 110,
+      "distance_to_next": 0.09406864643096924
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 871,
+      "end_char": 1077,
+      "window_start": 618,
+      "window_end": 1230,
+      "tokens": 137,
+      "distance_to_next": 0.06191539764404297
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 19,
+      "start_char": 1078,
+      "end_char": 1230,
+      "window_start": 871,
+      "window_end": 1230,
+      "tokens": 83,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 0,
+      "end_char": 76,
+      "window_start": 0,
+      "window_end": 184,
+      "tokens": 44,
+      "distance_to_next": 0.02145010232925415
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 77,
+      "end_char": 184,
+      "window_start": 0,
+      "window_end": 270,
+      "tokens": 66,
+      "distance_to_next": 0.055611252784729004
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 185,
+      "end_char": 270,
+      "window_start": 77,
+      "window_end": 361,
+      "tokens": 69,
+      "distance_to_next": 0.07228660583496094
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 271,
+      "end_char": 361,
+      "window_start": 185,
+      "window_end": 506,
+      "tokens": 82,
+      "distance_to_next": 0.10729891061782837
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 362,
+      "end_char": 506,
+      "window_start": 271,
+      "window_end": 686,
+      "tokens": 101,
+      "distance_to_next": 0.048796772956848145
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 507,
+      "end_char": 686,
+      "window_start": 362,
+      "window_end": 796,
+      "tokens": 104,
+      "distance_to_next": 0.06831300258636475
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 687,
+      "end_char": 796,
+      "window_start": 507,
+      "window_end": 992,
+      "tokens": 106,
+      "distance_to_next": 0.18679356575012207
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 797,
+      "end_char": 992,
+      "window_start": 687,
+      "window_end": 1107,
+      "tokens": 89,
+      "distance_to_next": 0.14967787265777588
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 993,
+      "end_char": 1107,
+      "window_start": 797,
+      "window_end": 1179,
+      "tokens": 80,
+      "distance_to_next": 0.13417023420333862
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 1108,
+      "end_char": 1179,
+      "window_start": 993,
+      "window_end": 1312,
+      "tokens": 70,
+      "distance_to_next": 0.0743720531463623
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 1180,
+      "end_char": 1312,
+      "window_start": 1108,
+      "window_end": 1429,
+      "tokens": 68,
+      "distance_to_next": 0.026938319206237793
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 1313,
+      "end_char": 1429,
+      "window_start": 1180,
+      "window_end": 1444,
+      "tokens": 56,
+      "distance_to_next": 0.10520744323730469
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 20,
+      "start_char": 1430,
+      "end_char": 1444,
+      "window_start": 1313,
+      "window_end": 1444,
+      "tokens": 27,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 0,
+      "end_char": 42,
+      "window_start": 0,
+      "window_end": 188,
+      "tokens": 37,
+      "distance_to_next": 0.09921306371688843
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 43,
+      "end_char": 188,
+      "window_start": 0,
+      "window_end": 371,
+      "tokens": 76,
+      "distance_to_next": 0.07073366641998291
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 189,
+      "end_char": 371,
+      "window_start": 43,
+      "window_end": 462,
+      "tokens": 86,
+      "distance_to_next": 0.04342365264892578
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 372,
+      "end_char": 462,
+      "window_start": 189,
+      "window_end": 483,
+      "tokens": 65,
+      "distance_to_next": 0.11558288335800171
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 463,
+      "end_char": 483,
+      "window_start": 372,
+      "window_end": 546,
+      "tokens": 40,
+      "distance_to_next": 0.10180962085723877
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 484,
+      "end_char": 546,
+      "window_start": 463,
+      "window_end": 701,
+      "tokens": 48,
+      "distance_to_next": 0.07775712013244629
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 547,
+      "end_char": 701,
+      "window_start": 484,
+      "window_end": 784,
+      "tokens": 57,
+      "distance_to_next": 0.12187302112579346
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 702,
+      "end_char": 784,
+      "window_start": 547,
+      "window_end": 882,
+      "tokens": 61,
+      "distance_to_next": 0.06348109245300293
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 785,
+      "end_char": 882,
+      "window_start": 702,
+      "window_end": 1029,
+      "tokens": 65,
+      "distance_to_next": 0.06431138515472412
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 883,
+      "end_char": 1029,
+      "window_start": 785,
+      "window_end": 1103,
+      "tokens": 67,
+      "distance_to_next": 0.04834485054016113
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 1030,
+      "end_char": 1103,
+      "window_start": 883,
+      "window_end": 1206,
+      "tokens": 74,
+      "distance_to_next": 0.09892380237579346
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 1104,
+      "end_char": 1206,
+      "window_start": 1030,
+      "window_end": 1236,
+      "tokens": 51,
+      "distance_to_next": 0.06378298997879028
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 1207,
+      "end_char": 1236,
+      "window_start": 1104,
+      "window_end": 1280,
+      "tokens": 42,
+      "distance_to_next": 0.17321312427520752
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 1237,
+      "end_char": 1280,
+      "window_start": 1207,
+      "window_end": 1388,
+      "tokens": 38,
+      "distance_to_next": 0.07226443290710449
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 1281,
+      "end_char": 1388,
+      "window_start": 1237,
+      "window_end": 1515,
+      "tokens": 55,
+      "distance_to_next": 0.028692424297332764
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 21,
+      "start_char": 1389,
+      "end_char": 1515,
+      "window_start": 1281,
+      "window_end": 1515,
+      "tokens": 47,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 0,
+      "end_char": 11,
+      "window_start": 0,
+      "window_end": 152,
+      "tokens": 39,
+      "distance_to_next": 0.09492963552474976
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 12,
+      "end_char": 152,
+      "window_start": 0,
+      "window_end": 177,
+      "tokens": 45,
+      "distance_to_next": 0.08630365133285522
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 153,
+      "end_char": 177,
+      "window_start": 12,
+      "window_end": 214,
+      "tokens": 51,
+      "distance_to_next": 0.19065701961517334
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 178,
+      "end_char": 214,
+      "window_start": 153,
+      "window_end": 376,
+      "tokens": 49,
+      "distance_to_next": 0.05016624927520752
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 215,
+      "end_char": 376,
+      "window_start": 178,
+      "window_end": 478,
+      "tokens": 65,
+      "distance_to_next": 0.11469805240631104
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 377,
+      "end_char": 478,
+      "window_start": 215,
+      "window_end": 633,
+      "tokens": 88,
+      "distance_to_next": 0.058460116386413574
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 479,
+      "end_char": 633,
+      "window_start": 377,
+      "window_end": 716,
+      "tokens": 72,
+      "distance_to_next": 0.07383298873901367
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 634,
+      "end_char": 716,
+      "window_start": 479,
+      "window_end": 801,
+      "tokens": 67,
+      "distance_to_next": 0.14827853441238403
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 717,
+      "end_char": 801,
+      "window_start": 634,
+      "window_end": 907,
+      "tokens": 55,
+      "distance_to_next": 0.03936290740966797
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 802,
+      "end_char": 907,
+      "window_start": 717,
+      "window_end": 981,
+      "tokens": 53,
+      "distance_to_next": 0.04072833061218262
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 908,
+      "end_char": 981,
+      "window_start": 802,
+      "window_end": 1074,
+      "tokens": 55,
+      "distance_to_next": 0.1097685694694519
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 982,
+      "end_char": 1074,
+      "window_start": 908,
+      "window_end": 1141,
+      "tokens": 48,
+      "distance_to_next": 0.058770179748535156
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 1075,
+      "end_char": 1141,
+      "window_start": 982,
+      "window_end": 1252,
+      "tokens": 56,
+      "distance_to_next": 0.10454589128494263
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 1142,
+      "end_char": 1252,
+      "window_start": 1075,
+      "window_end": 1284,
+      "tokens": 46,
+      "distance_to_next": 0.05227828025817871
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 1253,
+      "end_char": 1284,
+      "window_start": 1142,
+      "window_end": 1377,
+      "tokens": 52,
+      "distance_to_next": 0.31331849098205566
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 1285,
+      "end_char": 1377,
+      "window_start": 1253,
+      "window_end": 1463,
+      "tokens": 51,
+      "distance_to_next": 0.058625102043151855
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 1378,
+      "end_char": 1463,
+      "window_start": 1285,
+      "window_end": 1547,
+      "tokens": 64,
+      "distance_to_next": 0.05375105142593384
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 22,
+      "start_char": 1464,
+      "end_char": 1547,
+      "window_start": 1378,
+      "window_end": 1547,
+      "tokens": 45,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 0,
+      "end_char": 72,
+      "window_start": 0,
+      "window_end": 156,
+      "tokens": 43,
+      "distance_to_next": 0.11705213785171509
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 73,
+      "end_char": 156,
+      "window_start": 0,
+      "window_end": 323,
+      "tokens": 83,
+      "distance_to_next": 0.13452792167663574
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 157,
+      "end_char": 323,
+      "window_start": 73,
+      "window_end": 427,
+      "tokens": 90,
+      "distance_to_next": 0.08955550193786621
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 324,
+      "end_char": 427,
+      "window_start": 157,
+      "window_end": 603,
+      "tokens": 106,
+      "distance_to_next": 0.038469910621643066
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 428,
+      "end_char": 603,
+      "window_start": 324,
+      "window_end": 769,
+      "tokens": 107,
+      "distance_to_next": 0.06661015748977661
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 604,
+      "end_char": 769,
+      "window_start": 428,
+      "window_end": 867,
+      "tokens": 105,
+      "distance_to_next": 0.10873264074325562
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 770,
+      "end_char": 867,
+      "window_start": 604,
+      "window_end": 963,
+      "tokens": 82,
+      "distance_to_next": 0.1343846321105957
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 868,
+      "end_char": 963,
+      "window_start": 770,
+      "window_end": 1046,
+      "tokens": 63,
+      "distance_to_next": 0.1900615692138672
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 964,
+      "end_char": 1046,
+      "window_start": 868,
+      "window_end": 1172,
+      "tokens": 69,
+      "distance_to_next": 0.18123853206634521
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 1047,
+      "end_char": 1172,
+      "window_start": 964,
+      "window_end": 1375,
+      "tokens": 107,
+      "distance_to_next": 0.04948270320892334
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 1173,
+      "end_char": 1375,
+      "window_start": 1047,
+      "window_end": 1412,
+      "tokens": 94,
+      "distance_to_next": 0.056899964809417725
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 1376,
+      "end_char": 1412,
+      "window_start": 1173,
+      "window_end": 1519,
+      "tokens": 93,
+      "distance_to_next": 0.10533398389816284
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 1413,
+      "end_char": 1519,
+      "window_start": 1376,
+      "window_end": 1597,
+      "tokens": 58,
+      "distance_to_next": 0.06724512577056885
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 1520,
+      "end_char": 1597,
+      "window_start": 1413,
+      "window_end": 1618,
+      "tokens": 56,
+      "distance_to_next": 0.08587121963500977
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 23,
+      "start_char": 1598,
+      "end_char": 1618,
+      "window_start": 1520,
+      "window_end": 1618,
+      "tokens": 29,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 0,
+      "end_char": 41,
+      "window_start": 0,
+      "window_end": 273,
+      "tokens": 73,
+      "distance_to_next": 0.006740748882293701
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 42,
+      "end_char": 273,
+      "window_start": 0,
+      "window_end": 355,
+      "tokens": 92,
+      "distance_to_next": 0.04515373706817627
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 274,
+      "end_char": 355,
+      "window_start": 42,
+      "window_end": 432,
+      "tokens": 95,
+      "distance_to_next": 0.08585232496261597
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 356,
+      "end_char": 432,
+      "window_start": 274,
+      "window_end": 491,
+      "tokens": 51,
+      "distance_to_next": 0.04102045297622681
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 433,
+      "end_char": 491,
+      "window_start": 356,
+      "window_end": 583,
+      "tokens": 56,
+      "distance_to_next": 0.0377422571182251
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 492,
+      "end_char": 583,
+      "window_start": 433,
+      "window_end": 641,
+      "tokens": 52,
+      "distance_to_next": 0.09834372997283936
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 584,
+      "end_char": 641,
+      "window_start": 492,
+      "window_end": 839,
+      "tokens": 81,
+      "distance_to_next": 0.06475722789764404
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 642,
+      "end_char": 839,
+      "window_start": 584,
+      "window_end": 928,
+      "tokens": 74,
+      "distance_to_next": 0.04823058843612671
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 840,
+      "end_char": 928,
+      "window_start": 642,
+      "window_end": 1019,
+      "tokens": 82,
+      "distance_to_next": 0.1645498275756836
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 929,
+      "end_char": 1019,
+      "window_start": 840,
+      "window_end": 1098,
+      "tokens": 52,
+      "distance_to_next": 0.11537027359008789
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1020,
+      "end_char": 1098,
+      "window_start": 929,
+      "window_end": 1199,
+      "tokens": 56,
+      "distance_to_next": 0.06812030076980591
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1099,
+      "end_char": 1199,
+      "window_start": 1020,
+      "window_end": 1295,
+      "tokens": 62,
+      "distance_to_next": 0.10022825002670288
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1200,
+      "end_char": 1295,
+      "window_start": 1099,
+      "window_end": 1434,
+      "tokens": 82,
+      "distance_to_next": 0.0571712851524353
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1296,
+      "end_char": 1434,
+      "window_start": 1200,
+      "window_end": 1545,
+      "tokens": 81,
+      "distance_to_next": 0.0988152027130127
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1435,
+      "end_char": 1545,
+      "window_start": 1296,
+      "window_end": 1606,
+      "tokens": 67,
+      "distance_to_next": 0.06485378742218018
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1546,
+      "end_char": 1606,
+      "window_start": 1435,
+      "window_end": 1655,
+      "tokens": 47,
+      "distance_to_next": 0.13083595037460327
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1607,
+      "end_char": 1655,
+      "window_start": 1546,
+      "window_end": 1684,
+      "tokens": 32,
+      "distance_to_next": 0.224723219871521
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 24,
+      "start_char": 1656,
+      "end_char": 1684,
+      "window_start": 1607,
+      "window_end": 1684,
+      "tokens": 20,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 0,
+      "end_char": 91,
+      "window_start": 0,
+      "window_end": 210,
+      "tokens": 49,
+      "distance_to_next": 0.09303814172744751
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 92,
+      "end_char": 210,
+      "window_start": 0,
+      "window_end": 368,
+      "tokens": 85,
+      "distance_to_next": 0.10334384441375732
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 211,
+      "end_char": 368,
+      "window_start": 92,
+      "window_end": 505,
+      "tokens": 92,
+      "distance_to_next": 0.05545687675476074
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 369,
+      "end_char": 505,
+      "window_start": 211,
+      "window_end": 581,
+      "tokens": 82,
+      "distance_to_next": 0.12158530950546265
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 506,
+      "end_char": 581,
+      "window_start": 369,
+      "window_end": 704,
+      "tokens": 76,
+      "distance_to_next": 0.10888820886611938
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 582,
+      "end_char": 704,
+      "window_start": 506,
+      "window_end": 799,
+      "tokens": 70,
+      "distance_to_next": 0.08983707427978516
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 705,
+      "end_char": 799,
+      "window_start": 582,
+      "window_end": 953,
+      "tokens": 89,
+      "distance_to_next": 0.05125325918197632
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 800,
+      "end_char": 953,
+      "window_start": 705,
+      "window_end": 1059,
+      "tokens": 88,
+      "distance_to_next": 0.0968056321144104
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 954,
+      "end_char": 1059,
+      "window_start": 800,
+      "window_end": 1257,
+      "tokens": 109,
+      "distance_to_next": 0.08978766202926636
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 1060,
+      "end_char": 1257,
+      "window_start": 954,
+      "window_end": 1297,
+      "tokens": 84,
+      "distance_to_next": 0.09493547677993774
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 1258,
+      "end_char": 1297,
+      "window_start": 1060,
+      "window_end": 1454,
+      "tokens": 86,
+      "distance_to_next": 0.14122933149337769
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 1298,
+      "end_char": 1454,
+      "window_start": 1258,
+      "window_end": 1522,
+      "tokens": 53,
+      "distance_to_next": 0.05113875865936279
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 25,
+      "start_char": 1455,
+      "end_char": 1522,
+      "window_start": 1298,
+      "window_end": 1522,
+      "tokens": 44,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 0,
+      "end_char": 152,
+      "window_start": 0,
+      "window_end": 292,
+      "tokens": 66,
+      "distance_to_next": 0.030479073524475098
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 153,
+      "end_char": 292,
+      "window_start": 0,
+      "window_end": 517,
+      "tokens": 118,
+      "distance_to_next": 0.16513484716415405
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 293,
+      "end_char": 517,
+      "window_start": 153,
+      "window_end": 754,
+      "tokens": 152,
+      "distance_to_next": 0.06255924701690674
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 518,
+      "end_char": 754,
+      "window_start": 293,
+      "window_end": 814,
+      "tokens": 134,
+      "distance_to_next": 0.07360351085662842
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 755,
+      "end_char": 814,
+      "window_start": 518,
+      "window_end": 992,
+      "tokens": 129,
+      "distance_to_next": 0.11004698276519775
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 815,
+      "end_char": 992,
+      "window_start": 755,
+      "window_end": 1105,
+      "tokens": 89,
+      "distance_to_next": 0.05393344163894653
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 993,
+      "end_char": 1105,
+      "window_start": 815,
+      "window_end": 1215,
+      "tokens": 99,
+      "distance_to_next": 0.1003572940826416
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 1106,
+      "end_char": 1215,
+      "window_start": 993,
+      "window_end": 1331,
+      "tokens": 76,
+      "distance_to_next": 0.060513973236083984
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 26,
+      "start_char": 1216,
+      "end_char": 1331,
+      "window_start": 1106,
+      "window_end": 1331,
+      "tokens": 49,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 0,
+      "end_char": 27,
+      "window_start": 0,
+      "window_end": 101,
+      "tokens": 23,
+      "distance_to_next": 0.08281028270721436
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 28,
+      "end_char": 101,
+      "window_start": 0,
+      "window_end": 198,
+      "tokens": 43,
+      "distance_to_next": 0.05886709690093994
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 102,
+      "end_char": 198,
+      "window_start": 28,
+      "window_end": 391,
+      "tokens": 78,
+      "distance_to_next": 0.040650010108947754
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 199,
+      "end_char": 391,
+      "window_start": 102,
+      "window_end": 435,
+      "tokens": 73,
+      "distance_to_next": 0.11667275428771973
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 392,
+      "end_char": 435,
+      "window_start": 199,
+      "window_end": 520,
+      "tokens": 69,
+      "distance_to_next": 0.17809855937957764
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 436,
+      "end_char": 520,
+      "window_start": 392,
+      "window_end": 723,
+      "tokens": 74,
+      "distance_to_next": 0.03218114376068115
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 521,
+      "end_char": 723,
+      "window_start": 436,
+      "window_end": 907,
+      "tokens": 99,
+      "distance_to_next": 0.05539405345916748
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 724,
+      "end_char": 907,
+      "window_start": 521,
+      "window_end": 1039,
+      "tokens": 113,
+      "distance_to_next": 0.12074202299118042
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 908,
+      "end_char": 1039,
+      "window_start": 724,
+      "window_end": 1151,
+      "tokens": 95,
+      "distance_to_next": 0.12036365270614624
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 1040,
+      "end_char": 1151,
+      "window_start": 908,
+      "window_end": 1226,
+      "tokens": 75,
+      "distance_to_next": 0.10791665315628052
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 1152,
+      "end_char": 1226,
+      "window_start": 1040,
+      "window_end": 1473,
+      "tokens": 90,
+      "distance_to_next": 0.15337133407592773
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 1227,
+      "end_char": 1473,
+      "window_start": 1152,
+      "window_end": 1602,
+      "tokens": 99,
+      "distance_to_next": 0.07452309131622314
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 1474,
+      "end_char": 1602,
+      "window_start": 1227,
+      "window_end": 1654,
+      "tokens": 98,
+      "distance_to_next": 0.13273131847381592
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 27,
+      "start_char": 1603,
+      "end_char": 1654,
+      "window_start": 1474,
+      "window_end": 1654,
+      "tokens": 53,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 0,
+      "end_char": 47,
+      "window_start": 0,
+      "window_end": 118,
+      "tokens": 29,
+      "distance_to_next": 0.14035898447036743
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 48,
+      "end_char": 118,
+      "window_start": 0,
+      "window_end": 344,
+      "tokens": 88,
+      "distance_to_next": 0.08975458145141602
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 119,
+      "end_char": 344,
+      "window_start": 48,
+      "window_end": 503,
+      "tokens": 113,
+      "distance_to_next": 0.06890726089477539
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 345,
+      "end_char": 503,
+      "window_start": 119,
+      "window_end": 662,
+      "tokens": 133,
+      "distance_to_next": 0.12269783020019531
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 504,
+      "end_char": 662,
+      "window_start": 345,
+      "window_end": 886,
+      "tokens": 122,
+      "distance_to_next": 0.06884521245956421
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 663,
+      "end_char": 886,
+      "window_start": 504,
+      "window_end": 1083,
+      "tokens": 122,
+      "distance_to_next": 0.08791720867156982
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 28,
+      "start_char": 887,
+      "end_char": 1083,
+      "window_start": 663,
+      "window_end": 1083,
+      "tokens": 87,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 0,
+      "end_char": 201,
+      "window_start": 0,
+      "window_end": 310,
+      "tokens": 78,
+      "distance_to_next": 0.05674624443054199
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 202,
+      "end_char": 310,
+      "window_start": 0,
+      "window_end": 480,
+      "tokens": 125,
+      "distance_to_next": 0.116446852684021
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 311,
+      "end_char": 480,
+      "window_start": 202,
+      "window_end": 658,
+      "tokens": 115,
+      "distance_to_next": 0.05805659294128418
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 481,
+      "end_char": 658,
+      "window_start": 311,
+      "window_end": 806,
+      "tokens": 123,
+      "distance_to_next": 0.14166545867919922
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 659,
+      "end_char": 806,
+      "window_start": 481,
+      "window_end": 982,
+      "tokens": 117,
+      "distance_to_next": 0.10185050964355469
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 807,
+      "end_char": 982,
+      "window_start": 659,
+      "window_end": 1221,
+      "tokens": 138,
+      "distance_to_next": 0.07587075233459473
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 983,
+      "end_char": 1221,
+      "window_start": 807,
+      "window_end": 1348,
+      "tokens": 132,
+      "distance_to_next": 0.12663805484771729
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 1222,
+      "end_char": 1348,
+      "window_start": 983,
+      "window_end": 1466,
+      "tokens": 117,
+      "distance_to_next": 0.1275576949119568
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 1349,
+      "end_char": 1466,
+      "window_start": 1222,
+      "window_end": 1564,
+      "tokens": 80,
+      "distance_to_next": 0.08957135677337646
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 1467,
+      "end_char": 1564,
+      "window_start": 1349,
+      "window_end": 1661,
+      "tokens": 76,
+      "distance_to_next": 0.13171279430389404
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 29,
+      "start_char": 1565,
+      "end_char": 1661,
+      "window_start": 1467,
+      "window_end": 1661,
+      "tokens": 50,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 0,
+      "end_char": 176,
+      "window_start": 0,
+      "window_end": 367,
+      "tokens": 94,
+      "distance_to_next": 0.03718435764312744
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 177,
+      "end_char": 367,
+      "window_start": 0,
+      "window_end": 518,
+      "tokens": 129,
+      "distance_to_next": 0.08036625385284424
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 368,
+      "end_char": 518,
+      "window_start": 177,
+      "window_end": 915,
+      "tokens": 176,
+      "distance_to_next": 0.08554673194885254
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 519,
+      "end_char": 915,
+      "window_start": 368,
+      "window_end": 938,
+      "tokens": 136,
+      "distance_to_next": 0.1109381914138794
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 916,
+      "end_char": 938,
+      "window_start": 519,
+      "window_end": 1061,
+      "tokens": 127,
+      "distance_to_next": 0.15763354301452637
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 939,
+      "end_char": 1061,
+      "window_start": 916,
+      "window_end": 1172,
+      "tokens": 55,
+      "distance_to_next": 0.04795241355895996
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 1062,
+      "end_char": 1172,
+      "window_start": 939,
+      "window_end": 1473,
+      "tokens": 106,
+      "distance_to_next": 0.0495486855506897
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 30,
+      "start_char": 1173,
+      "end_char": 1473,
+      "window_start": 1062,
+      "window_end": 1473,
+      "tokens": 80,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 31,
+      "start_char": 0,
+      "end_char": 109,
+      "window_start": 0,
+      "window_end": 198,
+      "tokens": 47,
+      "distance_to_next": 0.032984793186187744
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 31,
+      "start_char": 110,
+      "end_char": 198,
+      "window_start": 0,
+      "window_end": 374,
+      "tokens": 88,
+      "distance_to_next": 0.06115686893463135
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 31,
+      "start_char": 199,
+      "end_char": 374,
+      "window_start": 110,
+      "window_end": 490,
+      "tokens": 89,
+      "distance_to_next": 0.06466281414031982
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 31,
+      "start_char": 375,
+      "end_char": 490,
+      "window_start": 199,
+      "window_end": 767,
+      "tokens": 139,
+      "distance_to_next": 0.025433659553527832
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 31,
+      "start_char": 491,
+      "end_char": 767,
+      "window_start": 375,
+      "window_end": 906,
+      "tokens": 128,
+      "distance_to_next": 0.05519062280654907
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 31,
+      "start_char": 768,
+      "end_char": 906,
+      "window_start": 491,
+      "window_end": 906,
+      "tokens": 103,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 0,
+      "end_char": 49,
+      "window_start": 0,
+      "window_end": 351,
+      "tokens": 88,
+      "distance_to_next": 0.011062860488891602
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 50,
+      "end_char": 351,
+      "window_start": 0,
+      "window_end": 541,
+      "tokens": 123,
+      "distance_to_next": 0.07497680187225342
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 352,
+      "end_char": 541,
+      "window_start": 50,
+      "window_end": 633,
+      "tokens": 133,
+      "distance_to_next": 0.20101499557495117
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 542,
+      "end_char": 633,
+      "window_start": 352,
+      "window_end": 867,
+      "tokens": 121,
+      "distance_to_next": 0.05845141410827637
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 634,
+      "end_char": 867,
+      "window_start": 542,
+      "window_end": 1026,
+      "tokens": 117,
+      "distance_to_next": 0.06122720241546631
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 868,
+      "end_char": 1026,
+      "window_start": 634,
+      "window_end": 1125,
+      "tokens": 120,
+      "distance_to_next": 0.11294126510620117
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1027,
+      "end_char": 1125,
+      "window_start": 868,
+      "window_end": 1181,
+      "tokens": 71,
+      "distance_to_next": 0.1679311990737915
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1126,
+      "end_char": 1181,
+      "window_start": 1027,
+      "window_end": 1355,
+      "tokens": 87,
+      "distance_to_next": 0.11445999145507812
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1182,
+      "end_char": 1355,
+      "window_start": 1126,
+      "window_end": 1514,
+      "tokens": 91,
+      "distance_to_next": 0.04709196090698242
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1356,
+      "end_char": 1514,
+      "window_start": 1182,
+      "window_end": 1566,
+      "tokens": 93,
+      "distance_to_next": 0.09879320859909058
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1515,
+      "end_char": 1566,
+      "window_start": 1356,
+      "window_end": 1678,
+      "tokens": 71,
+      "distance_to_next": 0.12832748889923096
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1567,
+      "end_char": 1678,
+      "window_start": 1515,
+      "window_end": 1794,
+      "tokens": 71,
+      "distance_to_next": 0.08268201351165771
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 32,
+      "start_char": 1679,
+      "end_char": 1794,
+      "window_start": 1567,
+      "window_end": 1794,
+      "tokens": 57,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 0,
+      "end_char": 150,
+      "window_start": 0,
+      "window_end": 234,
+      "tokens": 60,
+      "distance_to_next": 0.016267836093902588
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 151,
+      "end_char": 234,
+      "window_start": 0,
+      "window_end": 297,
+      "tokens": 74,
+      "distance_to_next": 0.11416685581207275
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 235,
+      "end_char": 297,
+      "window_start": 151,
+      "window_end": 358,
+      "tokens": 51,
+      "distance_to_next": 0.05140483379364014
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 298,
+      "end_char": 358,
+      "window_start": 235,
+      "window_end": 435,
+      "tokens": 53,
+      "distance_to_next": 0.047334492206573486
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 359,
+      "end_char": 435,
+      "window_start": 298,
+      "window_end": 525,
+      "tokens": 61,
+      "distance_to_next": 0.06087404489517212
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 436,
+      "end_char": 525,
+      "window_start": 359,
+      "window_end": 618,
+      "tokens": 75,
+      "distance_to_next": 0.07598626613616943
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 526,
+      "end_char": 618,
+      "window_start": 436,
+      "window_end": 785,
+      "tokens": 88,
+      "distance_to_next": 0.08968156576156616
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 619,
+      "end_char": 785,
+      "window_start": 526,
+      "window_end": 874,
+      "tokens": 91,
+      "distance_to_next": 0.12788045406341553
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 786,
+      "end_char": 874,
+      "window_start": 619,
+      "window_end": 1189,
+      "tokens": 143,
+      "distance_to_next": 0.0702582597732544
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 875,
+      "end_char": 1189,
+      "window_start": 786,
+      "window_end": 1300,
+      "tokens": 132,
+      "distance_to_next": 0.10007983446121216
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 1190,
+      "end_char": 1300,
+      "window_start": 875,
+      "window_end": 1433,
+      "tokens": 137,
+      "distance_to_next": 0.13683700561523438
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 33,
+      "start_char": 1301,
+      "end_char": 1433,
+      "window_start": 1190,
+      "window_end": 1433,
+      "tokens": 57,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 0,
+      "end_char": 288,
+      "window_start": 0,
+      "window_end": 533,
+      "tokens": 136,
+      "distance_to_next": 0.0072939395904541016
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 289,
+      "end_char": 533,
+      "window_start": 0,
+      "window_end": 596,
+      "tokens": 147,
+      "distance_to_next": 0.08336502313613892
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 534,
+      "end_char": 596,
+      "window_start": 289,
+      "window_end": 732,
+      "tokens": 108,
+      "distance_to_next": 0.21467554569244385
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 597,
+      "end_char": 732,
+      "window_start": 534,
+      "window_end": 787,
+      "tokens": 57,
+      "distance_to_next": 0.2194596529006958
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 733,
+      "end_char": 787,
+      "window_start": 597,
+      "window_end": 939,
+      "tokens": 78,
+      "distance_to_next": 0.0936320424079895
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 788,
+      "end_char": 939,
+      "window_start": 733,
+      "window_end": 1080,
+      "tokens": 77,
+      "distance_to_next": 0.04616880416870117
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 940,
+      "end_char": 1080,
+      "window_start": 788,
+      "window_end": 1226,
+      "tokens": 99,
+      "distance_to_next": 0.04838043451309204
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 1081,
+      "end_char": 1226,
+      "window_start": 940,
+      "window_end": 1371,
+      "tokens": 95,
+      "distance_to_next": 0.031540870666503906
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 1227,
+      "end_char": 1371,
+      "window_start": 1081,
+      "window_end": 1590,
+      "tokens": 113,
+      "distance_to_next": 0.05432099103927612
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 1372,
+      "end_char": 1590,
+      "window_start": 1227,
+      "window_end": 1710,
+      "tokens": 107,
+      "distance_to_next": 0.07835054397583008
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 1591,
+      "end_char": 1710,
+      "window_start": 1372,
+      "window_end": 1925,
+      "tokens": 125,
+      "distance_to_next": 0.04883384704589844
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 34,
+      "start_char": 1711,
+      "end_char": 1925,
+      "window_start": 1591,
+      "window_end": 1925,
+      "tokens": 75,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 0,
+      "end_char": 172,
+      "window_start": 0,
+      "window_end": 286,
+      "tokens": 72,
+      "distance_to_next": 0.01409614086151123
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 173,
+      "end_char": 286,
+      "window_start": 0,
+      "window_end": 451,
+      "tokens": 111,
+      "distance_to_next": 0.14656758308410645
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 287,
+      "end_char": 451,
+      "window_start": 173,
+      "window_end": 601,
+      "tokens": 107,
+      "distance_to_next": 0.07463377714157104
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 452,
+      "end_char": 601,
+      "window_start": 287,
+      "window_end": 690,
+      "tokens": 103,
+      "distance_to_next": 0.07431173324584961
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 602,
+      "end_char": 690,
+      "window_start": 452,
+      "window_end": 1071,
+      "tokens": 150,
+      "distance_to_next": 0.05580341815948486
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 691,
+      "end_char": 1071,
+      "window_start": 602,
+      "window_end": 1266,
+      "tokens": 155,
+      "distance_to_next": 0.087607741355896
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 1072,
+      "end_char": 1266,
+      "window_start": 691,
+      "window_end": 1437,
+      "tokens": 177,
+      "distance_to_next": 0.07739639282226562
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 1267,
+      "end_char": 1437,
+      "window_start": 1072,
+      "window_end": 1598,
+      "tokens": 134,
+      "distance_to_next": 0.13729792833328247
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 35,
+      "start_char": 1438,
+      "end_char": 1598,
+      "window_start": 1267,
+      "window_end": 1598,
+      "tokens": 90,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 0,
+      "end_char": 69,
+      "window_start": 0,
+      "window_end": 106,
+      "tokens": 30,
+      "distance_to_next": 0.1574547290802002
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 70,
+      "end_char": 106,
+      "window_start": 0,
+      "window_end": 204,
+      "tokens": 59,
+      "distance_to_next": 0.20902478694915771
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 107,
+      "end_char": 204,
+      "window_start": 70,
+      "window_end": 427,
+      "tokens": 88,
+      "distance_to_next": 0.039064109325408936
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 205,
+      "end_char": 427,
+      "window_start": 107,
+      "window_end": 562,
+      "tokens": 103,
+      "distance_to_next": 0.11627674102783203
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 428,
+      "end_char": 562,
+      "window_start": 205,
+      "window_end": 806,
+      "tokens": 126,
+      "distance_to_next": 0.0553249716758728
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 563,
+      "end_char": 806,
+      "window_start": 428,
+      "window_end": 1077,
+      "tokens": 137,
+      "distance_to_next": 0.10603082180023193
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 807,
+      "end_char": 1077,
+      "window_start": 563,
+      "window_end": 1272,
+      "tokens": 159,
+      "distance_to_next": 0.07000893354415894
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 1078,
+      "end_char": 1272,
+      "window_start": 807,
+      "window_end": 1294,
+      "tokens": 111,
+      "distance_to_next": 0.1040118932723999
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 36,
+      "start_char": 1273,
+      "end_char": 1294,
+      "window_start": 1078,
+      "window_end": 1294,
+      "tokens": 54,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 0,
+      "end_char": 220,
+      "window_start": 0,
+      "window_end": 275,
+      "tokens": 68,
+      "distance_to_next": 0.013848423957824707
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 221,
+      "end_char": 275,
+      "window_start": 0,
+      "window_end": 385,
+      "tokens": 99,
+      "distance_to_next": 0.18334853649139404
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 276,
+      "end_char": 385,
+      "window_start": 221,
+      "window_end": 607,
+      "tokens": 100,
+      "distance_to_next": 0.08308136463165283
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 386,
+      "end_char": 607,
+      "window_start": 276,
+      "window_end": 814,
+      "tokens": 130,
+      "distance_to_next": 0.10940486192703247
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 608,
+      "end_char": 814,
+      "window_start": 386,
+      "window_end": 1010,
+      "tokens": 146,
+      "distance_to_next": 0.07481628656387329
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 815,
+      "end_char": 1010,
+      "window_start": 608,
+      "window_end": 1246,
+      "tokens": 141,
+      "distance_to_next": 0.1337740421295166
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 1011,
+      "end_char": 1246,
+      "window_start": 815,
+      "window_end": 1496,
+      "tokens": 148,
+      "distance_to_next": 0.1691402792930603
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 1247,
+      "end_char": 1496,
+      "window_start": 1011,
+      "window_end": 1625,
+      "tokens": 132,
+      "distance_to_next": 0.13297295570373535
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 1497,
+      "end_char": 1625,
+      "window_start": 1247,
+      "window_end": 1778,
+      "tokens": 115,
+      "distance_to_next": 0.07183051109313965
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 37,
+      "start_char": 1626,
+      "end_char": 1778,
+      "window_start": 1497,
+      "window_end": 1778,
+      "tokens": 65,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 0,
+      "end_char": 181,
+      "window_start": 0,
+      "window_end": 285,
+      "tokens": 80,
+      "distance_to_next": 0.006837189197540283
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 182,
+      "end_char": 285,
+      "window_start": 0,
+      "window_end": 384,
+      "tokens": 106,
+      "distance_to_next": 0.1253402829170227
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 286,
+      "end_char": 384,
+      "window_start": 182,
+      "window_end": 496,
+      "tokens": 79,
+      "distance_to_next": 0.20915979146957397
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 385,
+      "end_char": 496,
+      "window_start": 286,
+      "window_end": 760,
+      "tokens": 118,
+      "distance_to_next": 0.038698434829711914
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 497,
+      "end_char": 760,
+      "window_start": 385,
+      "window_end": 874,
+      "tokens": 124,
+      "distance_to_next": 0.049742937088012695
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 761,
+      "end_char": 874,
+      "window_start": 497,
+      "window_end": 1011,
+      "tokens": 133,
+      "distance_to_next": 0.13587844371795654
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 875,
+      "end_char": 1011,
+      "window_start": 761,
+      "window_end": 1121,
+      "tokens": 99,
+      "distance_to_next": 0.1676945686340332
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 1012,
+      "end_char": 1121,
+      "window_start": 875,
+      "window_end": 1204,
+      "tokens": 87,
+      "distance_to_next": 0.1771094799041748
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 1122,
+      "end_char": 1204,
+      "window_start": 1012,
+      "window_end": 1396,
+      "tokens": 105,
+      "distance_to_next": 0.13138002157211304
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 1205,
+      "end_char": 1396,
+      "window_start": 1122,
+      "window_end": 1642,
+      "tokens": 143,
+      "distance_to_next": 0.07687944173812866
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 38,
+      "start_char": 1397,
+      "end_char": 1642,
+      "window_start": 1205,
+      "window_end": 1642,
+      "tokens": 123,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 0,
+      "end_char": 23,
+      "window_start": 0,
+      "window_end": 140,
+      "tokens": 36,
+      "distance_to_next": 0.07900691032409668
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 24,
+      "end_char": 140,
+      "window_start": 0,
+      "window_end": 207,
+      "tokens": 53,
+      "distance_to_next": 0.11858546733856201
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 141,
+      "end_char": 207,
+      "window_start": 24,
+      "window_end": 373,
+      "tokens": 87,
+      "distance_to_next": 0.04998970031738281
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 208,
+      "end_char": 373,
+      "window_start": 141,
+      "window_end": 470,
+      "tokens": 86,
+      "distance_to_next": 0.12007564306259155
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 374,
+      "end_char": 470,
+      "window_start": 208,
+      "window_end": 756,
+      "tokens": 135,
+      "distance_to_next": 0.09350240230560303
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 471,
+      "end_char": 756,
+      "window_start": 374,
+      "window_end": 847,
+      "tokens": 116,
+      "distance_to_next": 0.16202187538146973
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 757,
+      "end_char": 847,
+      "window_start": 471,
+      "window_end": 1049,
+      "tokens": 144,
+      "distance_to_next": 0.05155819654464722
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 848,
+      "end_char": 1049,
+      "window_start": 757,
+      "window_end": 1142,
+      "tokens": 98,
+      "distance_to_next": 0.07429993152618408
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 1050,
+      "end_char": 1142,
+      "window_start": 848,
+      "window_end": 1278,
+      "tokens": 105,
+      "distance_to_next": 0.26916080713272095
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 1143,
+      "end_char": 1278,
+      "window_start": 1050,
+      "window_end": 1452,
+      "tokens": 96,
+      "distance_to_next": 0.06580221652984619
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 1279,
+      "end_char": 1452,
+      "window_start": 1143,
+      "window_end": 1555,
+      "tokens": 102,
+      "distance_to_next": 0.12038779258728027
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 1453,
+      "end_char": 1555,
+      "window_start": 1279,
+      "window_end": 1646,
+      "tokens": 95,
+      "distance_to_next": 0.13206720352172852
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 1556,
+      "end_char": 1646,
+      "window_start": 1453,
+      "window_end": 1685,
+      "tokens": 65,
+      "distance_to_next": 0.08127796649932861
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 39,
+      "start_char": 1647,
+      "end_char": 1685,
+      "window_start": 1556,
+      "window_end": 1685,
+      "tokens": 39,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 0,
+      "end_char": 119,
+      "window_start": 0,
+      "window_end": 261,
+      "tokens": 60,
+      "distance_to_next": 0.11644899845123291
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 120,
+      "end_char": 261,
+      "window_start": 0,
+      "window_end": 606,
+      "tokens": 154,
+      "distance_to_next": 0.11208003759384155
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 262,
+      "end_char": 606,
+      "window_start": 120,
+      "window_end": 754,
+      "tokens": 161,
+      "distance_to_next": 0.1322738528251648
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 607,
+      "end_char": 754,
+      "window_start": 262,
+      "window_end": 1018,
+      "tokens": 195,
+      "distance_to_next": 0.11611968278884888
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 755,
+      "end_char": 1018,
+      "window_start": 607,
+      "window_end": 1148,
+      "tokens": 133,
+      "distance_to_next": 0.07398653030395508
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 1019,
+      "end_char": 1148,
+      "window_start": 755,
+      "window_end": 1273,
+      "tokens": 131,
+      "distance_to_next": 0.17264187335968018
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 1149,
+      "end_char": 1273,
+      "window_start": 1019,
+      "window_end": 1311,
+      "tokens": 77,
+      "distance_to_next": 0.09969067573547363
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 1274,
+      "end_char": 1311,
+      "window_start": 1149,
+      "window_end": 1429,
+      "tokens": 74,
+      "distance_to_next": 0.268379271030426
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 1312,
+      "end_char": 1429,
+      "window_start": 1274,
+      "window_end": 1533,
+      "tokens": 73,
+      "distance_to_next": 0.05412602424621582
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 1430,
+      "end_char": 1533,
+      "window_start": 1312,
+      "window_end": 1641,
+      "tokens": 84,
+      "distance_to_next": 0.06830424070358276
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 40,
+      "start_char": 1534,
+      "end_char": 1641,
+      "window_start": 1430,
+      "window_end": 1641,
+      "tokens": 55,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 0,
+      "end_char": 61,
+      "window_start": 0,
+      "window_end": 132,
+      "tokens": 31,
+      "distance_to_next": 0.015451669692993164
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 62,
+      "end_char": 132,
+      "window_start": 0,
+      "window_end": 207,
+      "tokens": 45,
+      "distance_to_next": 0.07223773002624512
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 133,
+      "end_char": 207,
+      "window_start": 62,
+      "window_end": 336,
+      "tokens": 59,
+      "distance_to_next": 0.1461135745048523
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 208,
+      "end_char": 336,
+      "window_start": 133,
+      "window_end": 419,
+      "tokens": 59,
+      "distance_to_next": 0.06458461284637451
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 337,
+      "end_char": 419,
+      "window_start": 208,
+      "window_end": 612,
+      "tokens": 88,
+      "distance_to_next": 0.04083007574081421
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 420,
+      "end_char": 612,
+      "window_start": 337,
+      "window_end": 724,
+      "tokens": 87,
+      "distance_to_next": 0.1043848991394043
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 613,
+      "end_char": 724,
+      "window_start": 420,
+      "window_end": 810,
+      "tokens": 87,
+      "distance_to_next": 0.1052854061126709
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 725,
+      "end_char": 810,
+      "window_start": 613,
+      "window_end": 1019,
+      "tokens": 86,
+      "distance_to_next": 0.07236695289611816
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 811,
+      "end_char": 1019,
+      "window_start": 725,
+      "window_end": 1253,
+      "tokens": 113,
+      "distance_to_next": 0.04915010929107666
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 1020,
+      "end_char": 1253,
+      "window_start": 811,
+      "window_end": 1259,
+      "tokens": 96,
+      "distance_to_next": 0.06540936231613159
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 41,
+      "start_char": 1254,
+      "end_char": 1259,
+      "window_start": 1020,
+      "window_end": 1259,
+      "tokens": 54,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 0,
+      "end_char": 178,
+      "window_start": 0,
+      "window_end": 376,
+      "tokens": 84,
+      "distance_to_next": 0.006202101707458496
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 179,
+      "end_char": 376,
+      "window_start": 0,
+      "window_end": 423,
+      "tokens": 93,
+      "distance_to_next": 0.153114914894104
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 377,
+      "end_char": 423,
+      "window_start": 179,
+      "window_end": 579,
+      "tokens": 87,
+      "distance_to_next": 0.181915283203125
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 424,
+      "end_char": 579,
+      "window_start": 377,
+      "window_end": 697,
+      "tokens": 65,
+      "distance_to_next": 0.04291313886642456
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 580,
+      "end_char": 697,
+      "window_start": 424,
+      "window_end": 871,
+      "tokens": 87,
+      "distance_to_next": 0.08035194873809814
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 698,
+      "end_char": 871,
+      "window_start": 580,
+      "window_end": 995,
+      "tokens": 81,
+      "distance_to_next": 0.038078486919403076
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 872,
+      "end_char": 995,
+      "window_start": 698,
+      "window_end": 1126,
+      "tokens": 87,
+      "distance_to_next": 0.07780992984771729
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 996,
+      "end_char": 1126,
+      "window_start": 872,
+      "window_end": 1185,
+      "tokens": 69,
+      "distance_to_next": 0.13864922523498535
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 1127,
+      "end_char": 1185,
+      "window_start": 996,
+      "window_end": 1272,
+      "tokens": 68,
+      "distance_to_next": 0.08615797758102417
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 1186,
+      "end_char": 1272,
+      "window_start": 1127,
+      "window_end": 1345,
+      "tokens": 56,
+      "distance_to_next": 0.1195380687713623
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 1273,
+      "end_char": 1345,
+      "window_start": 1186,
+      "window_end": 1470,
+      "tokens": 68,
+      "distance_to_next": 0.31933802366256714
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 1346,
+      "end_char": 1470,
+      "window_start": 1273,
+      "window_end": 1618,
+      "tokens": 72,
+      "distance_to_next": 0.0830456018447876
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 42,
+      "start_char": 1471,
+      "end_char": 1618,
+      "window_start": 1346,
+      "window_end": 1618,
+      "tokens": 55,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 0,
+      "end_char": 91,
+      "window_start": 0,
+      "window_end": 182,
+      "tokens": 39,
+      "distance_to_next": 0.015318870544433594
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 92,
+      "end_char": 182,
+      "window_start": 0,
+      "window_end": 295,
+      "tokens": 61,
+      "distance_to_next": 0.05075955390930176
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 183,
+      "end_char": 295,
+      "window_start": 92,
+      "window_end": 389,
+      "tokens": 62,
+      "distance_to_next": 0.19613343477249146
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 296,
+      "end_char": 389,
+      "window_start": 183,
+      "window_end": 418,
+      "tokens": 49,
+      "distance_to_next": 0.3264774680137634
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 390,
+      "end_char": 418,
+      "window_start": 296,
+      "window_end": 641,
+      "tokens": 75,
+      "distance_to_next": 0.04910796880722046
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 419,
+      "end_char": 641,
+      "window_start": 390,
+      "window_end": 765,
+      "tokens": 84,
+      "distance_to_next": 0.03047269582748413
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 642,
+      "end_char": 765,
+      "window_start": 419,
+      "window_end": 827,
+      "tokens": 94,
+      "distance_to_next": 0.0686454176902771
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 766,
+      "end_char": 827,
+      "window_start": 642,
+      "window_end": 1008,
+      "tokens": 85,
+      "distance_to_next": 0.10633409023284912
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 828,
+      "end_char": 1008,
+      "window_start": 766,
+      "window_end": 1162,
+      "tokens": 97,
+      "distance_to_next": 0.035811543464660645
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 1009,
+      "end_char": 1162,
+      "window_start": 828,
+      "window_end": 1178,
+      "tokens": 85,
+      "distance_to_next": 0.05094647407531738
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 1163,
+      "end_char": 1178,
+      "window_start": 1009,
+      "window_end": 1314,
+      "tokens": 75,
+      "distance_to_next": 0.15598350763320923
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 1179,
+      "end_char": 1314,
+      "window_start": 1163,
+      "window_end": 1409,
+      "tokens": 50,
+      "distance_to_next": 0.033599019050598145
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 1315,
+      "end_char": 1409,
+      "window_start": 1179,
+      "window_end": 1482,
+      "tokens": 61,
+      "distance_to_next": 0.13873010873794556
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 1410,
+      "end_char": 1482,
+      "window_start": 1315,
+      "window_end": 1516,
+      "tokens": 39,
+      "distance_to_next": 0.09077823162078857
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 43,
+      "start_char": 1483,
+      "end_char": 1516,
+      "window_start": 1410,
+      "window_end": 1516,
+      "tokens": 24,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 44,
+      "start_char": 0,
+      "end_char": 178,
+      "window_start": 0,
+      "window_end": 328,
+      "tokens": 70,
+      "distance_to_next": 0.0872119665145874
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 44,
+      "start_char": 179,
+      "end_char": 328,
+      "window_start": 0,
+      "window_end": 536,
+      "tokens": 115,
+      "distance_to_next": 0.04016745090484619
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 44,
+      "start_char": 329,
+      "end_char": 536,
+      "window_start": 179,
+      "window_end": 731,
+      "tokens": 114,
+      "distance_to_next": 0.05175936222076416
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 44,
+      "start_char": 537,
+      "end_char": 731,
+      "window_start": 329,
+      "window_end": 875,
+      "tokens": 114,
+      "distance_to_next": 0.038983047008514404
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 44,
+      "start_char": 732,
+      "end_char": 875,
+      "window_start": 537,
+      "window_end": 1032,
+      "tokens": 105,
+      "distance_to_next": 0.045523881912231445
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 44,
+      "start_char": 876,
+      "end_char": 1032,
+      "window_start": 732,
+      "window_end": 1032,
+      "tokens": 66,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 0,
+      "end_char": 202,
+      "window_start": 0,
+      "window_end": 540,
+      "tokens": 120,
+      "distance_to_next": 0.05886650085449219
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 203,
+      "end_char": 540,
+      "window_start": 0,
+      "window_end": 796,
+      "tokens": 178,
+      "distance_to_next": 0.04676461219787598
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 541,
+      "end_char": 796,
+      "window_start": 203,
+      "window_end": 996,
+      "tokens": 173,
+      "distance_to_next": 0.1063985824584961
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 797,
+      "end_char": 996,
+      "window_start": 541,
+      "window_end": 1123,
+      "tokens": 119,
+      "distance_to_next": 0.21800243854522705
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 997,
+      "end_char": 1123,
+      "window_start": 797,
+      "window_end": 1448,
+      "tokens": 135,
+      "distance_to_next": 0.0774458646774292
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 1124,
+      "end_char": 1448,
+      "window_start": 997,
+      "window_end": 1572,
+      "tokens": 124,
+      "distance_to_next": 0.026621699333190918
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 45,
+      "start_char": 1449,
+      "end_char": 1572,
+      "window_start": 1124,
+      "window_end": 1572,
+      "tokens": 104,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 0,
+      "end_char": 79,
+      "window_start": 0,
+      "window_end": 227,
+      "tokens": 52,
+      "distance_to_next": 0.014508605003356934
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 80,
+      "end_char": 227,
+      "window_start": 0,
+      "window_end": 382,
+      "tokens": 88,
+      "distance_to_next": 0.1987779140472412
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 228,
+      "end_char": 382,
+      "window_start": 80,
+      "window_end": 550,
+      "tokens": 103,
+      "distance_to_next": 0.15545547008514404
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 383,
+      "end_char": 550,
+      "window_start": 228,
+      "window_end": 691,
+      "tokens": 108,
+      "distance_to_next": 0.045354485511779785
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 551,
+      "end_char": 691,
+      "window_start": 383,
+      "window_end": 723,
+      "tokens": 80,
+      "distance_to_next": 0.1732293963432312
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 692,
+      "end_char": 723,
+      "window_start": 551,
+      "window_end": 775,
+      "tokens": 54,
+      "distance_to_next": 0.2790890336036682
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 724,
+      "end_char": 775,
+      "window_start": 692,
+      "window_end": 1007,
+      "tokens": 71,
+      "distance_to_next": 0.04937279224395752
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 776,
+      "end_char": 1007,
+      "window_start": 724,
+      "window_end": 1031,
+      "tokens": 70,
+      "distance_to_next": 0.08143377304077148
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 1008,
+      "end_char": 1031,
+      "window_start": 776,
+      "window_end": 1125,
+      "tokens": 78,
+      "distance_to_next": 0.2026360034942627
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 1032,
+      "end_char": 1125,
+      "window_start": 1008,
+      "window_end": 1492,
+      "tokens": 106,
+      "distance_to_next": 0.0248488187789917
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 1126,
+      "end_char": 1492,
+      "window_start": 1032,
+      "window_end": 1504,
+      "tokens": 103,
+      "distance_to_next": 0.13657093048095703
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 1493,
+      "end_char": 1504,
+      "window_start": 1126,
+      "window_end": 1577,
+      "tokens": 103,
+      "distance_to_next": 0.1960362195968628
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 1505,
+      "end_char": 1577,
+      "window_start": 1493,
+      "window_end": 1627,
+      "tokens": 35,
+      "distance_to_next": 0.0305325984954834
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 46,
+      "start_char": 1578,
+      "end_char": 1627,
+      "window_start": 1505,
+      "window_end": 1627,
+      "tokens": 31,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 0,
+      "end_char": 26,
+      "window_start": 0,
+      "window_end": 276,
+      "tokens": 71,
+      "distance_to_next": 0.03208661079406738
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 27,
+      "end_char": 276,
+      "window_start": 0,
+      "window_end": 429,
+      "tokens": 100,
+      "distance_to_next": 0.06420260667800903
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 277,
+      "end_char": 429,
+      "window_start": 27,
+      "window_end": 468,
+      "tokens": 102,
+      "distance_to_next": 0.26270365715026855
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 430,
+      "end_char": 468,
+      "window_start": 277,
+      "window_end": 718,
+      "tokens": 88,
+      "distance_to_next": 0.09304189682006836
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 469,
+      "end_char": 718,
+      "window_start": 430,
+      "window_end": 988,
+      "tokens": 124,
+      "distance_to_next": 0.034908294677734375
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 719,
+      "end_char": 988,
+      "window_start": 469,
+      "window_end": 1017,
+      "tokens": 122,
+      "distance_to_next": 0.08140790462493896
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 989,
+      "end_char": 1017,
+      "window_start": 719,
+      "window_end": 1218,
+      "tokens": 110,
+      "distance_to_next": 0.20643377304077148
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 1018,
+      "end_char": 1218,
+      "window_start": 989,
+      "window_end": 1230,
+      "tokens": 48,
+      "distance_to_next": 0.14488428831100464
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 1219,
+      "end_char": 1230,
+      "window_start": 1018,
+      "window_end": 1377,
+      "tokens": 71,
+      "distance_to_next": 0.15816545486450195
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 1231,
+      "end_char": 1377,
+      "window_start": 1219,
+      "window_end": 1560,
+      "tokens": 76,
+      "distance_to_next": 0.0738675594329834
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 1378,
+      "end_char": 1560,
+      "window_start": 1231,
+      "window_end": 1605,
+      "tokens": 86,
+      "distance_to_next": 0.12539327144622803
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 47,
+      "start_char": 1561,
+      "end_char": 1605,
+      "window_start": 1378,
+      "window_end": 1605,
+      "tokens": 57,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 0,
+      "end_char": 246,
+      "window_start": 0,
+      "window_end": 396,
+      "tokens": 87,
+      "distance_to_next": 0.008156061172485352
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 247,
+      "end_char": 396,
+      "window_start": 0,
+      "window_end": 414,
+      "tokens": 91,
+      "distance_to_next": 0.20695078372955322
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 397,
+      "end_char": 414,
+      "window_start": 247,
+      "window_end": 550,
+      "tokens": 70,
+      "distance_to_next": 0.16796576976776123
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 415,
+      "end_char": 550,
+      "window_start": 397,
+      "window_end": 1050,
+      "tokens": 145,
+      "distance_to_next": 0.016431689262390137
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 551,
+      "end_char": 1050,
+      "window_start": 415,
+      "window_end": 1072,
+      "tokens": 146,
+      "distance_to_next": 0.09300917387008667
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 1051,
+      "end_char": 1072,
+      "window_start": 551,
+      "window_end": 1311,
+      "tokens": 168,
+      "distance_to_next": 0.1344800591468811
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 48,
+      "start_char": 1073,
+      "end_char": 1311,
+      "window_start": 1051,
+      "window_end": 1311,
+      "tokens": 62,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 0,
+      "end_char": 104,
+      "window_start": 0,
+      "window_end": 269,
+      "tokens": 64,
+      "distance_to_next": 0.15028727054595947
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 105,
+      "end_char": 269,
+      "window_start": 0,
+      "window_end": 546,
+      "tokens": 116,
+      "distance_to_next": 0.04373103380203247
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 270,
+      "end_char": 546,
+      "window_start": 105,
+      "window_end": 565,
+      "tokens": 99,
+      "distance_to_next": 0.10795605182647705
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 547,
+      "end_char": 565,
+      "window_start": 270,
+      "window_end": 802,
+      "tokens": 110,
+      "distance_to_next": 0.1796410083770752
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 566,
+      "end_char": 802,
+      "window_start": 547,
+      "window_end": 959,
+      "tokens": 89,
+      "distance_to_next": 0.03005218505859375
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 803,
+      "end_char": 959,
+      "window_start": 566,
+      "window_end": 980,
+      "tokens": 89,
+      "distance_to_next": 0.1839897632598877
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 960,
+      "end_char": 980,
+      "window_start": 803,
+      "window_end": 1201,
+      "tokens": 83,
+      "distance_to_next": 0.15135908126831055
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 981,
+      "end_char": 1201,
+      "window_start": 960,
+      "window_end": 1342,
+      "tokens": 83,
+      "distance_to_next": 0.07277321815490723
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 1202,
+      "end_char": 1342,
+      "window_start": 981,
+      "window_end": 1576,
+      "tokens": 126,
+      "distance_to_next": 0.04432082176208496
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 49,
+      "start_char": 1343,
+      "end_char": 1576,
+      "window_start": 1202,
+      "window_end": 1576,
+      "tokens": 81,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 50,
+      "start_char": 0,
+      "end_char": 147,
+      "window_start": 0,
+      "window_end": 252,
+      "tokens": 59,
+      "distance_to_next": 0.010222911834716797
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 50,
+      "start_char": 148,
+      "end_char": 252,
+      "window_start": 0,
+      "window_end": 332,
+      "tokens": 74,
+      "distance_to_next": 0.20273232460021973
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 50,
+      "start_char": 253,
+      "end_char": 332,
+      "window_start": 148,
+      "window_end": 430,
+      "tokens": 62,
+      "distance_to_next": 0.12243300676345825
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 50,
+      "start_char": 333,
+      "end_char": 430,
+      "window_start": 253,
+      "window_end": 430,
+      "tokens": 40,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 0,
+      "end_char": 39,
+      "window_start": 0,
+      "window_end": 239,
+      "tokens": 51,
+      "distance_to_next": 0.18454980850219727
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 40,
+      "end_char": 239,
+      "window_start": 0,
+      "window_end": 407,
+      "tokens": 89,
+      "distance_to_next": 0.02691364288330078
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 240,
+      "end_char": 407,
+      "window_start": 40,
+      "window_end": 556,
+      "tokens": 108,
+      "distance_to_next": 0.018427133560180664
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 408,
+      "end_char": 556,
+      "window_start": 240,
+      "window_end": 739,
+      "tokens": 101,
+      "distance_to_next": 0.23052626848220825
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 557,
+      "end_char": 739,
+      "window_start": 408,
+      "window_end": 946,
+      "tokens": 111,
+      "distance_to_next": 0.058827102184295654
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 740,
+      "end_char": 946,
+      "window_start": 557,
+      "window_end": 1173,
+      "tokens": 136,
+      "distance_to_next": 0.0630568265914917
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 947,
+      "end_char": 1173,
+      "window_start": 740,
+      "window_end": 1239,
+      "tokens": 128,
+      "distance_to_next": 0.08364826440811157
+    },
+    {
+      "document_id": "ninds_stroke_overview_2020",
+      "page": 51,
+      "start_char": 1174,
+      "end_char": 1239,
+      "window_start": 947,
+      "window_end": 1239,
+      "tokens": 80,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 0,
+      "end_char": 107,
+      "window_start": 0,
+      "window_end": 262,
+      "tokens": 53,
+      "distance_to_next": 0.018957316875457764
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 108,
+      "end_char": 262,
+      "window_start": 0,
+      "window_end": 427,
+      "tokens": 87,
+      "distance_to_next": 0.1092904806137085
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 263,
+      "end_char": 427,
+      "window_start": 108,
+      "window_end": 728,
+      "tokens": 135,
+      "distance_to_next": 0.0968635082244873
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 428,
+      "end_char": 728,
+      "window_start": 263,
+      "window_end": 911,
+      "tokens": 141,
+      "distance_to_next": 0.06849634647369385
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 729,
+      "end_char": 911,
+      "window_start": 428,
+      "window_end": 1055,
+      "tokens": 141,
+      "distance_to_next": 0.12194275856018066
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 912,
+      "end_char": 1055,
+      "window_start": 729,
+      "window_end": 1192,
+      "tokens": 102,
+      "distance_to_next": 0.06940966844558716
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 3,
+      "start_char": 1056,
+      "end_char": 1192,
+      "window_start": 912,
+      "window_end": 1192,
+      "tokens": 66,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 0,
+      "end_char": 37,
+      "window_start": 0,
+      "window_end": 161,
+      "tokens": 40,
+      "distance_to_next": 0.05908799171447754
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 38,
+      "end_char": 161,
+      "window_start": 0,
+      "window_end": 367,
+      "tokens": 83,
+      "distance_to_next": 0.0865587592124939
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 162,
+      "end_char": 367,
+      "window_start": 38,
+      "window_end": 625,
+      "tokens": 127,
+      "distance_to_next": 0.06562972068786621
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 368,
+      "end_char": 625,
+      "window_start": 162,
+      "window_end": 883,
+      "tokens": 153,
+      "distance_to_next": 0.08145380020141602
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 626,
+      "end_char": 883,
+      "window_start": 368,
+      "window_end": 1102,
+      "tokens": 154,
+      "distance_to_next": 0.06923854351043701
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 884,
+      "end_char": 1102,
+      "window_start": 626,
+      "window_end": 1185,
+      "tokens": 117,
+      "distance_to_next": 0.12045282125473022
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 1103,
+      "end_char": 1185,
+      "window_start": 884,
+      "window_end": 1373,
+      "tokens": 103,
+      "distance_to_next": 0.1551746129989624
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 4,
+      "start_char": 1186,
+      "end_char": 1373,
+      "window_start": 1103,
+      "window_end": 1373,
+      "tokens": 59,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 0,
+      "end_char": 63,
+      "window_start": 0,
+      "window_end": 113,
+      "tokens": 26,
+      "distance_to_next": 0.02623879909515381
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 64,
+      "end_char": 113,
+      "window_start": 0,
+      "window_end": 120,
+      "tokens": 29,
+      "distance_to_next": 0.23308467864990234
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 114,
+      "end_char": 120,
+      "window_start": 64,
+      "window_end": 238,
+      "tokens": 42,
+      "distance_to_next": 0.15104305744171143
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 121,
+      "end_char": 238,
+      "window_start": 114,
+      "window_end": 365,
+      "tokens": 54,
+      "distance_to_next": 0.02524411678314209
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 239,
+      "end_char": 365,
+      "window_start": 121,
+      "window_end": 412,
+      "tokens": 61,
+      "distance_to_next": 0.14857131242752075
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 366,
+      "end_char": 412,
+      "window_start": 239,
+      "window_end": 455,
+      "tokens": 44,
+      "distance_to_next": 0.2899882197380066
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 413,
+      "end_char": 455,
+      "window_start": 366,
+      "window_end": 479,
+      "tokens": 25,
+      "distance_to_next": 0.2425175905227661
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 456,
+      "end_char": 479,
+      "window_start": 413,
+      "window_end": 569,
+      "tokens": 36,
+      "distance_to_next": 0.07268357276916504
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 480,
+      "end_char": 569,
+      "window_start": 456,
+      "window_end": 593,
+      "tokens": 33,
+      "distance_to_next": 0.065463125705719
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 570,
+      "end_char": 593,
+      "window_start": 480,
+      "window_end": 700,
+      "tokens": 48,
+      "distance_to_next": 0.18537873029708862
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 594,
+      "end_char": 700,
+      "window_start": 570,
+      "window_end": 737,
+      "tokens": 35,
+      "distance_to_next": 0.1014174222946167
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 701,
+      "end_char": 737,
+      "window_start": 594,
+      "window_end": 865,
+      "tokens": 55,
+      "distance_to_next": 0.12073653936386108
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 738,
+      "end_char": 865,
+      "window_start": 701,
+      "window_end": 897,
+      "tokens": 43,
+      "distance_to_next": 0.053699493408203125
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 866,
+      "end_char": 897,
+      "window_start": 738,
+      "window_end": 1030,
+      "tokens": 64,
+      "distance_to_next": 0.13884997367858887
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 5,
+      "start_char": 898,
+      "end_char": 1030,
+      "window_start": 866,
+      "window_end": 1030,
+      "tokens": 39,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 6,
+      "start_char": 0,
+      "end_char": 45,
+      "window_start": 0,
+      "window_end": 151,
+      "tokens": 36,
+      "distance_to_next": 0.10100841522216797
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 6,
+      "start_char": 46,
+      "end_char": 151,
+      "window_start": 0,
+      "window_end": 620,
+      "tokens": 143,
+      "distance_to_next": 0.028759002685546875
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 6,
+      "start_char": 152,
+      "end_char": 620,
+      "window_start": 46,
+      "window_end": 720,
+      "tokens": 161,
+      "distance_to_next": 0.03016340732574463
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 6,
+      "start_char": 621,
+      "end_char": 720,
+      "window_start": 152,
+      "window_end": 1061,
+      "tokens": 216,
+      "distance_to_next": 0.07850134372711182
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 6,
+      "start_char": 721,
+      "end_char": 1061,
+      "window_start": 621,
+      "window_end": 1180,
+      "tokens": 135,
+      "distance_to_next": 0.0804445743560791
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 6,
+      "start_char": 1062,
+      "end_char": 1180,
+      "window_start": 721,
+      "window_end": 1180,
+      "tokens": 107,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 0,
+      "end_char": 155,
+      "window_start": 0,
+      "window_end": 236,
+      "tokens": 71,
+      "distance_to_next": 0.024837255477905273
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 156,
+      "end_char": 236,
+      "window_start": 0,
+      "window_end": 320,
+      "tokens": 93,
+      "distance_to_next": 0.1711471676826477
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 237,
+      "end_char": 320,
+      "window_start": 156,
+      "window_end": 371,
+      "tokens": 56,
+      "distance_to_next": 0.13647949695587158
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 321,
+      "end_char": 371,
+      "window_start": 237,
+      "window_end": 465,
+      "tokens": 59,
+      "distance_to_next": 0.10823148488998413
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 372,
+      "end_char": 465,
+      "window_start": 321,
+      "window_end": 696,
+      "tokens": 89,
+      "distance_to_next": 0.20180022716522217
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 466,
+      "end_char": 696,
+      "window_start": 372,
+      "window_end": 924,
+      "tokens": 130,
+      "distance_to_next": 0.12713146209716797
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 697,
+      "end_char": 924,
+      "window_start": 466,
+      "window_end": 1181,
+      "tokens": 170,
+      "distance_to_next": 0.03565329313278198
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 7,
+      "start_char": 925,
+      "end_char": 1181,
+      "window_start": 697,
+      "window_end": 1181,
+      "tokens": 118,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 0,
+      "end_char": 212,
+      "window_start": 0,
+      "window_end": 298,
+      "tokens": 68,
+      "distance_to_next": 0.013826847076416016
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 213,
+      "end_char": 298,
+      "window_start": 0,
+      "window_end": 411,
+      "tokens": 94,
+      "distance_to_next": 0.09508544206619263
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 299,
+      "end_char": 411,
+      "window_start": 213,
+      "window_end": 620,
+      "tokens": 93,
+      "distance_to_next": 0.04516434669494629
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 412,
+      "end_char": 620,
+      "window_start": 299,
+      "window_end": 748,
+      "tokens": 103,
+      "distance_to_next": 0.12261569499969482
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 621,
+      "end_char": 748,
+      "window_start": 412,
+      "window_end": 863,
+      "tokens": 100,
+      "distance_to_next": 0.08886748552322388
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 749,
+      "end_char": 863,
+      "window_start": 621,
+      "window_end": 1002,
+      "tokens": 84,
+      "distance_to_next": 0.15261083841323853
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 864,
+      "end_char": 1002,
+      "window_start": 749,
+      "window_end": 1126,
+      "tokens": 80,
+      "distance_to_next": 0.05688440799713135
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 1003,
+      "end_char": 1126,
+      "window_start": 864,
+      "window_end": 1242,
+      "tokens": 83,
+      "distance_to_next": 0.09748327732086182
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 1127,
+      "end_char": 1242,
+      "window_start": 1003,
+      "window_end": 1332,
+      "tokens": 72,
+      "distance_to_next": 0.08986353874206543
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 8,
+      "start_char": 1243,
+      "end_char": 1332,
+      "window_start": 1127,
+      "window_end": 1332,
+      "tokens": 48,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 0,
+      "end_char": 47,
+      "window_start": 0,
+      "window_end": 310,
+      "tokens": 73,
+      "distance_to_next": 0.0213775634765625
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 48,
+      "end_char": 310,
+      "window_start": 0,
+      "window_end": 407,
+      "tokens": 94,
+      "distance_to_next": 0.026419341564178467
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 311,
+      "end_char": 407,
+      "window_start": 48,
+      "window_end": 569,
+      "tokens": 123,
+      "distance_to_next": 0.16580355167388916
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 408,
+      "end_char": 569,
+      "window_start": 311,
+      "window_end": 636,
+      "tokens": 73,
+      "distance_to_next": 0.10649478435516357
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 570,
+      "end_char": 636,
+      "window_start": 408,
+      "window_end": 791,
+      "tokens": 87,
+      "distance_to_next": 0.0915648341178894
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 637,
+      "end_char": 791,
+      "window_start": 570,
+      "window_end": 895,
+      "tokens": 67,
+      "distance_to_next": 0.10311824083328247
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 792,
+      "end_char": 895,
+      "window_start": 637,
+      "window_end": 1022,
+      "tokens": 83,
+      "distance_to_next": 0.0729449987411499
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 896,
+      "end_char": 1022,
+      "window_start": 792,
+      "window_end": 1122,
+      "tokens": 69,
+      "distance_to_next": 0.05558907985687256
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 9,
+      "start_char": 1023,
+      "end_char": 1122,
+      "window_start": 896,
+      "window_end": 1122,
+      "tokens": 51,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 0,
+      "end_char": 49,
+      "window_start": 0,
+      "window_end": 192,
+      "tokens": 43,
+      "distance_to_next": 0.018339037895202637
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 50,
+      "end_char": 192,
+      "window_start": 0,
+      "window_end": 292,
+      "tokens": 64,
+      "distance_to_next": 0.06736332178115845
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 193,
+      "end_char": 292,
+      "window_start": 50,
+      "window_end": 436,
+      "tokens": 89,
+      "distance_to_next": 0.15533137321472168
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 293,
+      "end_char": 436,
+      "window_start": 193,
+      "window_end": 574,
+      "tokens": 87,
+      "distance_to_next": 0.054050981998443604
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 437,
+      "end_char": 574,
+      "window_start": 293,
+      "window_end": 761,
+      "tokens": 108,
+      "distance_to_next": 0.12697505950927734
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 575,
+      "end_char": 761,
+      "window_start": 437,
+      "window_end": 830,
+      "tokens": 86,
+      "distance_to_next": 0.09957629442214966
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 762,
+      "end_char": 830,
+      "window_start": 575,
+      "window_end": 999,
+      "tokens": 94,
+      "distance_to_next": 0.1843801736831665
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 831,
+      "end_char": 999,
+      "window_start": 762,
+      "window_end": 1268,
+      "tokens": 101,
+      "distance_to_next": 0.02824878692626953
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 1000,
+      "end_char": 1268,
+      "window_start": 831,
+      "window_end": 1296,
+      "tokens": 93,
+      "distance_to_next": 0.04175686836242676
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 10,
+      "start_char": 1269,
+      "end_char": 1296,
+      "window_start": 1000,
+      "window_end": 1296,
+      "tokens": 56,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 0,
+      "end_char": 167,
+      "window_start": 0,
+      "window_end": 243,
+      "tokens": 58,
+      "distance_to_next": 0.09878867864608765
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 168,
+      "end_char": 243,
+      "window_start": 0,
+      "window_end": 369,
+      "tokens": 84,
+      "distance_to_next": 0.12729144096374512
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 244,
+      "end_char": 369,
+      "window_start": 168,
+      "window_end": 625,
+      "tokens": 98,
+      "distance_to_next": 0.07894682884216309
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 370,
+      "end_char": 625,
+      "window_start": 244,
+      "window_end": 725,
+      "tokens": 105,
+      "distance_to_next": 0.1133873462677002
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 626,
+      "end_char": 725,
+      "window_start": 370,
+      "window_end": 842,
+      "tokens": 102,
+      "distance_to_next": 0.08929955959320068
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 726,
+      "end_char": 842,
+      "window_start": 626,
+      "window_end": 1117,
+      "tokens": 112,
+      "distance_to_next": 0.09116381406784058
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 843,
+      "end_char": 1117,
+      "window_start": 726,
+      "window_end": 1236,
+      "tokens": 119,
+      "distance_to_next": 0.0285489559173584
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 1118,
+      "end_char": 1236,
+      "window_start": 843,
+      "window_end": 1406,
+      "tokens": 139,
+      "distance_to_next": 0.12644875049591064
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 11,
+      "start_char": 1237,
+      "end_char": 1406,
+      "window_start": 1118,
+      "window_end": 1406,
+      "tokens": 75,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 0,
+      "end_char": 180,
+      "window_start": 0,
+      "window_end": 335,
+      "tokens": 73,
+      "distance_to_next": 0.02045917510986328
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 181,
+      "end_char": 335,
+      "window_start": 0,
+      "window_end": 430,
+      "tokens": 95,
+      "distance_to_next": 0.09225356578826904
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 336,
+      "end_char": 430,
+      "window_start": 181,
+      "window_end": 652,
+      "tokens": 100,
+      "distance_to_next": 0.12108933925628662
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 431,
+      "end_char": 652,
+      "window_start": 336,
+      "window_end": 798,
+      "tokens": 97,
+      "distance_to_next": 0.07627642154693604
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 653,
+      "end_char": 798,
+      "window_start": 431,
+      "window_end": 909,
+      "tokens": 96,
+      "distance_to_next": 0.1612774133682251
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 799,
+      "end_char": 909,
+      "window_start": 653,
+      "window_end": 997,
+      "tokens": 70,
+      "distance_to_next": 0.06704145669937134
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 910,
+      "end_char": 997,
+      "window_start": 799,
+      "window_end": 1097,
+      "tokens": 60,
+      "distance_to_next": 0.12684601545333862
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 998,
+      "end_char": 1097,
+      "window_start": 910,
+      "window_end": 1144,
+      "tokens": 48,
+      "distance_to_next": 0.06743371486663818
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 1098,
+      "end_char": 1144,
+      "window_start": 998,
+      "window_end": 1303,
+      "tokens": 61,
+      "distance_to_next": 0.09812217950820923
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 1145,
+      "end_char": 1303,
+      "window_start": 1098,
+      "window_end": 1409,
+      "tokens": 63,
+      "distance_to_next": 0.03532421588897705
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 12,
+      "start_char": 1304,
+      "end_char": 1409,
+      "window_start": 1145,
+      "window_end": 1409,
+      "tokens": 54,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 0,
+      "end_char": 93,
+      "window_start": 0,
+      "window_end": 286,
+      "tokens": 67,
+      "distance_to_next": 0.042601943016052246
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 94,
+      "end_char": 286,
+      "window_start": 0,
+      "window_end": 516,
+      "tokens": 110,
+      "distance_to_next": 0.061699628829956055
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 287,
+      "end_char": 516,
+      "window_start": 94,
+      "window_end": 692,
+      "tokens": 126,
+      "distance_to_next": 0.054383039474487305
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 517,
+      "end_char": 692,
+      "window_start": 287,
+      "window_end": 844,
+      "tokens": 112,
+      "distance_to_next": 0.05345010757446289
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 693,
+      "end_char": 844,
+      "window_start": 517,
+      "window_end": 1055,
+      "tokens": 109,
+      "distance_to_next": 0.13508403301239014
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 845,
+      "end_char": 1055,
+      "window_start": 693,
+      "window_end": 1231,
+      "tokens": 107,
+      "distance_to_next": 0.07160055637359619
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 1056,
+      "end_char": 1231,
+      "window_start": 845,
+      "window_end": 1347,
+      "tokens": 102,
+      "distance_to_next": 0.0849083662033081
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 13,
+      "start_char": 1232,
+      "end_char": 1347,
+      "window_start": 1056,
+      "window_end": 1347,
+      "tokens": 62,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 0,
+      "end_char": 173,
+      "window_start": 0,
+      "window_end": 311,
+      "tokens": 63,
+      "distance_to_next": 0.04403430223464966
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 174,
+      "end_char": 311,
+      "window_start": 0,
+      "window_end": 563,
+      "tokens": 115,
+      "distance_to_next": 0.10862231254577637
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 312,
+      "end_char": 563,
+      "window_start": 174,
+      "window_end": 699,
+      "tokens": 107,
+      "distance_to_next": 0.10203361511230469
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 564,
+      "end_char": 699,
+      "window_start": 312,
+      "window_end": 893,
+      "tokens": 116,
+      "distance_to_next": 0.0951041579246521
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 700,
+      "end_char": 893,
+      "window_start": 564,
+      "window_end": 952,
+      "tokens": 75,
+      "distance_to_next": 0.0988762378692627
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 894,
+      "end_char": 952,
+      "window_start": 700,
+      "window_end": 1060,
+      "tokens": 69,
+      "distance_to_next": 0.12633955478668213
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 953,
+      "end_char": 1060,
+      "window_start": 894,
+      "window_end": 1191,
+      "tokens": 60,
+      "distance_to_next": 0.07241296768188477
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 1061,
+      "end_char": 1191,
+      "window_start": 953,
+      "window_end": 1333,
+      "tokens": 77,
+      "distance_to_next": 0.12470203638076782
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 1192,
+      "end_char": 1333,
+      "window_start": 1061,
+      "window_end": 1454,
+      "tokens": 80,
+      "distance_to_next": 0.0389552116394043
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 14,
+      "start_char": 1334,
+      "end_char": 1454,
+      "window_start": 1192,
+      "window_end": 1454,
+      "tokens": 54,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 0,
+      "end_char": 13,
+      "window_start": 0,
+      "window_end": 237,
+      "tokens": 51,
+      "distance_to_next": 0.07129180431365967
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 14,
+      "end_char": 237,
+      "window_start": 0,
+      "window_end": 489,
+      "tokens": 110,
+      "distance_to_next": 0.07337450981140137
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 238,
+      "end_char": 489,
+      "window_start": 14,
+      "window_end": 804,
+      "tokens": 172,
+      "distance_to_next": 0.10063838958740234
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 490,
+      "end_char": 804,
+      "window_start": 238,
+      "window_end": 899,
+      "tokens": 144,
+      "distance_to_next": 0.11462455987930298
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 805,
+      "end_char": 899,
+      "window_start": 490,
+      "window_end": 1078,
+      "tokens": 123,
+      "distance_to_next": 0.20094561576843262
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 900,
+      "end_char": 1078,
+      "window_start": 805,
+      "window_end": 1351,
+      "tokens": 117,
+      "distance_to_next": 0.04198145866394043
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 15,
+      "start_char": 1079,
+      "end_char": 1351,
+      "window_start": 900,
+      "window_end": 1351,
+      "tokens": 100,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 0,
+      "end_char": 106,
+      "window_start": 0,
+      "window_end": 151,
+      "tokens": 37,
+      "distance_to_next": 0.15636813640594482
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 107,
+      "end_char": 151,
+      "window_start": 0,
+      "window_end": 273,
+      "tokens": 63,
+      "distance_to_next": 0.12174642086029053
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 152,
+      "end_char": 273,
+      "window_start": 107,
+      "window_end": 326,
+      "tokens": 47,
+      "distance_to_next": 0.02868962287902832
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 274,
+      "end_char": 326,
+      "window_start": 152,
+      "window_end": 468,
+      "tokens": 64,
+      "distance_to_next": 0.16147065162658691
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 327,
+      "end_char": 468,
+      "window_start": 274,
+      "window_end": 677,
+      "tokens": 78,
+      "distance_to_next": 0.07544982433319092
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 469,
+      "end_char": 677,
+      "window_start": 327,
+      "window_end": 789,
+      "tokens": 90,
+      "distance_to_next": 0.04508566856384277
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 678,
+      "end_char": 789,
+      "window_start": 469,
+      "window_end": 845,
+      "tokens": 77,
+      "distance_to_next": 0.043456852436065674
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 790,
+      "end_char": 845,
+      "window_start": 678,
+      "window_end": 930,
+      "tokens": 56,
+      "distance_to_next": 0.08042371273040771
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 846,
+      "end_char": 930,
+      "window_start": 790,
+      "window_end": 1026,
+      "tokens": 57,
+      "distance_to_next": 0.10374224185943604
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 931,
+      "end_char": 1026,
+      "window_start": 846,
+      "window_end": 1042,
+      "tokens": 49,
+      "distance_to_next": 0.16546106338500977
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 1027,
+      "end_char": 1042,
+      "window_start": 931,
+      "window_end": 1159,
+      "tokens": 59,
+      "distance_to_next": 0.08236020803451538
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 1043,
+      "end_char": 1159,
+      "window_start": 1027,
+      "window_end": 1238,
+      "tokens": 53,
+      "distance_to_next": 0.07698708772659302
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 16,
+      "start_char": 1160,
+      "end_char": 1238,
+      "window_start": 1043,
+      "window_end": 1238,
+      "tokens": 49,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 0,
+      "end_char": 45,
+      "window_start": 0,
+      "window_end": 131,
+      "tokens": 31,
+      "distance_to_next": 0.045353829860687256
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 46,
+      "end_char": 131,
+      "window_start": 0,
+      "window_end": 195,
+      "tokens": 47,
+      "distance_to_next": 0.06742417812347412
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 132,
+      "end_char": 195,
+      "window_start": 46,
+      "window_end": 223,
+      "tokens": 43,
+      "distance_to_next": 0.1280139684677124
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 196,
+      "end_char": 223,
+      "window_start": 132,
+      "window_end": 372,
+      "tokens": 61,
+      "distance_to_next": 0.1429673433303833
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 224,
+      "end_char": 372,
+      "window_start": 196,
+      "window_end": 400,
+      "tokens": 52,
+      "distance_to_next": 0.09867793321609497
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 373,
+      "end_char": 400,
+      "window_start": 224,
+      "window_end": 516,
+      "tokens": 72,
+      "distance_to_next": 0.17824995517730713
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 401,
+      "end_char": 516,
+      "window_start": 373,
+      "window_end": 622,
+      "tokens": 59,
+      "distance_to_next": 0.03776586055755615
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 517,
+      "end_char": 622,
+      "window_start": 401,
+      "window_end": 641,
+      "tokens": 57,
+      "distance_to_next": 0.07886141538619995
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 623,
+      "end_char": 641,
+      "window_start": 517,
+      "window_end": 739,
+      "tokens": 50,
+      "distance_to_next": 0.17723572254180908
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 642,
+      "end_char": 739,
+      "window_start": 623,
+      "window_end": 827,
+      "tokens": 46,
+      "distance_to_next": 0.06513863801956177
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 740,
+      "end_char": 827,
+      "window_start": 642,
+      "window_end": 916,
+      "tokens": 60,
+      "distance_to_next": 0.13984215259552002
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 828,
+      "end_char": 916,
+      "window_start": 740,
+      "window_end": 945,
+      "tokens": 47,
+      "distance_to_next": 0.2386271357536316
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 917,
+      "end_char": 945,
+      "window_start": 828,
+      "window_end": 1184,
+      "tokens": 81,
+      "distance_to_next": 0.0727396011352539
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 946,
+      "end_char": 1184,
+      "window_start": 917,
+      "window_end": 1250,
+      "tokens": 75,
+      "distance_to_next": 0.06255555152893066
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 1185,
+      "end_char": 1250,
+      "window_start": 946,
+      "window_end": 1419,
+      "tokens": 99,
+      "distance_to_next": 0.17534923553466797
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 17,
+      "start_char": 1251,
+      "end_char": 1419,
+      "window_start": 1185,
+      "window_end": 1419,
+      "tokens": 45,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 0,
+      "end_char": 148,
+      "window_start": 0,
+      "window_end": 297,
+      "tokens": 67,
+      "distance_to_next": 0.050481319427490234
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 149,
+      "end_char": 297,
+      "window_start": 0,
+      "window_end": 470,
+      "tokens": 102,
+      "distance_to_next": 0.06767499446868896
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 298,
+      "end_char": 470,
+      "window_start": 149,
+      "window_end": 652,
+      "tokens": 109,
+      "distance_to_next": 0.10827159881591797
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 471,
+      "end_char": 652,
+      "window_start": 298,
+      "window_end": 752,
+      "tokens": 95,
+      "distance_to_next": 0.0854148268699646
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 653,
+      "end_char": 752,
+      "window_start": 471,
+      "window_end": 1024,
+      "tokens": 120,
+      "distance_to_next": 0.1121857762336731
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 753,
+      "end_char": 1024,
+      "window_start": 653,
+      "window_end": 1104,
+      "tokens": 98,
+      "distance_to_next": 0.05508232116699219
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 1025,
+      "end_char": 1104,
+      "window_start": 753,
+      "window_end": 1269,
+      "tokens": 107,
+      "distance_to_next": 0.19610655307769775
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 1105,
+      "end_char": 1269,
+      "window_start": 1025,
+      "window_end": 1346,
+      "tokens": 62,
+      "distance_to_next": 0.13069593906402588
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 1270,
+      "end_char": 1346,
+      "window_start": 1105,
+      "window_end": 1520,
+      "tokens": 99,
+      "distance_to_next": 0.08000952005386353
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 18,
+      "start_char": 1347,
+      "end_char": 1520,
+      "window_start": 1270,
+      "window_end": 1520,
+      "tokens": 69,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 0,
+      "end_char": 100,
+      "window_start": 0,
+      "window_end": 408,
+      "tokens": 96,
+      "distance_to_next": 0.032706379890441895
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 101,
+      "end_char": 408,
+      "window_start": 0,
+      "window_end": 726,
+      "tokens": 162,
+      "distance_to_next": 0.03463459014892578
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 409,
+      "end_char": 726,
+      "window_start": 101,
+      "window_end": 891,
+      "tokens": 180,
+      "distance_to_next": 0.10844647884368896
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 727,
+      "end_char": 891,
+      "window_start": 409,
+      "window_end": 1017,
+      "tokens": 145,
+      "distance_to_next": 0.09604835510253906
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 892,
+      "end_char": 1017,
+      "window_start": 727,
+      "window_end": 1151,
+      "tokens": 107,
+      "distance_to_next": 0.1374988555908203
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 1018,
+      "end_char": 1151,
+      "window_start": 892,
+      "window_end": 1402,
+      "tokens": 119,
+      "distance_to_next": 0.05106508731842041
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 1152,
+      "end_char": 1402,
+      "window_start": 1018,
+      "window_end": 1538,
+      "tokens": 110,
+      "distance_to_next": 0.041976988315582275
+    },
+    {
+      "document_id": "ninds_rehabilitation_2020",
+      "page": 19,
+      "start_char": 1403,
+      "end_char": 1538,
+      "window_start": 1152,
+      "window_end": 1538,
+      "tokens": 82,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 0,
+      "end_char": 26,
+      "window_start": 0,
+      "window_end": 35,
+      "tokens": 15,
+      "distance_to_next": 0.006204724311828613
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 27,
+      "end_char": 35,
+      "window_start": 0,
+      "window_end": 39,
+      "tokens": 18,
+      "distance_to_next": 0.37915748357772827
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 36,
+      "end_char": 39,
+      "window_start": 27,
+      "window_end": 45,
+      "tokens": 15,
+      "distance_to_next": 0.46021175384521484
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 40,
+      "end_char": 45,
+      "window_start": 36,
+      "window_end": 96,
+      "tokens": 21,
+      "distance_to_next": 0.14522457122802734
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 46,
+      "end_char": 96,
+      "window_start": 40,
+      "window_end": 163,
+      "tokens": 35,
+      "distance_to_next": 0.038729071617126465
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 97,
+      "end_char": 163,
+      "window_start": 46,
+      "window_end": 240,
+      "tokens": 52,
+      "distance_to_next": 0.10414135456085205
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 164,
+      "end_char": 240,
+      "window_start": 97,
+      "window_end": 298,
+      "tokens": 54,
+      "distance_to_next": 0.09623301029205322
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 241,
+      "end_char": 298,
+      "window_start": 164,
+      "window_end": 389,
+      "tokens": 59,
+      "distance_to_next": 0.2223128080368042
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 299,
+      "end_char": 389,
+      "window_start": 241,
+      "window_end": 451,
+      "tokens": 54,
+      "distance_to_next": 0.10429465770721436
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 390,
+      "end_char": 451,
+      "window_start": 299,
+      "window_end": 509,
+      "tokens": 56,
+      "distance_to_next": 0.16108697652816772
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 452,
+      "end_char": 509,
+      "window_start": 390,
+      "window_end": 559,
+      "tokens": 47,
+      "distance_to_next": 0.206140398979187
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 510,
+      "end_char": 559,
+      "window_start": 452,
+      "window_end": 624,
+      "tokens": 45,
+      "distance_to_next": 0.11676514148712158
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 560,
+      "end_char": 624,
+      "window_start": 510,
+      "window_end": 717,
+      "tokens": 47,
+      "distance_to_next": 0.1546494960784912
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 625,
+      "end_char": 717,
+      "window_start": 560,
+      "window_end": 827,
+      "tokens": 60,
+      "distance_to_next": 0.1458345651626587
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 718,
+      "end_char": 827,
+      "window_start": 625,
+      "window_end": 881,
+      "tokens": 59,
+      "distance_to_next": 0.09064650535583496
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 828,
+      "end_char": 881,
+      "window_start": 718,
+      "window_end": 987,
+      "tokens": 69,
+      "distance_to_next": 0.0719791054725647
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 882,
+      "end_char": 987,
+      "window_start": 828,
+      "window_end": 1185,
+      "tokens": 86,
+      "distance_to_next": 0.09156632423400879
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 989,
+      "end_char": 1185,
+      "window_start": 882,
+      "window_end": 1221,
+      "tokens": 83,
+      "distance_to_next": 0.11479818820953369
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 1187,
+      "end_char": 1221,
+      "window_start": 989,
+      "window_end": 1241,
+      "tokens": 64,
+      "distance_to_next": 0.326233446598053
+    },
+    {
+      "document_id": "ninds_fast_2024",
+      "page": 1,
+      "start_char": 1222,
+      "end_char": 1241,
+      "window_start": 1187,
+      "window_end": 1241,
+      "tokens": 21,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 0,
+      "end_char": 90,
+      "window_start": 0,
+      "window_end": 189,
+      "tokens": 44,
+      "distance_to_next": 0.028277456760406494
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 91,
+      "end_char": 189,
+      "window_start": 0,
+      "window_end": 352,
+      "tokens": 83,
+      "distance_to_next": 0.04512131214141846
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 190,
+      "end_char": 352,
+      "window_start": 91,
+      "window_end": 418,
+      "tokens": 79,
+      "distance_to_next": 0.15224355459213257
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 353,
+      "end_char": 418,
+      "window_start": 190,
+      "window_end": 538,
+      "tokens": 84,
+      "distance_to_next": 0.08597040176391602
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 419,
+      "end_char": 538,
+      "window_start": 353,
+      "window_end": 706,
+      "tokens": 84,
+      "distance_to_next": 0.04342794418334961
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 539,
+      "end_char": 706,
+      "window_start": 419,
+      "window_end": 801,
+      "tokens": 89,
+      "distance_to_next": 0.06514465808868408
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 707,
+      "end_char": 801,
+      "window_start": 539,
+      "window_end": 893,
+      "tokens": 80,
+      "distance_to_next": 0.11466491222381592
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 802,
+      "end_char": 893,
+      "window_start": 707,
+      "window_end": 1105,
+      "tokens": 82,
+      "distance_to_next": 0.10130316019058228
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 894,
+      "end_char": 1105,
+      "window_start": 802,
+      "window_end": 1159,
+      "tokens": 76,
+      "distance_to_next": 0.07471513748168945
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1106,
+      "end_char": 1159,
+      "window_start": 894,
+      "window_end": 1252,
+      "tokens": 74,
+      "distance_to_next": 0.16224288940429688
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1160,
+      "end_char": 1252,
+      "window_start": 1106,
+      "window_end": 1280,
+      "tokens": 42,
+      "distance_to_next": 0.18842828273773193
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1253,
+      "end_char": 1280,
+      "window_start": 1160,
+      "window_end": 1481,
+      "tokens": 77,
+      "distance_to_next": 0.06801146268844604
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1282,
+      "end_char": 1481,
+      "window_start": 1253,
+      "window_end": 1609,
+      "tokens": 89,
+      "distance_to_next": 0.0133284330368042
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1482,
+      "end_char": 1609,
+      "window_start": 1282,
+      "window_end": 1727,
+      "tokens": 109,
+      "distance_to_next": 0.1244935393333435
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1610,
+      "end_char": 1727,
+      "window_start": 1482,
+      "window_end": 1773,
+      "tokens": 75,
+      "distance_to_next": 0.11619913578033447
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1728,
+      "end_char": 1773,
+      "window_start": 1610,
+      "window_end": 1793,
+      "tokens": 54,
+      "distance_to_next": 0.17627960443496704
+    },
+    {
+      "document_id": "ninds_prevention_2024",
+      "page": 1,
+      "start_char": 1774,
+      "end_char": 1793,
+      "window_start": 1728,
+      "window_end": 1793,
+      "tokens": 25,
+      "distance_to_next": null
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 0,
+      "end_char": 77,
+      "window_start": 0,
+      "window_end": 219,
+      "tokens": 48,
+      "distance_to_next": 0.042227208614349365
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 78,
+      "end_char": 219,
+      "window_start": 0,
+      "window_end": 328,
+      "tokens": 71,
+      "distance_to_next": 0.05028432607650757
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 220,
+      "end_char": 328,
+      "window_start": 78,
+      "window_end": 440,
+      "tokens": 77,
+      "distance_to_next": 0.11100798845291138
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 329,
+      "end_char": 440,
+      "window_start": 220,
+      "window_end": 568,
+      "tokens": 78,
+      "distance_to_next": 0.03750509023666382
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 441,
+      "end_char": 568,
+      "window_start": 329,
+      "window_end": 616,
+      "tokens": 64,
+      "distance_to_next": 0.028937935829162598
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 569,
+      "end_char": 616,
+      "window_start": 441,
+      "window_end": 679,
+      "tokens": 57,
+      "distance_to_next": 0.18255162239074707
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 617,
+      "end_char": 679,
+      "window_start": 569,
+      "window_end": 802,
+      "tokens": 54,
+      "distance_to_next": 0.06497859954833984
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 680,
+      "end_char": 802,
+      "window_start": 617,
+      "window_end": 894,
+      "tokens": 62,
+      "distance_to_next": 0.12328493595123291
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 803,
+      "end_char": 894,
+      "window_start": 680,
+      "window_end": 1248,
+      "tokens": 118,
+      "distance_to_next": 0.0525360107421875
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 895,
+      "end_char": 1248,
+      "window_start": 803,
+      "window_end": 1318,
+      "tokens": 108,
+      "distance_to_next": 0.08492159843444824
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 1249,
+      "end_char": 1318,
+      "window_start": 895,
+      "window_end": 1436,
+      "tokens": 115,
+      "distance_to_next": 0.21419024467468262
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 1319,
+      "end_char": 1436,
+      "window_start": 1249,
+      "window_end": 1482,
+      "tokens": 60,
+      "distance_to_next": 0.1287531852722168
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 1437,
+      "end_char": 1482,
+      "window_start": 1319,
+      "window_end": 1507,
+      "tokens": 53,
+      "distance_to_next": 0.23409342765808105
+    },
+    {
+      "document_id": "ninds_recovery_2024",
+      "page": 1,
+      "start_char": 1483,
+      "end_char": 1507,
+      "window_start": 1437,
+      "window_end": 1507,
+      "tokens": 29,
+      "distance_to_next": null
+    }
+  ],
+  "token_statistics": {
+    "count": 759,
+    "total_tokens": 62752,
+    "maximum_tokens": 216
+  },
+  "model_loading_seconds": 8.477382379000119,
+  "embedding_seconds": 249.24708132900014,
+  "total_seconds": 257.79364923899993,
+  "service_cost": 0.0,
+  "cost_scope": "Local CPU compute service only; excludes electricity, hardware and network.",
+  "created_at": "2026-11-14T09:54:41.538806+00:00",
+  "vectors_sha256": "dcb98ee0bab5106e5b2c00f7a1a13033a9a3f1f4a6e55d1002a1bcdacac194ec"
+}

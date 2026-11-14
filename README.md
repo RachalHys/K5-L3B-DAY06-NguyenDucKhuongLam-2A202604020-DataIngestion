@@ -10,7 +10,16 @@ Biến tài liệu thành kho tri thức có thể truy xuất cho AI agent, r�
 
 ## Bắt đầu nhanh
 
-Dùng [starter PostgreSQL + pgvector](starter/README.md) để dựng database và hoàn thiện các hàm TODO, hoặc tự chọn vector store tương đương. Starter chỉ là khung: **bạn tự hiện thực pipeline và benchmark**.
+Bài làm sử dụng **BGE-M3 chạy local và PostgreSQL/pgvector**, trên 5 PDF NINDS/NIH với 67 trang nội dung về đột quỵ.
+
+- [Báo cáo cá nhân](report/individual/2A202604020_NguyenDucKhuongLam.md): phương pháp, kết quả và phân tích.
+- [Hướng dẫn chạy](starter/README.md): cài môi trường, chạy pipeline và tái lập kết quả.
+- [Dữ liệu](data/README.md) và [manifest](data/manifest.json): nguồn, quyền sử dụng và cách lấy PDF.
+- [Thông tin học viên](STUDENT.md).
+
+Bốn cấu hình gồm A (cửa sổ cố định), B (ưu tiên đoạn/câu), C (B kết hợp filter năm) và D (semantic). Các cấu hình dùng cùng model, dữ liệu và benchmark **20 dev / 5 test**. C được chọn trên dev trước khi chạy test; kết quả nằm trong `results/`, cấu hình ở [configs/lab.json](configs/lab.json).
+
+PDF gốc không được đưa vào Git. Repo có văn bản đã xử lý và vector để tái lập truy xuất; hướng dẫn tải PDF và giới hạn truy cập nguồn nằm trong tài liệu dữ liệu. Các lượt thử trước được giữ riêng để theo dõi thay đổi, phiên bản hiện tại được chỉ ra trong `artifacts/current_prepared.json`.
 
 ## 1. Xây pipeline
 

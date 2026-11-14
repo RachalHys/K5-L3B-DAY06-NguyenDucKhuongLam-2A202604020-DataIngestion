@@ -1,0 +1,3 @@
+# Local CPU embedding setup. Resolve with uv's --torch-backend cpu option.
+-r requirements.txt
+sentence-transformers

@@ -1,0 +1,51 @@
+{
+  "prepared_id": "c5d3358834ca1f25c699",
+  "selected_strategy": "C",
+  "selection_rule": [
+    "dev_evidence_hit3_desc",
+    "dev_hit1_desc",
+    "chunk_count_asc",
+    "strategy_id_asc"
+  ],
+  "dev_metrics": [
+    {
+      "strategy": "C",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 17,
+      "hit3_n": 18,
+      "hit1": 0.85,
+      "evidence_hit3": 0.9
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 17,
+      "hit3_n": 17,
+      "hit1": 0.85,
+      "evidence_hit3": 0.85
+    },
+    {
+      "strategy": "D",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 15,
+      "hit3_n": 17,
+      "hit1": 0.75,
+      "evidence_hit3": 0.85
+    },
+    {
+      "strategy": "A",
+      "split": "dev",
+      "n": 20,
+      "hit1_n": 13,
+      "hit3_n": 17,
+      "hit1": 0.65,
+      "evidence_hit3": 0.85
+    }
+  ],
+  "dev_trace_sha256": "50273c1694d1c0e1ff7425a60081c33e25a4a632bde337242d627e97eb75cdcd",
+  "embedding_run_sha256": "2085ee485cef412e81b98313cc37b7427dd9fb429d4413da92ca109287d16e8f",
+  "selected_at": "2026-11-14T09:59:39.826982+00:00"
+}

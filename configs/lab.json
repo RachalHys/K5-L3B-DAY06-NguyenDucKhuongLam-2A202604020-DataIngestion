@@ -1,0 +1,58 @@
+{
+  "study_id": "stroke-awareness-v1",
+  "model": {
+    "name": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimensions": 1024,
+    "max_tokens": 512,
+    "normalize_embeddings": true,
+    "precision": "float32",
+    "batch_size": 4,
+    "document_method": "encode",
+    "query_method": "encode",
+    "query_instruction": ""
+  },
+  "strategies": {
+    "A": {
+      "chunking": "fixed",
+      "chunk_size": 500,
+      "overlap": 50,
+      "filters": false
+    },
+    "B": {
+      "chunking": "paragraph_sentence",
+      "chunk_size": 500,
+      "overlap": 0,
+      "filters": false
+    },
+    "C": {
+      "chunks_from": "B",
+      "filters": true
+    },
+    "D": {
+      "chunking": "semantic",
+      "chunk_size": 500,
+      "overlap": 0,
+      "filters": false,
+      "breakpoint_percentile": 90,
+      "min_chunk_size": 100,
+      "buffer_size": 1
+    }
+  },
+  "retrieval": {
+    "top_k": 3,
+    "metric": "cosine",
+    "search": "exact"
+  },
+  "selection_rule": [
+    "dev_evidence_hit3_desc",
+    "dev_hit1_desc",
+    "chunk_count_asc",
+    "strategy_id_asc"
+  ],
+  "coherence_sampling": "First 10 eligible pages ordered by document_id/page; midpoint advanced to next non-whitespace character; first covering chunk in source order.",
+  "benchmark_language": "en",
+  "test_policy": "Freeze questions and selection rule before retrieval; select on dev before test. Any test-informed changes require disclosure and a new independent test set.",
+  "embedding_backend": "Local CPU; four PyTorch threads.",
+  "cost_scope": "USD compute-service charges; excludes electricity, hardware and network."
+}

@@ -1,0 +1,496 @@
+{
+  "prepared_id": "c5d3358834ca1f25c699",
+  "source_content_pages": 67,
+  "postgresql_version": "16.16 (Debian 16.16-1.pgdg12+1)",
+  "pgvector_version": "0.8.7",
+  "model": {
+    "name": "BAAI/bge-m3",
+    "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+    "dimensions": 1024,
+    "max_tokens": 512,
+    "normalize_embeddings": true,
+    "precision": "float32",
+    "batch_size": 4,
+    "document_method": "encode",
+    "query_method": "encode",
+    "query_instruction": ""
+  },
+  "backend": "cpu",
+  "preprocessing_seconds": 261.72585050900125,
+  "semantic_chunking": {
+    "D": {
+      "threshold": 0.17315599918365476,
+      "distance_count": 692,
+      "token_statistics": {
+        "count": 759,
+        "total_tokens": 62752,
+        "maximum_tokens": 216
+      },
+      "model_loading_seconds": 8.477382379000119,
+      "embedding_seconds": 249.24708132900014,
+      "total_seconds": 257.79364923899993,
+      "service_cost": 0.0
+    }
+  },
+  "model_loading_seconds": 8.791212796000764,
+  "embedding_seconds": {
+    "A": 94.62826369499999,
+    "B": 92.34175544299978,
+    "D": 96.41572230200109,
+    "queries": 2.4119259230010357
+  },
+  "token_statistics": {
+    "A": {
+      "total_tokens": 24122,
+      "maximum_tokens": 138,
+      "count": 241
+    },
+    "B": {
+      "total_tokens": 22071,
+      "maximum_tokens": 140,
+      "count": 252
+    },
+    "D": {
+      "total_tokens": 22113,
+      "maximum_tokens": 140,
+      "count": 273
+    },
+    "queries": {
+      "total_tokens": 520,
+      "maximum_tokens": 27,
+      "count": 25
+    }
+  },
+  "database_import_and_reload": {
+    "A": {
+      "initial_import_seconds": 0.40018808799868566,
+      "reload_seconds": 0.38602200800050923,
+      "row_counts": [
+        241,
+        241
+      ],
+      "embedding_reused_from": null
+    },
+    "B": {
+      "initial_import_seconds": 0.4160808739998174,
+      "reload_seconds": 0.40115541300110635,
+      "row_counts": [
+        252,
+        252
+      ],
+      "embedding_reused_from": null
+    },
+    "C": {
+      "initial_import_seconds": 0.405579439999201,
+      "reload_seconds": 0.3950672080009099,
+      "row_counts": [
+        252,
+        252
+      ],
+      "embedding_reused_from": "B"
+    },
+    "D": {
+      "initial_import_seconds": 0.43809682999926736,
+      "reload_seconds": 0.42057904899957066,
+      "row_counts": [
+        273,
+        273
+      ],
+      "embedding_reused_from": null
+    }
+  },
+  "chunk_statistics": {
+    "A": {
+      "chunk_count": 241,
+      "total_characters": 104235,
+      "min_characters": 56,
+      "max_characters": 500,
+      "median_characters": 500,
+      "p95_characters": 500.0
+    },
+    "B": {
+      "chunk_count": 252,
+      "total_characters": 95349,
+      "min_characters": 19,
+      "max_characters": 500,
+      "median_characters": 415.0,
+      "p95_characters": 492.0
+    },
+    "C": {
+      "chunk_count": 252,
+      "total_characters": 95349,
+      "min_characters": 19,
+      "max_characters": 500,
+      "median_characters": 415.0,
+      "p95_characters": 492.0
+    },
+    "D": {
+      "chunk_count": 273,
+      "total_characters": 95328,
+      "min_characters": 19,
+      "max_characters": 500,
+      "median_characters": 386,
+      "p95_characters": 489.0
+    }
+  },
+  "retrieval_metrics": {
+    "dev": [
+      {
+        "strategy": "A",
+        "split": "dev",
+        "n": 20,
+        "hit1_n": 13,
+        "hit3_n": 17,
+        "hit1": 0.65,
+        "evidence_hit3": 0.85
+      },
+      {
+        "strategy": "B",
+        "split": "dev",
+        "n": 20,
+        "hit1_n": 17,
+        "hit3_n": 17,
+        "hit1": 0.85,
+        "evidence_hit3": 0.85
+      },
+      {
+        "strategy": "C",
+        "split": "dev",
+        "n": 20,
+        "hit1_n": 17,
+        "hit3_n": 18,
+        "hit1": 0.85,
+        "evidence_hit3": 0.9
+      },
+      {
+        "strategy": "D",
+        "split": "dev",
+        "n": 20,
+        "hit1_n": 15,
+        "hit3_n": 17,
+        "hit1": 0.75,
+        "evidence_hit3": 0.85
+      }
+    ],
+    "test": [
+      {
+        "strategy": "A",
+        "split": "test",
+        "n": 5,
+        "hit1_n": 3,
+        "hit3_n": 3,
+        "hit1": 0.6,
+        "evidence_hit3": 0.6
+      },
+      {
+        "strategy": "B",
+        "split": "test",
+        "n": 5,
+        "hit1_n": 5,
+        "hit3_n": 5,
+        "hit1": 1.0,
+        "evidence_hit3": 1.0
+      },
+      {
+        "strategy": "C",
+        "split": "test",
+        "n": 5,
+        "hit1_n": 5,
+        "hit3_n": 5,
+        "hit1": 1.0,
+        "evidence_hit3": 1.0
+      },
+      {
+        "strategy": "D",
+        "split": "test",
+        "n": 5,
+        "hit1_n": 5,
+        "hit3_n": 5,
+        "hit1": 1.0,
+        "evidence_hit3": 1.0
+      }
+    ]
+  },
+  "retrieval_scoring": "Source/page plus full normalized primary or alternative quote. Gold authoring and any additional evidence reviews are disclosed separately.",
+  "selected_on_dev": "C",
+  "benchmark_version": 2,
+  "test_status": "completed",
+  "previous_test_ids_moved_to_dev": [
+    "q16",
+    "q17",
+    "q18",
+    "q19",
+    "q20"
+  ],
+  "strategy_extension": {
+    "previous_prepared_id": "74ff2015bc7faa361ddc",
+    "previous_inputs": "results/74ff2015bc7faa361ddc/inputs.zip",
+    "frozen_at": "2026-11-14T09:00:51.346023+00:00",
+    "dev_informed": true,
+    "basis": "The 1000-character paragraph/sentence D/E experiment was replaced with semantic D. Earlier dev results were observed; q21-q25 have not been retrieved.",
+    "replaced_strategies": [
+      "D",
+      "E"
+    ],
+    "replacement": {
+      "D": "Semantic boundaries using real buffered BGE-M3 source-sentence embeddings, a corpus-wide 90th-percentile cosine-distance threshold, minimum 100 characters before semantic cuts, maximum 500 characters and zero overlap; no metadata filter."
+    },
+    "hypothesis": "Semantic boundaries may improve topic coherence and evidence retrieval at the same character cap as B, but can fragment evidence and add preprocessing cost. B-D compare chunking; B-C retain the controlled filter comparison.",
+    "threshold_policy": "Percentile, buffer and size limits fixed before this run. Threshold uses only source-text distances across the selected corpus, never questions, answers or retrieval scores.",
+    "unchanged": "Corpus, normalization, A/B/C settings, retrieval model, 25 questions/gold, split and selection rule.",
+    "evaluation": "A/B/C/D are compared on the same 20 dev questions and selected before fresh-test retrieval. The evidence metric scores the actual returned chunk. Coherence and grounding use separate manual assessments."
+  },
+  "lookup_latency": {
+    "A": {
+      "n": 25,
+      "mean_seconds": 0.02313850924016151,
+      "median_seconds": 0.02288177800073754,
+      "max_seconds": 0.024732199999562,
+      "includes_query_encoding": false
+    },
+    "B": {
+      "n": 25,
+      "mean_seconds": 0.022971548279965646,
+      "median_seconds": 0.022880645999975968,
+      "max_seconds": 0.024005524001040612,
+      "includes_query_encoding": false
+    },
+    "C": {
+      "n": 25,
+      "mean_seconds": 0.02263173679995816,
+      "median_seconds": 0.022868173000460956,
+      "max_seconds": 0.02435073099877627,
+      "includes_query_encoding": false
+    },
+    "D": {
+      "n": 25,
+      "mean_seconds": 0.023973810280003817,
+      "median_seconds": 0.023911944999781554,
+      "max_seconds": 0.024650815001223236,
+      "includes_query_encoding": false
+    }
+  },
+  "cost": {
+    "compute_service_usd": 0.0,
+    "excludes": "Electricity, hardware and network"
+  },
+  "manual_audit_status": "Đã đối chiếu và xác nhận theo nguồn/rubric.",
+  "audit_method": {
+    "reviewer": "Đối chiếu nguồn",
+    "review_type": "Đối chiếu từng mẫu với nguồn và rubric",
+    "status": "Đã đối chiếu và xác nhận theo nguồn/rubric.",
+    "coherence": {
+      "n": 40,
+      "sampling": "First 10 eligible pages ordered by document_id/page; midpoint advanced to next non-whitespace character; first covering chunk in source order.",
+      "scale": {
+        "0": "Không hiểu được vì bị cắt hoặc mất chủ thể.",
+        "1": "Hiểu một phần, còn ranh giới hoặc ngữ cảnh thiếu.",
+        "2": "Tự hiểu được và giữ trọn ý của nội dung trong chunk."
+      },
+      "judgment": "Vị trí mẫu được cố định trước truy xuất. Từng chunk được đối chiếu với toàn trang nguồn theo rubric; chunk B/C giống nhau nhận cùng nhãn."
+    },
+    "metadata": {
+      "n": 60,
+      "fields": [
+        "document_id",
+        "source",
+        "page",
+        "publication_year",
+        "document_type",
+        "topic",
+        "language",
+        "country_context",
+        "start_char",
+        "end_char"
+      ],
+      "verification": "Đối chiếu source/trang/offset với PDF trích xuất lại, năm với ngày in trên PDF và các nhãn phân loại với manifest. Metadata đúng được tách khỏi việc tuân thủ filter.",
+      "printed_date_sources": {
+        "ninds_stroke_overview_2020": "February 2020, trang PDF 56",
+        "ninds_rehabilitation_2020": "April 2020, trang PDF 24",
+        "ninds_fast_2024": "May 2024, trang PDF 1",
+        "ninds_prevention_2024": "May 2024, trang PDF 1",
+        "ninds_recovery_2024": "May 2024, trang PDF 1"
+      }
+    },
+    "grounding": {
+      "n": 20,
+      "unit": "Toàn bộ top-3 của mỗi câu test và cấu hình.",
+      "scale": {
+        "0": "Không có bằng chứng.",
+        "1": "Có bằng chứng nhưng thiếu điều kiện hoặc ngữ cảnh.",
+        "2": "Đủ trả lời và truy nguồn."
+      },
+      "multi_chunk_policy": "Có thể dùng tổ hợp các chunk trong top-3 nếu thực sự đủ bằng chứng; không thay định nghĩa Evidence Hit@3 yêu cầu một chunk. A/q22 và A/q23 cần ghép hai chunk cùng trang có overlap."
+    },
+    "evidence_hits": {
+      "n": 60,
+      "single_chunk_required": true,
+      "additional_equivalence_applied": false,
+      "reviewed_labels_match_automatic_labels": true
+    },
+    "bias": "Quá trình xây benchmark và đối chiếu nhãn dùng cùng một quy trình, nên có nguy cơ thiên lệch; không phải đánh giá độc lập.",
+    "inputs": {
+      "coherence_template_sha256": "d05f0050e8cd7aeadc97f073c539fbc1f553a109834de5f40b8dadcfaf8733ee",
+      "test_trace_sha256": "93a9dd84a16e6eeb96dbede8bf6e9633fd5c6df4e2e06567eaef09b37206d122",
+      "manifest_sha256": "dc556bd7d835e7d12bba7efe5f2ec74778d0ffbfb24c9e5eb4b82994275179df"
+    },
+    "completed_at": "2026-11-14T10:27:49.005360+00:00",
+    "tool_support": {
+      "implementation_and_source_review": "Codex",
+      "pdf_extraction": "pypdf",
+      "data_validation": "Python",
+      "vector_storage": "PostgreSQL + pgvector"
+    }
+  },
+  "source_review_summary": [
+    {
+      "strategy": "A",
+      "coherence_n": 10,
+      "coherence_mean": 1.0,
+      "metadata_correct_n": 15,
+      "metadata_n": 15,
+      "filter_compliant_n": 1,
+      "filter_n": 2,
+      "filter_compliance": 0.5,
+      "grounding_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "grounding_mean": 2.0,
+      "reviewers": [
+        "Đối chiếu nguồn"
+      ]
+    },
+    {
+      "strategy": "B",
+      "coherence_n": 10,
+      "coherence_mean": 1.8,
+      "metadata_correct_n": 15,
+      "metadata_n": 15,
+      "filter_compliant_n": 1,
+      "filter_n": 2,
+      "filter_compliance": 0.5,
+      "grounding_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "grounding_mean": 2.0,
+      "reviewers": [
+        "Đối chiếu nguồn"
+      ]
+    },
+    {
+      "strategy": "C",
+      "coherence_n": 10,
+      "coherence_mean": 1.8,
+      "metadata_correct_n": 15,
+      "metadata_n": 15,
+      "filter_compliant_n": 2,
+      "filter_n": 2,
+      "filter_compliance": 1.0,
+      "grounding_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "grounding_mean": 2.0,
+      "reviewers": [
+        "Đối chiếu nguồn"
+      ]
+    },
+    {
+      "strategy": "D",
+      "coherence_n": 10,
+      "coherence_mean": 1.8,
+      "metadata_correct_n": 15,
+      "metadata_n": 15,
+      "filter_compliant_n": 1,
+      "filter_n": 2,
+      "filter_compliance": 0.5,
+      "grounding_counts": {
+        "0": 0,
+        "1": 0,
+        "2": 5
+      },
+      "grounding_mean": 2.0,
+      "reviewers": [
+        "Đối chiếu nguồn"
+      ]
+    }
+  ],
+  "retrieval_misses": [
+    {
+      "strategy": "A",
+      "split": "dev",
+      "id": "q06"
+    },
+    {
+      "strategy": "A",
+      "split": "dev",
+      "id": "q18"
+    },
+    {
+      "strategy": "A",
+      "split": "dev",
+      "id": "q20"
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "id": "q09"
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "id": "q18"
+    },
+    {
+      "strategy": "B",
+      "split": "dev",
+      "id": "q20"
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "id": "q18"
+    },
+    {
+      "strategy": "C",
+      "split": "dev",
+      "id": "q20"
+    },
+    {
+      "strategy": "D",
+      "split": "dev",
+      "id": "q09"
+    },
+    {
+      "strategy": "D",
+      "split": "dev",
+      "id": "q18"
+    },
+    {
+      "strategy": "D",
+      "split": "dev",
+      "id": "q20"
+    },
+    {
+      "strategy": "A",
+      "split": "test",
+      "id": "q22"
+    },
+    {
+      "strategy": "A",
+      "split": "test",
+      "id": "q23"
+    }
+  ],
+  "limitations": [
+    "Five test questions with primary evidence from Post-Stroke Rehabilitation (2020), also used in dev; limited source coverage and a shared benchmark/review process restrict generalization.",
+    "A/B differ in chunking method and overlap. B/C isolate filtering with identical chunks and embeddings. B/D compare sentence/paragraph and semantic boundaries at the same 500-character cap and zero overlap.",
+    "Semantic preprocessing adds source-window embedding work; its measured time is separate from retrieval-chunk embedding time. Regex sentence boundaries and hard size limits can still split context.",
+    "Lookup timings use precomputed benchmark query vectors and exclude query encoding."
+  ]
+}
